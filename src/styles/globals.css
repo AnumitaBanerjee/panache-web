@@ -1,0 +1,15 @@
+:root {
+	--primary-color: #CC7979;
+	--secondary-color: #948474;
+	--brown-color: #B14B48;
+	--purple-color: #888FC7;
+	--light-purple-color: #F0F0F0;
+	--grey-color: #7C7F85;
+	--light-grey-color: #E9E8ED;
+	--dark-grey-color: #303235;
+	--border-color: #707070;
+	--dark-border-color: #8D8D8D;
+	--white-color: #fff;
+	--black-color: #000000;
+	--primary-transition: all ease-in-out 0.35s;
+}
