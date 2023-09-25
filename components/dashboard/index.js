@@ -85,7 +85,7 @@ const Dashboard = () => {
                   <span className="notification-dot"></span>
                 </div>
                 <div className="profile-image"></div>
-                <span>Welcome<p>John Doe!</p></span>
+                <p>Welcome<span>John Doe!</span></p>
               </div>
             </div>
           </div>
