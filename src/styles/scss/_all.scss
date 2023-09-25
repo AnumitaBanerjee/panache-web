@@ -2368,7 +2368,7 @@ form {
             align-items: center;
             display: flex;
             color: var(--black-color);
-            background: var(--light-grey-color);
+            background-color: var(--light-grey-color);
             border: 1px solid #d6d6d6;
             font-weight: 600;
 
@@ -2839,5 +2839,44 @@ form {
 .switches-container input:nth-of-type(2):checked ~ .switch-wrapper .switch div:nth-of-type(2) {
     opacity: 1;
 }
+/* dahhboard- Pageination*/
+.dahhboard-panel {
+    .pagination {
+        li {
+    
+            a {
+                width: 35px;
+                height: 35px;
+                color: var(--black-color);
+                background-color: var(--white-color);
+                border: 1px solid #C9D6DE;
 
+                &:hover,
+                &.active {
+                    background-color: #789FBA;
+                    color: var(--white-color);
+                    border: 1px solid #C9D6DE;
+                }
+            }
+        }
+    }
+}
 /* Application Lists */
+.apply-list-pane-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    h2 {
+        margin: 0;
+    }
+    .apply-new-btn {
+        text-transform: uppercase;
+        background: url(../../../public/assets/images/plus-sign.png) 0 2px no-repeat;
+        padding-left: 25px;
+        font-size: 14px;
+        color: var(--black-color);
+        &:hover {
+            color: var(--secondary-color);
+        }
+    }
+}

@@ -42,7 +42,29 @@ const ApplicationLists = (props) => {
                 <div className="content-panel">
                     <div className="apply-list-pane-top">
                         <h2>Applications List</h2>
-                    </div>                  
+                        <Link href="/" className="apply-new-btn">Create New</Link>
+                    </div>
+                    <div className="apply-card-sec">
+
+                        <div className="apply-card-inner">
+                            <div className="apply-card-inner-top">
+                            </div>
+                            <div className="apply-card-inner-btm">
+
+                            </div>
+                        </div>
+
+
+
+                        <ul className="pagination">
+                            <li><Link href="/" className="prev"></Link></li>
+                            <li><Link href="/" className="active">1</Link></li>
+                            <li><Link href="/">2</Link></li>
+                            <li><Link href="/">3</Link></li>
+                            <li><Link href="/" className="next"></Link></li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
         </>
