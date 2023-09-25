@@ -40,8 +40,8 @@ const ApplicationLists = (props) => {
                     </div>
                 </div>
                 <div className="content-panel">
-                    <div className="apply-list-pane">
-
+                    <div className="apply-list-pane-top">
+                        <h2>Applications List</h2>
                     </div>                  
                 </div>
             </div>
