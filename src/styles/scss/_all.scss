@@ -487,8 +487,9 @@ p {
     .right-panel {
         .back-btn {
             padding: 2px 14px;
-            border: 1px solid #789fba;
+            border: 2px solid #9db4c3;
             margin: 0 10px 48px 0;
+            box-shadow: 0px 2px 12px 0.5px rgba(0, 0, 0, 0.05);
         }
 
         .form-floating {
@@ -684,6 +685,7 @@ p {
                 color: #555555;
                 margin: 0;
                 font-size: 14px;
+
                 span {
                     font-size: 16px;
                     color: var(--primary-color);
@@ -747,11 +749,13 @@ p {
                 .slick-slide.slick-active {
                     width: 385px !important;
                 }
-                .slick-slider{
-                    .slick-dots{
+
+                .slick-slider {
+                    .slick-dots {
                         display: none !important;
                     }
                 }
+
                 .slider-content {
                     width: 305px !important;
                     height: 232px;
@@ -783,28 +787,34 @@ p {
                             margin: 0 0 0 36px;
                         }
                     }
-                    h5{
+
+                    h5 {
                         font-size: 14px;
                         font-weight: 400;
                         padding: 14px 0 0;
                         margin: 0 0 14px;
                     }
-                    .fee-panel{
+
+                    .fee-panel {
                         display: flex;
                         background: #faf4e7;
-                        p{
+
+                        p {
                             color: #939191;
                             font-size: 14px;
-                            &:nth-child(1){
+
+                            &:nth-child(1) {
                                 padding: 0 16px;
                                 border-right: 2px solid #c2cac9;
                                 margin: 12px 0 12px;
                             }
-                            &:nth-child(2){
+
+                            &:nth-child(2) {
                                 padding: 0px 0 0 15px;
                                 margin: 12px 0 4px;
                             }
-                            span{
+
+                            span {
                                 display: block;
                                 color: var(--primary-color);
                                 font-size: 20px;
@@ -812,26 +822,30 @@ p {
                             }
                         }
                     }
-                    .time-panel{
-                        ul{
+
+                    .time-panel {
+                        ul {
                             display: flex;
                             justify-content: space-between;
                             list-style: none;
                             padding: 0;
-                            margin:0;
-                            li{
-                                padding-left:25px;
+                            margin: 0;
+
+                            li {
+                                padding-left: 25px;
                                 color: #939191;
                                 font-size: 14px;
                                 margin: 10px 0 0;
-                                &.first{
-                                    background: url(../../../public/assets/images/months-icon.png) no-repeat 0 3px; 
+
+                                &.first {
+                                    background: url(../../../public/assets/images/months-icon.png) no-repeat 0 3px;
                                 }
-                                &.second{
-                                    background: url(../../../public/assets/images/time-icon.png) no-repeat 0 3px; 
+
+                                &.second {
+                                    background: url(../../../public/assets/images/time-icon.png) no-repeat 0 3px;
                                 }
                             }
-                          
+
                         }
                     }
                 }
@@ -840,26 +854,31 @@ p {
 
         .search-university-panel {
             min-height: 100px;
-            .university-slider{
-                .slider-content{
+
+            .university-slider {
+                .slider-content {
                     width: 305px !important;
                     height: 232px;
                     background-color: var(--white-color);
                     border-top: 3px solid var(--secondary-color);
                     padding: 12px;
-                    .university-pane{
+
+                    .university-pane {
                         display: flex;
-                        img{
+
+                        img {
                             background: #e0eef6;
                             padding: 8px;
                             width: 38px;
                             height: 35px;
                         }
-                        p{
+
+                        p {
                             text-align: right;
                             font-size: 16px;
                             color: var(--primary-color);
-                            span{
+
+                            span {
                                 color: #8f8f8f;
                                 display: block;
                                 text-align: left;
@@ -872,6 +891,7 @@ p {
         }
     }
 }
+
 .application-progress-panel {
     display: flex;
     align-items: center;
@@ -1098,6 +1118,7 @@ p {
         }
     }
 }
+
 /* Form */
 .form-group {
     margin-bottom: 20px;
@@ -2996,26 +3017,33 @@ form {
         }
     }
 }
+
 .apply-card-inner {
     background: #f0f4f6;
     box-shadow: var(--box-shadow-light);
     margin-bottom: 20px;
+
     .apply-card-inner-btm {
         padding: 12px 15px 30px 15px;
+
         .apply-card-inner-btm-head {
             display: flex;
             margin-bottom: 30px;
+
             p {
                 margin: 0 10px 0 0;
                 font-size: 14px;
                 color: var(--primary-color);
+
                 span {
                     color: #8f8f8f;
                 }
+
                 &.aarea {
                     background: url(../../../public/assets/images/university-list-icon.png) 0 0px no-repeat;
                     padding-left: 35px;
                 }
+
                 &:first-child {
                     padding-right: 10px;
                     border-right: 1px solid var(--black-color);
@@ -3024,43 +3052,54 @@ form {
         }
     }
 }
+
 .apply-card-details {
     background: var(--white-color);
     border-top: 2px solid var(--secondary-color);
     padding: 12px 15px;
     display: flex;
     justify-content: space-between;
+
     .apply-card-proifle {
         display: flex;
+
         .apply-card-proifle-in {
             width: 41px;
             height: 41px;
+
             img {
                 width: 100%;
                 height: auto;
                 border-radius: 100%;
             }
         }
+
         .apply-card-profile-details {
             margin-left: 15px;
+
             .apply-card-profile-details-t {
                 display: flex;
                 align-items: center;
+
                 h3 {
                     margin: 0;
                 }
+
                 span {
                     font-size: 12px;
                     color: var(--white-color);
                     margin: 0 0 0 10px;
                     display: block;
                     padding: 4px 10px;
+
                     &.apply-id {
                         background: var(--blue-color);
                     }
+
                     &.student-id {
                         background: var(--green-color);
                     }
+
                     &.application-book {
                         background: #e0eef6;
                         display: flex;
@@ -3070,27 +3109,34 @@ form {
                     }
                 }
             }
+
             .applt-card-profile-details-b {
                 margin-top: 12px;
+
                 ul {
                     padding: 0;
                     margin: 0;
                     list-style-type: none;
                     display: flex;
+
                     li {
                         font-size: 14px;
                         color: #8f8f8f;
                         margin-right: 24px;
                         padding-left: 24px;
+
                         a {
                             color: #8f8f8f;
+
                             &:hover {
                                 color: var(--secondary-color);
                             }
                         }
+
                         &.tel {
                             background: url(../../../public/assets/images/mobile-icon.png) 0 0px no-repeat;
                         }
+
                         &.mail {
                             background: url(../../../public/assets/images/mail-icon.png) 0 4px no-repeat;
                         }
@@ -3099,12 +3145,15 @@ form {
             }
         }
     }
+
     .apply-card-btns {
         display: flex;
         justify-content: end;
+
         .apply-card-btn-inner {
             width: 152px;
             text-align: right;
+
             .btn {
                 font-size: 12px;
                 padding: 5px 10px;
@@ -3114,12 +3163,72 @@ form {
                 min-width: inherit;
                 margin-bottom: 5px;
                 letter-spacing: 2px;
+
                 &::after {
                     display: none;
                 }
+
                 &:last-child {
                     margin: 0;
                 }
+            }
+        }
+    }
+}
+
+/*Pending Tasks*/
+.content-panel {
+    .pending-header {
+        .back-btn {
+            padding: 2px 14px;
+            border: 2px solid #9db4c3;
+            margin: 0 10px 15px 0;
+            box-shadow: 0px 2px 12px 0.5px rgba(0, 0, 0, 0.05);
+        }
+
+        span {
+            color: var(--primary-color);
+            font-size: 18px;
+            font-weight: 400;
+            margin-right: 5px;
+        }
+    }
+
+    .pending-content {
+        .pending-box {
+            min-height: 90px;
+            background: #fff;
+            border-top: 3px solid var(--secondary-color);
+            box-shadow: var(--box-shadow-light);
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            margin: 10px 0;
+
+            img {
+                background: #FAECE7;
+                padding: 6px;
+            }
+
+            p {
+                font-size: 14px;
+                margin: 0 10px;
+            }
+
+            h5 {
+                color: #EB8527;
+                font-size: 12px;
+                font-weight: normal;
+                position: absolute;
+                right: 14px;
+                top: 15px;
+                cursor: pointer;
+            }
+
+            span {
+                color: #939191;
+                font-size: 14px;
             }
         }
     }
