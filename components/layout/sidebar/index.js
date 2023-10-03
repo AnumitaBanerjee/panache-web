@@ -5,11 +5,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from 'next/router';
 
 const Sidebar = () => {
-
-    // Menu
     const [menuClass, setMenuClass] = useState(false);
     const router = useRouter();
-
 
     return (
         <>
@@ -109,8 +106,8 @@ const Sidebar = () => {
                                 <span>Recommended Programs</span>
                             </Link>
                         </li>
-                        <li className={router.pathname == "/pending" ? "active" : ""}>
-                            <Link href="/pending" className="">
+                        <li className={router.pathname == "/pending-tasks" ? "active" : ""}>
+                            <Link href="/pending-tasks" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pending-icon.png`}
                                     alt="Pending"

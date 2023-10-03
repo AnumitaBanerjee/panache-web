@@ -487,8 +487,9 @@ p {
     .right-panel {
         .back-btn {
             padding: 2px 14px;
-            border: 1px solid #789fba;
+            border: 2px solid #9db4c3;
             margin: 0 10px 48px 0;
+            box-shadow: 0px 2px 12px 0.5px rgba(0, 0, 0, 0.05);
         }
 
         .form-floating {
@@ -684,6 +685,7 @@ p {
                 color: #555555;
                 margin: 0;
                 font-size: 14px;
+
                 span {
                     font-size: 16px;
                     color: var(--primary-color);
@@ -752,6 +754,7 @@ p {
                         display: none !important;
                     }
                 }
+
                 .slider-content {
                     width: 305px !important;
                     height: 232px;
@@ -871,6 +874,7 @@ p {
         }
     }
 }
+
 .application-progress-panel {
     display: flex;
     align-items: center;
@@ -1097,6 +1101,7 @@ p {
         }
     }
 }
+
 /* Form */
 .form-group {
     margin-bottom: 20px;
@@ -2994,10 +2999,12 @@ form {
         }
     }
 }
+
 .apply-card-inner {
     background: #f0f4f6;
     box-shadow: var(--box-shadow-light);
     margin-bottom: 20px;
+
     .apply-card-inner-btm {
         padding: 12px 15px 30px 15px;
     }
@@ -3024,43 +3031,54 @@ form {
         }
     }
 }
+
 .apply-card-details {
     background: var(--white-color);
     border-top: 2px solid var(--secondary-color);
     padding: 12px 15px;
     display: flex;
     justify-content: space-between;
+
     .apply-card-proifle {
         display: flex;
+
         .apply-card-proifle-in {
             width: 41px;
             height: 41px;
+
             img {
                 width: 100%;
                 height: auto;
                 border-radius: 100%;
             }
         }
+
         .apply-card-profile-details {
             margin-left: 15px;
+
             .apply-card-profile-details-t {
                 display: flex;
                 align-items: center;
+
                 h3 {
                     margin: 0;
                 }
+
                 span {
                     font-size: 12px;
                     color: var(--white-color);
                     margin: 0 0 0 10px;
                     display: block;
                     padding: 4px 10px;
+
                     &.apply-id {
                         background: var(--blue-color);
                     }
+
                     &.student-id {
                         background: var(--green-color);
                     }
+
                     &.application-book {
                         background: #e0eef6;
                         display: flex;
@@ -3070,13 +3088,16 @@ form {
                     }
                 }
             }
+
             .applt-card-profile-details-b {
                 margin-top: 12px;
+
                 ul {
                     padding: 0;
                     margin: 0;
                     list-style-type: none;
                     display: flex;
+
                     li {
                         font-size: 14px;
                         color: #8f8f8f;
@@ -3088,6 +3109,7 @@ form {
                         }
                         a {
                             color: #8f8f8f;
+
                             &:hover {
                                 color: var(--secondary-color);
                             }
@@ -3097,12 +3119,15 @@ form {
             }
         }
     }
+
     .apply-card-btns {
         display: flex;
         justify-content: end;
+
         .apply-card-btn-inner {
             width: 152px;
             text-align: right;
+
             .btn {
                 font-size: 12px;
                 padding: 5px 10px;
@@ -3112,9 +3137,11 @@ form {
                 min-width: inherit;
                 margin-bottom: 5px;
                 letter-spacing: 2px;
+
                 &::after {
                     display: none;
                 }
+
                 &:last-child {
                     margin: 0;
                 }
