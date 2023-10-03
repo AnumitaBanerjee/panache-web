@@ -103,7 +103,7 @@ const Dashboard = () => {
             }
           </div>
         </div>
-        <div className="content-panel">
+        
           <div className="application-panel">
             <div className="application-status-panel">
               <h2>Application Status (for Acadia University)</h2>
@@ -405,9 +405,6 @@ const Dashboard = () => {
               </Slider>
             </div>
           </div>
-
-
-
           <div className="search-university-panel">
             <h2>Search by University</h2>
             <div className="university-slider">
@@ -504,7 +501,6 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
   )
 }

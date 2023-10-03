@@ -1,26 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const FinancialAidInformation = () => {
   return (
     <>
       <div className="content-panel">
-        <div className="financial-aid-pane-top">
-          <h2>Financial Aid Programs</h2>
-        </div>
         <div className="financial-content">
           <div className="program-application-status">
             <h2>Program Application Status</h2>
-            <div className="pending-pane">
-              <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/approve-icon.png`}
-                alt="Panache"
-                width={15.99}
-                height={16}
-                priority={true}
-              />
-              <p>Etiam ultricies, est nec egestas</p>
-            </div>
             <div className="approve-pane">
               <Image
                 src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
@@ -30,47 +18,487 @@ const FinancialAidInformation = () => {
                 priority={true}
               />
               <p>Etiam ultricies, est nec egestas</p>
+              <span>PENDING</span>
             </div>
+            <div className="pending-pane">
+              <Image
+                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/approve-icon.png`}
+                alt="Panache"
+                width={15.99}
+                height={16}
+                priority={true}
+              />
+              <p>Etiam ultricies, est nec egestas</p>
+              <span>APPROVED</span>
+            </div>
+          </div>
+          <div className="box-header">
+            <h2>Financial Aid Programs</h2>
+            <Link href='/'>SEE ALL</Link>
           </div>
           <div className="row">
             <div className="col-md-4">
               <div className="financial-aid-box">
-                <div className="financial-box-t">
-                  <div className="financial-box-t-l">
-                    <div className="degree-pane">
-                      <Image
-                        src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
-                        alt="Panache"
-                        width={29}
-                        height={21}
-                        priority={true}
-                      />
-                      <p>BSc in Applied<br />Data Science</p>
-                      <button className="apply-btn" type="button">APPLY</button>
-                    </div>
-                    <h5>Modal University (Austria)</h5>
-                    <div className="fee-panel">
-                      <p>Application Fee<span>$5059</span></p>
-                      <p>Tutio Fee<span>$50</span></p>
-                    </div>
-                    <div className="time-panel">
-                      <ul>
-                        <li className='first'>
-                          Sep, 2023 (Open)
-                        </li>
-                        <li className='second'>
-                          36 months
-                        </li>
-                      </ul>
-                    </div>
+                <div className="financial-box-t-l">
+                  <div className="degree-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>Adam Smith Fellowship</p>
                   </div>
-                  <h5>RESOLVE</h5>
+                  <p>Ut vitae sapien sed odio tincidunt  set tincidunt. Nullam non est suscipit, ut dolor</p>
+                  <div className="country-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/globe-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Country: <span>Canada</span></label>
+                  </div>
+                  <div className="degree-or-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-orange-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Eligible Programs: <span>M.Phil., or Ph.D</span></label>
+                  </div>
                 </div>
-                <span>Pellentesque sit amet tellus dolor.</span>
+                <div className="financial-box-footer">
+                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="brochure-btn">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
+                      alt="Panache"
+                      width={11.01}
+                      height={14.16}
+                      priority={true}
+                    />
+                    <span>DOWNLOAD BROCHURE</span>
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="col-md-4"></div>
-            <div className="col-md-4"></div>
+            <div className="col-md-4">
+              <div className="financial-aid-box">
+                <div className="financial-box-t-l">
+                  <div className="degree-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>Adam Smith Fellowship</p>
+                  </div>
+                  <p>Ut vitae sapien sed odio tincidunt  set tincidunt. Nullam non est suscipit, ut dolor</p>
+                  <div className="country-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/globe-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Country: <span>Canada</span></label>
+                  </div>
+                  <div className="degree-or-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-orange-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Eligible Programs: <span>M.Phil., or Ph.D</span></label>
+                  </div>
+                </div>
+                <div className="financial-box-footer">
+                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="brochure-btn">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
+                      alt="Panache"
+                      width={11.01}
+                      height={14.16}
+                      priority={true}
+                    />
+                    <span>DOWNLOAD BROCHURE</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="financial-aid-box">
+                <div className="financial-box-t-l">
+                  <div className="degree-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>Adam Smith Fellowship</p>
+                  </div>
+                  <p>Ut vitae sapien sed odio tincidunt  set tincidunt. Nullam non est suscipit, ut dolor</p>
+                  <div className="country-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/globe-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Country: <span>Canada</span></label>
+                  </div>
+                  <div className="degree-or-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-orange-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Eligible Programs: <span>M.Phil., or Ph.D</span></label>
+                  </div>
+                </div>
+                <div className="financial-box-footer">
+                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="brochure-btn">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
+                      alt="Panache"
+                      width={11.01}
+                      height={14.16}
+                      priority={true}
+                    />
+                    <span>DOWNLOAD BROCHURE</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="box-header">
+            <h2>Available Scholarships</h2>
+            <Link href='/'>SEE ALL</Link>
+          </div>
+          <div className="row">
+            <div className="col-md-4">
+              <div className="financial-aid-box">
+                <div className="financial-box-t-l">
+                  <div className="degree-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>Adam Smith Fellowship</p>
+                  </div>
+                  <p>Ut vitae sapien sed odio tincidunt  set tincidunt. Nullam non est suscipit, ut dolor</p>
+                  <div className="country-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/globe-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Country: <span>Canada</span></label>
+                  </div>
+                  <div className="degree-or-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-orange-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Eligible Programs: <span>M.Phil., or Ph.D</span></label>
+                  </div>
+                </div>
+                <div className="financial-box-footer">
+                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="brochure-btn">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
+                      alt="Panache"
+                      width={11.01}
+                      height={14.16}
+                      priority={true}
+                    />
+                    <span>DOWNLOAD BROCHURE</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="financial-aid-box">
+                <div className="financial-box-t-l">
+                  <div className="degree-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>Adam Smith Fellowship</p>
+                  </div>
+                  <p>Ut vitae sapien sed odio tincidunt  set tincidunt. Nullam non est suscipit, ut dolor</p>
+                  <div className="country-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/globe-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Country: <span>Canada</span></label>
+                  </div>
+                  <div className="degree-or-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-orange-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Eligible Programs: <span>M.Phil., or Ph.D</span></label>
+                  </div>
+                </div>
+                <div className="financial-box-footer">
+                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="brochure-btn">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
+                      alt="Panache"
+                      width={11.01}
+                      height={14.16}
+                      priority={true}
+                    />
+                    <span>DOWNLOAD BROCHURE</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="financial-aid-box">
+                <div className="financial-box-t-l">
+                  <div className="degree-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>Adam Smith Fellowship</p>
+                  </div>
+                  <p>Ut vitae sapien sed odio tincidunt  set tincidunt. Nullam non est suscipit, ut dolor</p>
+                  <div className="country-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/globe-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Country: <span>Canada</span></label>
+                  </div>
+                  <div className="degree-or-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-orange-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Eligible Programs: <span>M.Phil., or Ph.D</span></label>
+                  </div>
+                </div>
+                <div className="financial-box-footer">
+                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="brochure-btn">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
+                      alt="Panache"
+                      width={11.01}
+                      height={14.16}
+                      priority={true}
+                    />
+                    <span>DOWNLOAD BROCHURE</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="box-header">
+            <h2>Other Financial Assistance</h2>
+            <Link href='/'>SEE ALL</Link>
+          </div>
+          <div className="row">
+            <div className="col-md-4">
+              <div className="financial-aid-box">
+                <div className="financial-box-t-l">
+                  <div className="degree-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>Adam Smith Fellowship</p>
+                  </div>
+                  <p>Ut vitae sapien sed odio tincidunt  set tincidunt. Nullam non est suscipit, ut dolor</p>
+                  <div className="country-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/globe-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Country: <span>Canada</span></label>
+                  </div>
+                  <div className="degree-or-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-orange-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Eligible Programs: <span>M.Phil., or Ph.D</span></label>
+                  </div>
+                </div>
+                <div className="financial-box-footer">
+                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="brochure-btn">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
+                      alt="Panache"
+                      width={11.01}
+                      height={14.16}
+                      priority={true}
+                    />
+                    <span>DOWNLOAD BROCHURE</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="financial-aid-box">
+                <div className="financial-box-t-l">
+                  <div className="degree-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>Adam Smith Fellowship</p>
+                  </div>
+                  <p>Ut vitae sapien sed odio tincidunt  set tincidunt. Nullam non est suscipit, ut dolor</p>
+                  <div className="country-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/globe-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Country: <span>Canada</span></label>
+                  </div>
+                  <div className="degree-or-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-orange-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Eligible Programs: <span>M.Phil., or Ph.D</span></label>
+                  </div>
+                </div>
+                <div className="financial-box-footer">
+                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="brochure-btn">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
+                      alt="Panache"
+                      width={11.01}
+                      height={14.16}
+                      priority={true}
+                    />
+                    <span>DOWNLOAD BROCHURE</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="financial-aid-box">
+                <div className="financial-box-t-l">
+                  <div className="degree-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>Adam Smith Fellowship</p>
+                  </div>
+                  <p>Ut vitae sapien sed odio tincidunt  set tincidunt. Nullam non est suscipit, ut dolor</p>
+                  <div className="country-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/globe-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Country: <span>Canada</span></label>
+                  </div>
+                  <div className="degree-or-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-orange-icon.png`}
+                      alt="Panache"
+                      width={14}
+                      height={14}
+                      priority={true}
+                    />
+                    <label>Eligible Programs: <span>M.Phil., or Ph.D</span></label>
+                  </div>
+                </div>
+                <div className="financial-box-footer">
+                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="brochure-btn">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
+                      alt="Panache"
+                      width={11.01}
+                      height={14.16}
+                      priority={true}
+                    />
+                    <span>DOWNLOAD BROCHURE</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
