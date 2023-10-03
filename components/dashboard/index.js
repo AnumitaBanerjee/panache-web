@@ -258,6 +258,92 @@ const Dashboard = () => {
                     </ul>
                   </div>
                 </div>
+                <div className="slider-content">
+                  <span className="degree-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>BSc in Applied<br />Data Science</p>
+                    <button className="apply-btn" type="button">APPLY</button>
+                  </span>
+                  <h5>Modal University (Austria)</h5>
+                  <div className="fee-panel">
+                    <p>Application Fee<span>$5059</span></p>
+                    <p>Tutio Fee<span>$50</span></p>
+                  </div>
+                  <div className="time-panel">
+                    <ul>
+                      <li className='first'>
+                        Sep, 2023 (Open)
+                      </li>
+                      <li className='second'>
+                        36 months
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="slider-content">
+                  <span className="degree-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>BSc in Applied<br />Data Science</p>
+                    <button className="apply-btn" type="button">APPLY</button>
+                  </span>
+                  <h5>Modal University (Austria)</h5>
+                  <div className="fee-panel">
+                    <p>Application Fee<span>$5059</span></p>
+                    <p>Tutio Fee<span>$50</span></p>
+                  </div>
+                  <div className="time-panel">
+                    <ul>
+                      <li className='first'>
+                        Sep, 2023 (Open)
+                      </li>
+                      <li className='second'>
+                        36 months
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="slider-content">
+                  <span className="degree-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>BSc in Applied<br />Data Science</p>
+                    <button className="apply-btn" type="button">APPLY</button>
+                  </span>
+                  <h5>Modal University (Austria)</h5>
+                  <div className="fee-panel">
+                    <p>Application Fee<span>$5059</span></p>
+                    <p>Tutio Fee<span>$50</span></p>
+                  </div>
+                  <div className="time-panel">
+                    <ul>
+                      <li className='first'>
+                        Sep, 2023 (Open)
+                      </li>
+                      <li className='second'>
+                        36 months
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
                 <div className="slider-content">
                   <span className="degree-pane">
@@ -318,93 +404,8 @@ const Dashboard = () => {
                 </div>
               </Slider>
             </div>
-            <div className="slider-content">
-              <span className="degree-pane">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
-                  alt="Panache"
-                  width={29}
-                  height={21}
-                  priority={true}
-                />
-                <p>BSc in Applied<br />Data Science</p>
-                <button className="apply-btn" type="button">APPLY</button>
-              </span>
-              <h5>Modal University (Austria)</h5>
-              <div className="fee-panel">
-                <p>Application Fee<span>$5059</span></p>
-                <p>Tutio Fee<span>$50</span></p>
-              </div>
-              <div className="time-panel">
-                <ul>
-                  <li className='first'>
-                    Sep, 2023 (Open)
-                  </li>
-                  <li className='second'>
-                    36 months
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="slider-content">
-              <span className="degree-pane">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
-                  alt="Panache"
-                  width={29}
-                  height={21}
-                  priority={true}
-                />
-                <p>BSc in Applied<br />Data Science</p>
-                <button className="apply-btn" type="button">APPLY</button>
-              </span>
-              <h5>Modal University (Austria)</h5>
-              <div className="fee-panel">
-                <p>Application Fee<span>$5059</span></p>
-                <p>Tutio Fee<span>$50</span></p>
-              </div>
-              <div className="time-panel">
-                <ul>
-                  <li className='first'>
-                    Sep, 2023 (Open)
-                  </li>
-                  <li className='second'>
-                    36 months
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="slider-content">
-              <span className="degree-pane">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
-                  alt="Panache"
-                  width={29}
-                  height={21}
-                  priority={true}
-                />
-                <p>BSc in Applied<br />Data Science</p>
-                <button className="apply-btn" type="button">APPLY</button>
-              </span>
-              <h5>Modal University (Austria)</h5>
-              <div className="fee-panel">
-                <p>Application Fee<span>$5059</span></p>
-                <p>Tutio Fee<span>$50</span></p>
-              </div>
-              <div className="time-panel">
-                <ul>
-                  <li className='first'>
-                    Sep, 2023 (Open)
-                  </li>
-                  <li className='second'>
-                    36 months
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
+
 
 
           <div className="search-university-panel">

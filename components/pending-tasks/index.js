@@ -20,277 +20,351 @@ const PendingTasks = () => {
           <div className="row">
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
             <div className="col-md-4">
               <div className="pending-box">
-                <Image
-                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
-                  alt="Panache"
-                  width={36.13}
-                  height={33}
-                  priority={true}
-                />
-                <p>Etium ultricies,
-                  est nec</p>
-                <h5>RESOLVE</h5>
-                <span>Pellentesque sit amet tellus dolor.</span>
-              </div>
+                <div className="pending-box-t">
+                  <div className="pending-box-t-l">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/alert-icon.png`}
+                      alt="Panache"
+                      width={36.13}
+                      height={33}
+                      priority={true}
+                    />
+                    <p>Etium ultricies,
+                      est nec</p>
+                  </div>
+                  <h5>RESOLVE</h5>
+                </div> 
+                <span>Pellentesque sit amet tellus dolor.</span>              
+              </div>             
             </div>
           </div>
+
         </div>
       </div>
+
     </>
   )
 }

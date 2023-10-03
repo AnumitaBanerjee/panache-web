@@ -127,8 +127,8 @@ const Sidebar = () => {
                                 <span>Pending Tasks</span>
                             </Link>
                         </li>
-                        <li className={router.pathname == "/financial" ? "active" : ""}>
-                            <Link href="/financial" className="">
+                        <li className={router.pathname == "/financial-aid-information" ? "active" : ""}>
+                            <Link href="/financial-aid-information" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/financial-icon.png`}
                                     alt="Financial"
