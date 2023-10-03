@@ -38,7 +38,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
                         onClick={() => onPageNumberClick("1")}
                     >
                         <span className="top-label">24.06.23</span>
-                        {index + 1}
+                        {'AR'}
                         <span className="bottom-label">24.06.23</span>
                     </div>
                 )}
@@ -50,7 +50,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
                         onClick={() => onPageNumberClick("2")}
                     >
                         <span className="top-label">24.06.23</span>
-                        {index + 1}
+                        {'CF'}
                         <span className="bottom-label">24.06.23</span>
                     </div>
                 )}
@@ -62,7 +62,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
                         onClick={() => onPageNumberClick("3")}
                     >
                         <span className="top-label">24.06.23</span>
-                        {index + 1}
+                        {'AF'}
                         <span className="bottom-label">24.06.23</span>
                     </div>
                 )}
@@ -74,7 +74,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
                         onClick={() => onPageNumberClick("4")}
                     >
                         <span className="top-label">24.06.23</span>
-                        {index + 1}
+                        {'SI'}
                         <span className="bottom-label">24.06.23</span>
                     </div>
                 )}
@@ -86,7 +86,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
                         onClick={() => onPageNumberClick("5")}
                     >
                         <span className="top-label">24.06.23</span>
-                        {index + 1}
+                        {'OL'}
                         <span className="bottom-label">24.06.23</span>
                     </div>
                 )}
@@ -98,7 +98,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
                         onClick={() => onPageNumberClick("6")}
                     >
                         <span className="top-label">24.06.23</span>
-                        {index + 1}
+                        {'TF'}
                         <span className="bottom-label">24.06.23</span>
                     </div>
                 )}
@@ -110,7 +110,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
                         onClick={() => onPageNumberClick("7")}
                     >
                         <span className="top-label">24.06.23</span>
-                        {index + 1}
+                        {'VP'}
                         <span className="bottom-label">24.06.23</span>
                     </div>
                 )}
@@ -122,7 +122,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
                         onClick={() => onPageNumberClick("8")}
                     >
                         <span className="top-label">24.06.23</span>
-                        {index + 1}
+                        {'VA'}
                         <span className="bottom-label">24.06.23</span>
                     </div>
                 )}
@@ -134,7 +134,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
                         onClick={() => onPageNumberClick("9")}
                     >
                         <span className="top-label">24.06.23</span>
-                        {index + 1}
+                        {'CW'}
                         <span className="bottom-label">24.06.23</span>
                     </div>
                 )}
@@ -146,7 +146,7 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
                         onClick={() => onPageNumberClick("10")}
                     >
                         <span className="top-label">24.06.23</span>
-                        {index + 1}
+                        {'CN'}
                         <span className="bottom-label">24.06.23</span>
                     </div>
                 )}

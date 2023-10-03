@@ -843,12 +843,12 @@ p {
             .university-slider{
                 .slider-content{
                     width: 305px !important;
-                    height: 232px;
+                    height: 182px;
                     background-color: var(--white-color);
                     border-top: 3px solid var(--secondary-color);
-                    padding: 12px;
                     .university-pane{
                         display: flex;
+                        padding: 12px 0 16px 12px;
                         img{
                             background: #e0eef6;
                             padding: 8px;
@@ -859,12 +859,59 @@ p {
                             text-align: right;
                             font-size: 16px;
                             color: var(--primary-color);
+                            margin: 0 12px;
+                            line-height: 1.2;
                             span{
                                 color: #8f8f8f;
                                 display: block;
                                 text-align: left;
                                 line-height: 1;
+                                font-size: 14px;
                             }
+                        }
+                    }
+                    .university-middle-pane{
+                        border-top: 1px solid #dedede;
+                        padding: 12px;
+                        ul{
+                            display: flex;
+                            list-style: none;
+                            padding: 0;
+                            margin: 0 0 6px;
+                            li{
+                                height: 45px;
+                                &:nth-child(1){
+                                    padding: 0 15px 0 0;
+                                    border-right: 1px solid #a9bdcb;
+                                }
+                                &:nth-child(2){
+                                    padding: 0 15px 0 15px;
+                                    border-right: 1px solid #a9bdcb;
+                                } 
+                                &:nth-child(3){
+                                    padding: 0 0 0 16px;
+                                }         
+                                p{
+                                    font-size: 14px;
+                                    color: #939191;
+                                    span{
+                                        display: block;
+                                        font-size: 14px;
+                                        color: var(--primary-color);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .university-footer-pane{
+                        background: #faf4e7;
+                        font-size: 12px;
+                        color: var(--primary-color);
+                        text-align: center;
+                        border-top: 2px solid #dedede;
+                        height: 100%;
+                        p{
+                            line-height: 3.0;
                         }
                     }
                 }
@@ -883,7 +930,7 @@ p {
             font-size: 14px;
             line-height: 1.2;
             font-size: 10px;
-
+            font-weight: 500;
             &:first-child {
                 margin-bottom: 21px;
             }

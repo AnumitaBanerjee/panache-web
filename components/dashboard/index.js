@@ -140,7 +140,7 @@ const Dashboard = () => {
             <h2>Search by Programs</h2>
             <div className="programs-slider">
               <Slider {...programSettings}>
-              <div className="slider-content">
+                <div className="slider-content">
                   <span className="degree-pane">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/degree-icon.png`}
@@ -149,7 +149,7 @@ const Dashboard = () => {
                       height={21}
                       priority={true}
                     />
-                    <p>BSc in Applied<br/>Data Science</p>
+                    <p>BSc in Applied<br />Data Science</p>
                     <button className="apply-btn" type="button">APPLY</button>
                   </span>
                   <h5>Modal University (Austria)</h5>
@@ -177,7 +177,7 @@ const Dashboard = () => {
                       height={21}
                       priority={true}
                     />
-                    <p>BSc in Applied<br/>Data Science</p>
+                    <p>BSc in Applied<br />Data Science</p>
                     <button className="apply-btn" type="button">APPLY</button>
                   </span>
                   <h5>Modal University (Austria)</h5>
@@ -205,7 +205,7 @@ const Dashboard = () => {
                       height={21}
                       priority={true}
                     />
-                    <p>BSc in Applied<br/>Data Science</p>
+                    <p>BSc in Applied<br />Data Science</p>
                     <button className="apply-btn" type="button">APPLY</button>
                   </span>
                   <h5>Modal University (Austria)</h5>
@@ -233,7 +233,7 @@ const Dashboard = () => {
                       height={21}
                       priority={true}
                     />
-                    <p>BSc in Applied<br/>Data Science</p>
+                    <p>BSc in Applied<br />Data Science</p>
                     <button className="apply-btn" type="button">APPLY</button>
                   </span>
                   <h5>Modal University (Austria)</h5>
@@ -252,7 +252,7 @@ const Dashboard = () => {
                     </ul>
                   </div>
                 </div>
-                
+
                 <div className="slider-content">
                   <span className="degree-pane">
                     <Image
@@ -262,7 +262,7 @@ const Dashboard = () => {
                       height={21}
                       priority={true}
                     />
-                    <p>BSc in Applied<br/>Data Science</p>
+                    <p>BSc in Applied<br />Data Science</p>
                     <button className="apply-btn" type="button">APPLY</button>
                   </span>
                   <h5>Modal University (Austria)</h5>
@@ -281,7 +281,7 @@ const Dashboard = () => {
                     </ul>
                   </div>
                 </div>
-                
+
                 <div className="slider-content">
                   <span className="degree-pane">
                     <Image
@@ -291,7 +291,7 @@ const Dashboard = () => {
                       height={21}
                       priority={true}
                     />
-                    <p>BSc in Applied<br/>Data Science</p>
+                    <p>BSc in Applied<br />Data Science</p>
                     <button className="apply-btn" type="button">APPLY</button>
                   </span>
                   <h5>Modal University (Austria)</h5>
@@ -317,8 +317,27 @@ const Dashboard = () => {
             <h2>Search by University</h2>
             <div className="university-slider">
               <Slider {...universitySettings}>
-                <div className="slider-content">
-                  <h3>1</h3>
+              <div className="slider-content">
+                  <span className="university-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>Acadia University<span>Canada</span></p>
+                  </span>
+                  <div className="university-middle-pane">
+                    <ul>
+                      <li><p>PGWP<span>Yes</span></p></li>
+                      <li><p>Shore Type<span>Both</span></p></li>
+                      <li><p>Campus/es<span>Wolfville</span></p></li>
+                    </ul>
+                  </div>
+                  <div className="university-footer-pane">
+                    <p>VIEW PROGRAMS</p>
+                  </div>
                 </div>
                 <div className="slider-content">
                   <span className="university-pane">
@@ -331,15 +350,60 @@ const Dashboard = () => {
                     />
                     <p>Acadia University<span>Canada</span></p>
                   </span>
+                  <div className="university-middle-pane">
+                    <ul>
+                      <li><p>PGWP<span>Yes</span></p></li>
+                      <li><p>Shore Type<span>Both</span></p></li>
+                      <li><p>Campus/es<span>Wolfville</span></p></li>
+                    </ul>
+                  </div>
+                  <div className="university-footer-pane">
+                    <p>VIEW PROGRAMS</p>
+                  </div>
                 </div>
                 <div className="slider-content">
-                  <h3>3</h3>
+                  <span className="university-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>Acadia University<span>Canada</span></p>
+                  </span>
+                  <div className="university-middle-pane">
+                    <ul>
+                      <li><p>PGWP<span>Yes</span></p></li>
+                      <li><p>Shore Type<span>Both</span></p></li>
+                      <li><p>Campus/es<span>Wolfville</span></p></li>
+                    </ul>
+                  </div>
+                  <div className="university-footer-pane">
+                    <p>VIEW PROGRAMS</p>
+                  </div>
                 </div>
                 <div className="slider-content">
-                  <h3>4</h3>
-                </div>
-                <div className="slider-content">
-                  <h3>5</h3>
+                  <span className="university-pane">
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-icon.png`}
+                      alt="Panache"
+                      width={29}
+                      height={21}
+                      priority={true}
+                    />
+                    <p>Acadia University<span>Canada</span></p>
+                  </span>
+                  <div className="university-middle-pane">
+                    <ul>
+                      <li><p>PGWP<span>Yes</span></p></li>
+                      <li><p>Shore Type<span>Both</span></p></li>
+                      <li><p>Campus/es<span>Wolfville</span></p></li>
+                    </ul>
+                  </div>
+                  <div className="university-footer-pane">
+                    <p>VIEW PROGRAMS</p>
+                  </div>
                 </div>
               </Slider>
             </div>
