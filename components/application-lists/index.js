@@ -94,7 +94,7 @@ const ApplicationLists = (props) => {
                 </div>
                 <div className="content-panel">
                     <div className="apply-list-pane-top">
-                        <h2>Applications List</h2>
+                        <h2>Application Lists</h2>
                         <Link href="/" className="apply-new-btn">Create New</Link>
                     </div>
                     <div className="apply-card-sec">
@@ -128,8 +128,23 @@ const ApplicationLists = (props) => {
                                         </div>
                                         <div className="applt-card-profile-details-b">
                                             <ul>
-                                                <li className="tel">0987654321</li>
-                                                <li className="mail">Samplemail@lorem.com</li>
+                                                <li className="tel">
+                                                    <Image
+                                                        src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/mobile-icon.png`}
+                                                        alt="Panache"
+                                                        width={12}
+                                                        height={18}
+                                                        priority={true}
+                                                    /> 0987654321</li>
+                                                <li className="mail">
+                                                    <Image
+                                                        src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/mail-icon.png`}
+                                                        alt="Panache"
+                                                        width={20}
+                                                        height={13}
+                                                        priority={true}
+                                                    />
+                                                    Samplemail@lorem.com</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -137,13 +152,21 @@ const ApplicationLists = (props) => {
                                 <div className="apply-card-btns">
                                     <div className="apply-card-btn-inner">
                                         <Link href="/" className="btn-orange btn">Remarks</Link>
-                                        <Link href="/" className="btn-blue btn">Communication</Link>
+                                        <Link href="/communication" className="btn-blue btn">Communication</Link>
                                     </div>
                                 </div>
                             </div>
                             <div className="apply-card-inner-btm">
                                 <div className="apply-card-inner-btm-head">
-                                    <p className="aarea">Acadia University, Canada</p>
+                                    <p className="aarea">
+                                        <Image
+                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-list-icon.png`}
+                                            alt="Panache"
+                                            width={16}
+                                            height={16}
+                                            priority={true}
+                                        />
+                                        Acadia University, Canada</p>
                                     <p className="tadke">Intake: <span>Jan 2023</span></p>
                                 </div>
                                 <div className="application-progress-panel">
@@ -201,8 +224,23 @@ const ApplicationLists = (props) => {
                                         </div>
                                         <div className="applt-card-profile-details-b">
                                             <ul>
-                                                <li className="tel">0987654321</li>
-                                                <li className="mail">Samplemail@lorem.com</li>
+                                                <li className="tel">
+                                                    <Image
+                                                        src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/mobile-icon.png`}
+                                                        alt="Panache"
+                                                        width={12}
+                                                        height={18}
+                                                        priority={true}
+                                                    /> 0987654321</li>
+                                                <li className="mail">
+                                                    <Image
+                                                        src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/mail-icon.png`}
+                                                        alt="Panache"
+                                                        width={20}
+                                                        height={13}
+                                                        priority={true}
+                                                    />
+                                                    Samplemail@lorem.com</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -210,13 +248,21 @@ const ApplicationLists = (props) => {
                                 <div className="apply-card-btns">
                                     <div className="apply-card-btn-inner">
                                         <Link href="/" className="btn-orange btn">Remarks</Link>
-                                        <Link href="/" className="btn-blue btn">Communication</Link>
+                                        <Link href="/communication" className="btn-blue btn">Communication</Link>
                                     </div>
                                 </div>
                             </div>
                             <div className="apply-card-inner-btm">
                                 <div className="apply-card-inner-btm-head">
-                                    <p className="aarea">Acadia University, Canada</p>
+                                    <p className="aarea">
+                                        <Image
+                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-list-icon.png`}
+                                            alt="Panache"
+                                            width={16}
+                                            height={16}
+                                            priority={true}
+                                        />
+                                        Acadia University, Canada</p>
                                     <p className="tadke">Intake: <span>Jan 2023</span></p>
                                 </div>
                                 <div className="application-progress-panel">
@@ -274,8 +320,23 @@ const ApplicationLists = (props) => {
                                         </div>
                                         <div className="applt-card-profile-details-b">
                                             <ul>
-                                                <li className="tel">0987654321</li>
-                                                <li className="mail">Samplemail@lorem.com</li>
+                                                <li className="tel">
+                                                    <Image
+                                                        src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/mobile-icon.png`}
+                                                        alt="Panache"
+                                                        width={12}
+                                                        height={18}
+                                                        priority={true}
+                                                    /> 0987654321</li>
+                                                <li className="mail">
+                                                    <Image
+                                                        src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/mail-icon.png`}
+                                                        alt="Panache"
+                                                        width={20}
+                                                        height={13}
+                                                        priority={true}
+                                                    />
+                                                    Samplemail@lorem.com</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -283,13 +344,21 @@ const ApplicationLists = (props) => {
                                 <div className="apply-card-btns">
                                     <div className="apply-card-btn-inner">
                                         <Link href="/" className="btn-orange btn">Remarks</Link>
-                                        <Link href="/" className="btn-blue btn">Communication</Link>
+                                        <Link href="/communication" className="btn-blue btn">Communication</Link>
                                     </div>
                                 </div>
                             </div>
                             <div className="apply-card-inner-btm">
                                 <div className="apply-card-inner-btm-head">
-                                    <p className="aarea">Acadia University, Canada</p>
+                                    <p className="aarea">
+                                        <Image
+                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-list-icon.png`}
+                                            alt="Panache"
+                                            width={16}
+                                            height={16}
+                                            priority={true}
+                                        />
+                                        Acadia University, Canada</p>
                                     <p className="tadke">Intake: <span>Jan 2023</span></p>
                                 </div>
                                 <div className="application-progress-panel">

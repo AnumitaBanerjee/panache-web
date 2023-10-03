@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import ApplicationListsPage from "../../../components/application-lists/index";
+import CommunicationPage from "../../../components/communication/index";
 
 
-const ApplicationLists = (props) => {
+const Communication = (props) => {
     return (
         <>
-         <ApplicationListsPage/>
+         <CommunicationPage/>
         </>
     )
 }
@@ -19,4 +19,4 @@ export async function getServerSideProps(context) {
     }
   }
 
-export default ApplicationLists;
+export default Communication;
