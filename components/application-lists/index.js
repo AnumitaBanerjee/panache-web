@@ -104,7 +104,7 @@ const ApplicationLists = (props) => {
                             <div className="apply-card-btns">
                                 <div className="apply-card-btn-inner">
                                     <Link href="/" className="btn-orange btn">Remarks</Link>
-                                    <Link href="/" className="btn-blue btn">Communication</Link>
+                                    <Link href="/communication" className="btn-blue btn">Communication</Link>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,7 @@ const ApplicationLists = (props) => {
                             <div className="apply-card-btns">
                                 <div className="apply-card-btn-inner">
                                     <Link href="/" className="btn-orange btn">Remarks</Link>
-                                    <Link href="/" className="btn-blue btn">Communication</Link>
+                                    <Link href="/communication" className="btn-blue btn">Communication</Link>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +250,7 @@ const ApplicationLists = (props) => {
                             <div className="apply-card-btns">
                                 <div className="apply-card-btn-inner">
                                     <Link href="/" className="btn-orange btn">Remarks</Link>
-                                    <Link href="/" className="btn-blue btn">Communication</Link>
+                                    <Link href="/communication" className="btn-blue btn">Communication</Link>
                                 </div>
                             </div>
                         </div>

@@ -64,8 +64,8 @@ const Sidebar = () => {
                                 <span>Application Lists</span>
                             </Link>
                         </li>
-                        <li className={router.pathname == "/university" ? "active" : ""}>
-                            <Link href="/university" className="">
+                        <li className={router.pathname == "#" ? "active" : ""}>
+                            <Link href="#" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-list-icon.png`}
                                     alt="University"
@@ -85,8 +85,8 @@ const Sidebar = () => {
                                 <span>University Lists</span>
                             </Link>
                         </li>
-                        <li className={router.pathname == "/recommended" ? "active" : ""}>
-                            <Link href="/recommended" className="">
+                        <li className={router.pathname == "#" ? "active" : ""}>
+                            <Link href="#" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/recommended-icon.png`}
                                     alt="Recommended"
@@ -148,7 +148,7 @@ const Sidebar = () => {
                                 <span>Financial Aid Information</span>
                             </Link>
                         </li>
-                        <li className={router.pathname == "/chat" ? "active" : ""}>
+                        <li className={router.pathname == "#" ? "active" : ""}>
                             <Link href="/chat" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/chat-icon.png`}
@@ -169,8 +169,8 @@ const Sidebar = () => {
                                 <span>Chat</span>
                             </Link>
                         </li>
-                        <li className={router.pathname == "/account" ? "active" : ""}>
-                            <Link href="/account" className="">
+                        <li className={router.pathname == "/account-settings" ? "active" : ""}>
+                            <Link href="/account-settings" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/account-icon.png`}
                                     alt="Account"

@@ -1,8 +1,10 @@
 import React from 'react'
 import Image from 'next/image';
-import Link from "next/link";
+import { useRouter } from 'next/router'
 
 const Welcome = () => {
+  const router = useRouter();
+  
   return (
     <>
       <div className="welcome-panel">
@@ -37,7 +39,10 @@ const Welcome = () => {
               </label>
           </div>
           <br />
-          <button className='btn submit-btn' type='submit'><Link href="/login">LET'S GO</Link></button>
+          <button
+            onClick={()=> router.push('/login')} 
+            className='btn submit-btn' 
+            type='submit'>LET'S GO</button>
         </div>
       </div>
     </>
