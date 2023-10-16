@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Slider from "react-slick";
 import Image from 'next/image';
 import MultiStepProgressBar from './MultiStepProgressBar';
+import Link from "next/link";
 
 const Dashboard = () => {
 
@@ -148,7 +149,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="application-panel mb-3">
+        <div className="application-panel mb-4">
           <div className="application-status-panel">
             <h2>Application Status (for Acadia University)</h2>
             <span>Application ID: 25698745</span>
@@ -186,8 +187,11 @@ const Dashboard = () => {
             }
           </div>
         </div>
-        <div className="search-programs-panel mb-3">
-          <h2>Search by Programs</h2>
+        <div className="search-programs-panel mb-4">
+          <div className='headin-area'>
+            <h2>Search by Programs</h2>
+            <Link href="#">See All</Link>
+          </div>
           <div className="programs-slider">
             <Slider {...programSettings}>
               <div className="slider-content">
@@ -314,7 +318,10 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="search-university-panel">
-          <h2>Search by University</h2>
+          <div className='headin-area'>
+            <h2>Search by University</h2>
+            <Link href="#">See All</Link>
+          </div>
           <div className="university-slider">
             <Slider {...universitySettings}>
               <div className="slider-content">

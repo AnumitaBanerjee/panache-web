@@ -211,16 +211,348 @@ const Communication = (props) => {
                                     </div>
                                 </TabPanel>
                                 <TabPanel>
-                                    <div className='tab_details_value'>Assigned Staff</div>
+                                    <div className='tab_details_value'>
+                                        <div className='tab_comment'>
+                                            <div className='assigned'>
+                                                <h6>Assigned Counselor</h6>
+                                                <div className='assigned-profile'>
+                                                    <figure>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/member-1.jpg`}
+                                                            alt="Panache"
+                                                            width={40}
+                                                            height={40}
+                                                            priority={true}
+                                                        />
+                                                    </figure>
+                                                    <div className='con'>
+                                                        <h5>John Doe</h5>
+                                                        <p>Nunc tincidunt eleifend urna</p>
+                                                    </div>
+                                                </div>
+                                                <div className='assigned-profile'>
+                                                    <figure>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/member-1.jpg`}
+                                                            alt="Panache"
+                                                            width={40}
+                                                            height={40}
+                                                            priority={true}
+                                                        />
+                                                    </figure>
+                                                    <div className='con'>
+                                                        <h5>Amanda D.</h5>
+                                                        <p>Duis accumsan nibh id</p>
+                                                    </div>
+                                                </div>
+                                                <div className='assigned-profile'>
+                                                    <figure>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/member-1.jpg`}
+                                                            alt="Panache"
+                                                            width={40}
+                                                            height={40}
+                                                            priority={true}
+                                                        />
+                                                    </figure>
+                                                    <div className='con'>
+                                                        <h5>Dylan Berry</h5>
+                                                        <p>Vestibulum suscipit tincidunt</p>
+                                                    </div>
+                                                </div>
+                                                <div className='assigned-profile'>
+                                                    <figure>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/member-1.jpg`}
+                                                            alt="Panache"
+                                                            width={40}
+                                                            height={40}
+                                                            priority={true}
+                                                        />
+                                                    </figure>
+                                                    <div className='con'>
+                                                        <h5>David Baker</h5>
+                                                        <p>Fusce sit amet arcu nisl</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='assigned'>
+                                                <h6>Admin</h6>
+                                                <div className='assigned-profile'>
+                                                    <figure>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/member-1.jpg`}
+                                                            alt="Panache"
+                                                            width={40}
+                                                            height={40}
+                                                            priority={true}
+                                                        />
+                                                    </figure>
+                                                    <div className='con'>
+                                                        <h5>Andrew Doe</h5>
+                                                        <p>Integer vel urna at arcu blandit</p>
+                                                    </div>
+                                                </div>
+                                                <div className='assigned-profile'>
+                                                    <figure>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/member-1.jpg`}
+                                                            alt="Panache"
+                                                            width={40}
+                                                            height={40}
+                                                            priority={true}
+                                                        />
+                                                    </figure>
+                                                    <div className='con'>
+                                                        <h5>Amanda D.</h5>
+                                                        <p>Duis accumsan nibh id</p>
+                                                    </div>
+                                                </div>
+                                                <div className='assigned-profile'>
+                                                    <figure>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/member-1.jpg`}
+                                                            alt="Panache"
+                                                            width={40}
+                                                            height={40}
+                                                            priority={true}
+                                                        />
+                                                    </figure>
+                                                    <div className='con'>
+                                                        <h5>Amanda D.</h5>
+                                                        <p>Duis accumsan nibh id</p>
+                                                    </div>
+                                                </div>
+                                                <div className='assigned-profile'>
+                                                    <figure>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/member-1.jpg`}
+                                                            alt="Panache"
+                                                            width={40}
+                                                            height={40}
+                                                            priority={true}
+                                                        />
+                                                    </figure>
+                                                    <div className='con'>
+                                                        <h5>Dylan Berry</h5>
+                                                        <p>Vestibulum suscipit tincidunt</p>
+                                                    </div>
+                                                </div>
+                                                <div className='assigned-profile'>
+                                                    <figure>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/member-1.jpg`}
+                                                            alt="Panache"
+                                                            width={40}
+                                                            height={40}
+                                                            priority={true}
+                                                        />
+                                                    </figure>
+                                                    <div className='con'>
+                                                        <h5>David Baker</h5>
+                                                        <p>Fusce sit amet arcu nisl</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </TabPanel>
                                 <TabPanel>
-                                    <div className='tab_details_value'>Uploaded Docs</div>
+                                    <div className='tab_details_value'>
+                                        <div className='tab_comment'>
+                                            <div className='doc-row'>
+                                                <div className='doc-col'>
+                                                    <Link href="#">
+                                                        <div className='eye'>
+                                                            <Image
+                                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/eye-icon.svg`}
+                                                                alt="Panache"
+                                                                width={16}
+                                                                height={10}
+                                                                priority={true}
+                                                            />
+                                                        </div>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/download-icon.svg`}
+                                                            alt="Panache"
+                                                            width={56}
+                                                            height={60}
+                                                            priority={true}
+                                                        />
+                                                        <p>CERTIFICATE 1</p>
+                                                    </Link>
+                                                </div>
+                                                <div className='doc-col'>
+                                                    <Link href="#">
+                                                        <div className='eye'>
+                                                            <Image
+                                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/eye-icon.svg`}
+                                                                alt="Panache"
+                                                                width={16}
+                                                                height={10}
+                                                                priority={true}
+                                                            />
+                                                        </div>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/download-icon.svg`}
+                                                            alt="Panache"
+                                                            width={56}
+                                                            height={60}
+                                                            priority={true}
+                                                        />
+                                                        <p>AN KITIELTS 1</p>
+                                                    </Link>
+                                                </div>
+                                                <div className='doc-col'>
+                                                    <Link href="#">
+                                                        <div className='eye'>
+                                                            <Image
+                                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/eye-icon.svg`}
+                                                                alt="Panache"
+                                                                width={16}
+                                                                height={10}
+                                                                priority={true}
+                                                            />
+                                                        </div>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/download-icon.svg`}
+                                                            alt="Panache"
+                                                            width={56}
+                                                            height={60}
+                                                            priority={true}
+                                                        />
+                                                        <p>CERTIFICATE 1</p>
+                                                    </Link>
+                                                </div>
+                                                <div className='doc-col'>
+                                                    <Link href="#">
+                                                        <div className='eye'>
+                                                            <Image
+                                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/eye-icon.svg`}
+                                                                alt="Panache"
+                                                                width={16}
+                                                                height={10}
+                                                                priority={true}
+                                                            />
+                                                        </div>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/download-icon.svg`}
+                                                            alt="Panache"
+                                                            width={56}
+                                                            height={60}
+                                                            priority={true}
+                                                        />
+                                                        <p>CERTIFICATE 1</p>
+                                                    </Link>
+                                                </div>
+                                                <div className='doc-col'>
+                                                    <Link href="#">
+                                                        <div className='eye'>
+                                                            <Image
+                                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/eye-icon.svg`}
+                                                                alt="Panache"
+                                                                width={16}
+                                                                height={10}
+                                                                priority={true}
+                                                            />
+                                                        </div>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/download-icon.svg`}
+                                                            alt="Panache"
+                                                            width={56}
+                                                            height={60}
+                                                            priority={true}
+                                                        />
+                                                        <p>CERTIFICATE 1</p>
+                                                    </Link>
+                                                </div>
+                                                <div className='doc-col'>
+                                                    <Link href="#">
+                                                        <div className='eye'>
+                                                            <Image
+                                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/eye-icon.svg`}
+                                                                alt="Panache"
+                                                                width={16}
+                                                                height={10}
+                                                                priority={true}
+                                                            />
+                                                        </div>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/download-icon.svg`}
+                                                            alt="Panache"
+                                                            width={56}
+                                                            height={60}
+                                                            priority={true}
+                                                        />
+                                                        <p>AN KITIELTS 1</p>
+                                                    </Link>
+                                                </div>
+                                                <div className='doc-col'>
+                                                    <Link href="#">
+                                                        <div className='eye'>
+                                                            <Image
+                                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/eye-icon.svg`}
+                                                                alt="Panache"
+                                                                width={16}
+                                                                height={10}
+                                                                priority={true}
+                                                            />
+                                                        </div>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/download-icon.svg`}
+                                                            alt="Panache"
+                                                            width={56}
+                                                            height={60}
+                                                            priority={true}
+                                                        />
+                                                        <p>CERTIFICATE 1</p>
+                                                    </Link>
+                                                </div>
+                                                <div className='doc-col'>
+                                                    <Link href="#">
+                                                        <div className='eye'>
+                                                            <Image
+                                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/eye-icon.svg`}
+                                                                alt="Panache"
+                                                                width={16}
+                                                                height={10}
+                                                                priority={true}
+                                                            />
+                                                        </div>
+                                                        <Image
+                                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/download-icon.svg`}
+                                                            alt="Panache"
+                                                            width={56}
+                                                            height={60}
+                                                            priority={true}
+                                                        />
+                                                        <p>CERTIFICATE 1</p>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className='all-btn'>
+                                            <Link href="#">Download All Documents</Link>
+                                        </div>
+                                    </div>
                                 </TabPanel>
                                 <TabPanel>
-                                    <div className='tab_details_value'>Transaction</div>
+                                    <div className='tab_details_value'>
+                                        <div className='tab_comment'>
+                                            <div className='no-content'>
+                                                No Transaction
+                                            </div>
+                                        </div>
+                                    </div>
                                 </TabPanel>
                                 <TabPanel>
-                                    <div className='tab_details_value'>Reminders</div>
+                                    <div className='tab_details_value'>
+                                        <div className='tab_comment'>
+                                            <div className='no-content'>
+                                                No Reminders
+                                            </div>
+                                        </div>
+                                    </div>
                                 </TabPanel>
                             </Tabs>
                         </div>

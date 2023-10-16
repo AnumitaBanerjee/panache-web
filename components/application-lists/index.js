@@ -110,7 +110,13 @@ const ApplicationLists = (props) => {
                         </div>
                         <div className="apply-card-inner-btm">
                             <div className="apply-card-inner-btm-head">
-                                <p className="aarea">Acadia University, Canada</p>
+                                <p className="aarea"><Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-icon.png`}
+                                    alt="Panache"
+                                    width={16}
+                                    height={16}
+                                    priority={true}
+                                />Acadia University, Canada</p>
                                 <p className="tadke">Intake: <span>Jan 2023</span></p>
                             </div>
                             <div className="application-progress-panel">
@@ -183,7 +189,13 @@ const ApplicationLists = (props) => {
                         </div>
                         <div className="apply-card-inner-btm">
                             <div className="apply-card-inner-btm-head">
-                                <p className="aarea">Acadia University, Canada</p>
+                                <p className="aarea"><Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-icon.png`}
+                                    alt="Panache"
+                                    width={16}
+                                    height={16}
+                                    priority={true}
+                                />Acadia University, Canada</p>
                                 <p className="tadke">Intake: <span>Jan 2023</span></p>
                             </div>
                             <div className="application-progress-panel">
@@ -256,7 +268,13 @@ const ApplicationLists = (props) => {
                         </div>
                         <div className="apply-card-inner-btm">
                             <div className="apply-card-inner-btm-head">
-                                <p className="aarea">Acadia University, Canada</p>
+                                <p className="aarea"><Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-icon.png`}
+                                    alt="Panache"
+                                    width={16}
+                                    height={16}
+                                    priority={true}
+                                />Acadia University, Canada</p>
                                 <p className="tadke">Intake: <span>Jan 2023</span></p>
                             </div>
                             <div className="application-progress-panel">
@@ -294,8 +312,7 @@ const ApplicationLists = (props) => {
                     </ul>
 
                 </div>
-                
-            </div >
+            </div>
         </>
     )
 }
