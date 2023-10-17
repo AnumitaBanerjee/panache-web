@@ -6,6 +6,16 @@ import Link from "next/link";
 
 const Dashboard = () => {
 
+  var applicationSettings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    dots: true,
+    arrows: false,
+  };
+
   var programSettings = {
     infinite: true,
     speed: 500,
@@ -110,83 +120,127 @@ const Dashboard = () => {
   return (
     <>
       <div className="content-panel dashboard">
-        <div className="application-panel mb-3">
-          <div className="application-status-panel">
-            <h2>Application Status (for Acadia University)</h2>
-            <span>Application ID: 25698745</span>
-            <span className="application-book">
-              <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
-                alt="Panache"
-                width={11}
-                height={13}
-                priority={true}
-              />
-            </span>
-          </div>
-          <div className="application-progress-panel">
-            <div className="end-act-date">
-              <span>Est. Date</span>
-              <span>Actual Date</span>
+
+        <div className="application-slider mb-4">
+          <Slider {...applicationSettings}>
+            <div className="application-panel">
+              <div className="application-status-panel">
+                <h2>Application Status (for Acadia University)</h2>
+                <span>Application ID: 25698745</span>
+                <span className="application-book">
+                  <Image
+                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
+                    alt="Panache"
+                    width={11}
+                    height={13}
+                    priority={true}
+                  />
+                </span>
+              </div>
+              <div className="application-progress-panel">
+                <div className="end-act-date">
+                  <span>Est. Date</span>
+                  <span>Actual Date</span>
+                </div>
+                <MultiStepProgressBar
+                  page={page}
+                  onPageNumberClick={nextPageNumber}
+                />
+                {
+                  {
+                    pageone: <span onClick={nextPage} />,
+                    pagetwo: <span onClick={nextPage} />,
+                    pagethree: <span onClick={nextPage} />,
+                    pagefour: <span onClick={nextPage} />,
+                    pagefive: <span onClick={nextPage} />,
+                    pagesix: <span onClick={nextPage} />,
+                    pageseven: <span onClick={nextPage} />,
+                    pageeight: <span onClick={nextPage} />,
+                    pagenine: <span />
+                  }[page]
+                }
+              </div>
             </div>
-            <MultiStepProgressBar
-              page={page}
-              onPageNumberClick={nextPageNumber}
-            />
-            {
-              {
-                pageone: <span onClick={nextPage} />,
-                pagetwo: <span onClick={nextPage} />,
-                pagethree: <span onClick={nextPage} />,
-                pagefour: <span onClick={nextPage} />,
-                pagefive: <span onClick={nextPage} />,
-                pagesix: <span onClick={nextPage} />,
-                pageseven: <span onClick={nextPage} />,
-                pageeight: <span onClick={nextPage} />,
-                pagenine: <span />
-              }[page]
-            }
-          </div>
+            <div className="application-panel">
+              <div className="application-status-panel">
+                <h2>Application Status (for Acadia University)</h2>
+                <span>Application ID: 25698745</span>
+                <span className="application-book">
+                  <Image
+                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
+                    alt="Panache"
+                    width={11}
+                    height={13}
+                    priority={true}
+                  />
+                </span>
+              </div>
+              <div className="application-progress-panel">
+                <div className="end-act-date">
+                  <span>Est. Date</span>
+                  <span>Actual Date</span>
+                </div>
+                <MultiStepProgressBar
+                  page={page}
+                  onPageNumberClick={nextPageNumber}
+                />
+                {
+                  {
+                    pageone: <span onClick={nextPage} />,
+                    pagetwo: <span onClick={nextPage} />,
+                    pagethree: <span onClick={nextPage} />,
+                    pagefour: <span onClick={nextPage} />,
+                    pagefive: <span onClick={nextPage} />,
+                    pagesix: <span onClick={nextPage} />,
+                    pageseven: <span onClick={nextPage} />,
+                    pageeight: <span onClick={nextPage} />,
+                    pagenine: <span />
+                  }[page]
+                }
+              </div>
+            </div>
+            <div className="application-panel">
+              <div className="application-status-panel">
+                <h2>Application Status (for Acadia University)</h2>
+                <span>Application ID: 25698745</span>
+                <span className="application-book">
+                  <Image
+                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
+                    alt="Panache"
+                    width={11}
+                    height={13}
+                    priority={true}
+                  />
+                </span>
+              </div>
+              <div className="application-progress-panel">
+                <div className="end-act-date">
+                  <span>Est. Date</span>
+                  <span>Actual Date</span>
+                </div>
+                <MultiStepProgressBar
+                  page={page}
+                  onPageNumberClick={nextPageNumber}
+                />
+                {
+                  {
+                    pageone: <span onClick={nextPage} />,
+                    pagetwo: <span onClick={nextPage} />,
+                    pagethree: <span onClick={nextPage} />,
+                    pagefour: <span onClick={nextPage} />,
+                    pagefive: <span onClick={nextPage} />,
+                    pagesix: <span onClick={nextPage} />,
+                    pageseven: <span onClick={nextPage} />,
+                    pageeight: <span onClick={nextPage} />,
+                    pagenine: <span />
+                  }[page]
+                }
+              </div>
+            </div>
+          </Slider>
         </div>
 
-        <div className="application-panel mb-4">
-          <div className="application-status-panel">
-            <h2>Application Status (for Acadia University)</h2>
-            <span>Application ID: 25698745</span>
-            <span className="application-book">
-              <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
-                alt="Panache"
-                width={11}
-                height={13}
-                priority={true}
-              />
-            </span>
-          </div>
-          <div className="application-progress-panel">
-            <div className="end-act-date">
-              <span>Est. Date</span>
-              <span>Actual Date</span>
-            </div>
-            <MultiStepProgressBar
-              page={page}
-              onPageNumberClick={nextPageNumber}
-            />
-            {
-              {
-                pageone: <span onClick={nextPage} />,
-                pagetwo: <span onClick={nextPage} />,
-                pagethree: <span onClick={nextPage} />,
-                pagefour: <span onClick={nextPage} />,
-                pagefive: <span onClick={nextPage} />,
-                pagesix: <span onClick={nextPage} />,
-                pageseven: <span onClick={nextPage} />,
-                pageeight: <span onClick={nextPage} />,
-                pagenine: <span />
-              }[page]
-            }
-          </div>
-        </div>
+
         <div className="search-programs-panel mb-4">
           <div className='headin-area'>
             <h2>Search by Programs</h2>

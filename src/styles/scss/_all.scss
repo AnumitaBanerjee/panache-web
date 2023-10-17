@@ -634,6 +634,10 @@ p {
 /* Dashboard */
 .dashboard {
     .slick-slider {
+        /* the parent */
+        .slick-list {
+            margin: 0 -9px;
+        }
         .slick-slide {
             padding: 10px;
         }
@@ -642,7 +646,7 @@ p {
             background: url(../../../public/assets/images/prev-arrow.png) no-repeat 0 0;
             width: 10px;
             height: 20px;
-            left: -6px;
+            left: -20px;
 
             &::before {
                 content: "";
@@ -662,7 +666,7 @@ p {
             background: url(../../../public/assets/images/next-arrow.png) no-repeat 0 0;
             width: 10px;
             height: 20px;
-            right: -7px;
+            right: -20px;
 
             &::before {
                 content: "";
@@ -768,9 +772,27 @@ p {
 .content-panel {
     background: #f0faff;
     min-height: auto;
-    padding: 25px;
-    margin-top: 25px;
-
+    padding: 34px;
+    margin-top: 30px;
+}
+.headin-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    h2 {
+        margin: 0;
+        font-size: 1.1rem;
+    }
+    a {
+        text-transform: uppercase;
+        color: var(--black-color);
+        &:hover {
+            color: var(--secondary-color);
+        }
+    }
+    margin: 0 0 10px 0;
+}
+.application-slider {
     .application-panel {
         background: var(--white-color);
         border-top: 2px solid var(--secondary-color);
@@ -807,31 +829,6 @@ p {
         }
     }
 }
-.headin-area {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    h2 {
-        margin: 0;
-        font-size: 1.1rem;
-    }
-    a {
-        text-transform: uppercase;
-        color: var(--black-color);
-        &:hover {
-            color: var(--secondary-color);
-        }
-    }
-    margin: 0 0 10px 0;
-}
-.search-programs-panel {
-    .programs-slider {
-        .slick-slider .slick-slide {
-            padding: 10px;
-        }
-    }
-}
-
 .programs-content {
     background-color: var(--white-color);
     border-top: 3px solid var(--secondary-color);
@@ -1380,7 +1377,29 @@ form {
         }
     }
 }
-
+.content-panel {
+    .slick-dots {
+        bottom: -14px;
+        li {
+            width: 10px;
+            height: 10px;
+            button {
+                width: 10px;
+                height: 10px;
+                padding: 0;
+                background: #6c8aa2;
+                border-radius: 20px;
+                opacity: 1;
+                &::before {
+                    display: none;
+                }
+            }
+            &.slick-active button {
+                background: var(--secondary-color);
+            }
+        }
+    }
+}
 /* Header */
 .main-header {
     position: fixed;
@@ -1895,30 +1914,28 @@ form {
     }
 }
 
-.container .slick-dots {
-    bottom: -42px;
-}
-
-.container .slick-dots li {
-    width: 10px;
-    height: 10px;
-}
-
-.container .slick-dots li button:before {
-    display: none;
-}
-
-.container .slick-dots li button {
-    width: 10px;
-    height: 10px;
-    padding: 0;
-    background: #6c8aa2;
-    border-radius: 20px;
-    opacity: 1;
-}
-
-.container .slick-dots li.slick-active button {
-    background: var(--secondary-color);
+.container {
+    .slick-dots {
+        bottom: -42px;
+        li {
+            width: 10px;
+            height: 10px;
+            button {
+                width: 10px;
+                height: 10px;
+                padding: 0;
+                background: #6c8aa2;
+                border-radius: 20px;
+                opacity: 1;
+                &::before {
+                    display: none;
+                }
+            }
+            &.slick-active button {
+                background: var(--secondary-color);
+            }
+        }
+    }
 }
 
 /* Students Testimonials */
@@ -3272,7 +3289,7 @@ form {
         justify-content: end;
 
         .apply-card-btn-inner {
-            width: 152px;
+            width: 160px;
             text-align: right;
 
             .btn {
@@ -3605,7 +3622,7 @@ form {
         .accordion-item {
             .accordion-header {
                 font-size: 0.9rem;
-                .accordion-button{
+                .accordion-button {
                     padding-left: 30px;
                     padding-right: 30px;
                 }
@@ -3617,14 +3634,14 @@ form {
                 padding: 0;
                 margin: 0;
                 list-style-type: none;
-                li{
+                li {
                     font-size: 0.8rem;
                     padding: 10px 0;
                     border-top: 1px solid #ced9e1;
-                    a{
+                    a {
                         color: var(--primary-color);
                         display: block;
-                        &:hover{
+                        &:hover {
                             background-color: var(--gray-color);
                         }
                     }
@@ -3920,7 +3937,7 @@ form {
                         color: #939191;
 
                         &:last-child {
-                            border-right: 0;                           
+                            border-right: 0;
                         }
 
                         span {
@@ -3939,7 +3956,7 @@ form {
                 background: #d1dde6;
                 padding: 8px;
                 font-size: 12px;
-                &:hover{
+                &:hover {
                     background: var(--secondary-color);
                 }
             }
@@ -3948,7 +3965,7 @@ form {
                 background: var(--secondary-color);
                 color: var(--primary-color);
                 font-size: 12px;
-                &:hover{
+                &:hover {
                     background: var(--primary-color);
                     color: var(--white-color);
                 }
@@ -3972,10 +3989,16 @@ form {
             color: var(--white-color);
             font-size: 1.1rem;
             padding: 12px 80px 12px 80px;
-            &:hover{
+            &:hover {
                 background: var(--secondary-color);
                 color: var(--black-color);
             }
         }
+    }
+}
+/* Chat Area */
+.chat-area{
+    .react-tabs__tab-list{
+        border: 0;
     }
 }

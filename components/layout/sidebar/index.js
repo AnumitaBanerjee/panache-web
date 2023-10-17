@@ -64,8 +64,8 @@ const Sidebar = () => {
                                 <span>Application Lists</span>
                             </Link>
                         </li>
-                        <li className={router.pathname == "#" ? "active" : ""}>
-                            <Link href="#" className="">
+                        <li className={router.pathname == "/university-lists" ? "active" : ""}>
+                            <Link href="/university-lists" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-list-icon.png`}
                                     alt="University"
@@ -85,8 +85,8 @@ const Sidebar = () => {
                                 <span>University Lists</span>
                             </Link>
                         </li>
-                        <li className={router.pathname == "#" ? "active" : ""}>
-                            <Link href="#" className="">
+                        <li className={router.pathname == "/recommended-programs" ? "active" : ""}>
+                            <Link href="/recommended-programs" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/recommended-icon.png`}
                                     alt="Recommended"
@@ -148,7 +148,7 @@ const Sidebar = () => {
                                 <span>Financial Aid Information</span>
                             </Link>
                         </li>
-                        <li className={router.pathname == "#" ? "active" : ""}>
+                        <li className={router.pathname == "/chat" ? "active" : ""}>
                             <Link href="/chat" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/chat-icon.png`}
