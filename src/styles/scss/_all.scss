@@ -1386,7 +1386,7 @@ form {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 2;
+    z-index: 1022;
     transition: var(--primary-transition);
 
     .header-container {
@@ -3914,11 +3914,13 @@ form {
                     li {
                         margin: 12px 0 12px;
                         padding: 0 16px;
-                        border-right: 2px solid #c2cac9;
+                        border-right: 1px solid #c2cac9;
+                        width: 50%;
+                        font-size: 14px;
+                        color: #939191;
 
-                        &:nth-child(1) {
-                            border-right: 2px solid #c2cac9;
-                            width: 50%;
+                        &:last-child {
+                            border-right: 0;                           
                         }
 
                         span {
@@ -3936,11 +3938,20 @@ form {
                 border: none;
                 background: #d1dde6;
                 padding: 8px;
+                font-size: 12px;
+                &:hover{
+                    background: var(--secondary-color);
+                }
             }
 
             .payment {
                 background: var(--secondary-color);
                 color: var(--primary-color);
+                font-size: 12px;
+                &:hover{
+                    background: var(--primary-color);
+                    color: var(--white-color);
+                }
             }
         }
     }
@@ -3958,9 +3969,13 @@ form {
         .pay-btn {
             background: var(--primary-color);
             border: none;
-            color: #fff;
+            color: var(--white-color);
             font-size: 1.1rem;
             padding: 12px 80px 12px 80px;
+            &:hover{
+                background: var(--secondary-color);
+                color: var(--black-color);
+            }
         }
     }
 }
