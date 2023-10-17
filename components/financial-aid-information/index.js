@@ -41,7 +41,7 @@ const FinancialAidInformation = () => {
           <div className='mt-4'>
             <div className="headin-area">
               <h2>Financial Aid Programs</h2>
-              <Link href='/'>SEE ALL</Link>
+              <Link href='/financial-aid'>SEE ALL</Link>
             </div>
             <div className="row">
               <div className="col-md-4">
@@ -199,7 +199,7 @@ const FinancialAidInformation = () => {
           <div className='mt-4'>
             <div className="headin-area">
               <h2>Available Scholarships</h2>
-              <Link href='/'>SEE ALL</Link>
+              <Link href='/available-scholarships'>SEE ALL</Link>
             </div>
             <div className="row">
               <div className="col-md-4">
@@ -357,7 +357,7 @@ const FinancialAidInformation = () => {
           <div className='mt-4'>
             <div className="headin-area">
               <h2>Other Financial Assistance</h2>
-              <Link href='/'>SEE ALL</Link>
+              <Link href='/other-financial-assistance'>SEE ALL</Link>
             </div>
             <div className="row">
               <div className="col-md-4">

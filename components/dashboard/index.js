@@ -19,7 +19,7 @@ const Dashboard = () => {
         breakpoint: 1199,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 0
         }
       },
@@ -48,7 +48,7 @@ const Dashboard = () => {
         breakpoint: 1199,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 0
         }
       },
@@ -190,11 +190,11 @@ const Dashboard = () => {
         <div className="search-programs-panel mb-4">
           <div className='headin-area'>
             <h2>Search by Programs</h2>
-            <Link href="#">See All</Link>
+            <Link href="/search-by-programs">See All</Link>
           </div>
           <div className="programs-slider">
             <Slider {...programSettings}>
-              <div className="slider-content">
+              <div className="slider-content programs-content">
                 <div className="degree-pane">
                   <div className="degree-pane-in">
                     <Image
@@ -224,7 +224,7 @@ const Dashboard = () => {
                   </ul>
                 </div>
               </div>
-              <div className="slider-content">
+              <div className="slider-content programs-content">
                 <div className="degree-pane">
                   <div className="degree-pane-in">
                     <Image
@@ -254,7 +254,7 @@ const Dashboard = () => {
                   </ul>
                 </div>
               </div>
-              <div className="slider-content">
+              <div className="slider-content programs-content">
                 <div className="degree-pane">
                   <div className="degree-pane-in">
                     <Image
@@ -284,7 +284,7 @@ const Dashboard = () => {
                   </ul>
                 </div>
               </div>
-              <div className="slider-content">
+              <div className="slider-content programs-content">
                 <div className="degree-pane">
                   <div className="degree-pane-in">
                     <Image
@@ -320,11 +320,11 @@ const Dashboard = () => {
         <div className="search-university-panel">
           <div className='headin-area'>
             <h2>Search by University</h2>
-            <Link href="#">See All</Link>
+            <Link href="/search-by-university">See All</Link>
           </div>
           <div className="university-slider">
             <Slider {...universitySettings}>
-              <div className="slider-content">
+              <div className="slider-content university-content">
                 <span className="university-pane">
                   <Image
                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-icon.png`}
@@ -346,7 +346,7 @@ const Dashboard = () => {
                   <p>VIEW PROGRAMS</p>
                 </div>
               </div>
-              <div className="slider-content">
+              <div className="slider-content university-content">
                 <span className="university-pane">
                   <Image
                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-icon.png`}
@@ -368,7 +368,7 @@ const Dashboard = () => {
                   <p>VIEW PROGRAMS</p>
                 </div>
               </div>
-              <div className="slider-content">
+              <div className="slider-content university-content">
                 <span className="university-pane">
                   <Image
                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-icon.png`}
@@ -390,7 +390,7 @@ const Dashboard = () => {
                   <p>VIEW PROGRAMS</p>
                 </div>
               </div>
-              <div className="slider-content">
+              <div className="slider-content university-content">
                 <span className="university-pane">
                   <Image
                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-icon.png`}
