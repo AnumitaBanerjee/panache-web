@@ -15,7 +15,7 @@ const UniversityLists = () => {
         <div className="row">
           <div className="col-md-4 mb-4">
             <div className="university-content">
-              <span className="university-pane">
+              <div className="university-pane">
                 <Image
                   src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-icon.png`}
                   alt="Panache"
@@ -24,7 +24,7 @@ const UniversityLists = () => {
                   priority={true}
                 />
                 <p>Acadia University<span>Canada</span></p>
-              </span>
+              </div>
               <div className="university-middle-pane">
                 <ul>
                   <li><p>PGWP<span>Yes</span></p></li>
