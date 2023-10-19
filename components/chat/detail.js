@@ -81,7 +81,7 @@ const ChatDetails = () => {
                     <span className='time'>12:36</span>
                   </div>
                   <div className='comment-reply-main'>
-                  <span className='time'>15.21</span>
+                    <span className='time'>15.21</span>
                     <div className='comment-reply'>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a dolor ultricies, consequat eros id, rhoncus turpis. Nunc at ligula non sapien semper semper. Donec sit amet turpis sit amet justo hendrerit volutpat. Nunc dictum libero finibus nunc auctor vehicula. Nam pretium tellus massa, at faucibus augue finibus ac.
                     </div>
@@ -102,10 +102,10 @@ const ChatDetails = () => {
                 </div>
                 <div className='chat-main-content'>
                   <div className='comment-main'>
-                  <span className='time'>12:36</span>
                     <div className='comment'>
                       Sed a neque in felis commodo porta. Sed varius bibendum nisl vel ullamcorper. Pellentesque mollis, nisl sed blandit rhoncus, massa nulla aliquet enim, ut varius tortor orci ac diam. Donec semper ante eu
                     </div>
+                    <span className='time'>12:36</span>
                   </div>
                 </div>
               </div>
@@ -147,7 +147,7 @@ const ChatDetails = () => {
                     <span className='time'>12:36</span>
                   </div>
                   <div className='comment-reply-main'>
-                  <span className='time'>15.21</span>
+                    <span className='time'>15.21</span>
                     <div className='comment-reply'>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a dolor ultricies, consequat eros id, rhoncus turpis. Nunc at ligula non sapien semper semper. Donec sit amet turpis sit amet justo hendrerit volutpat. Nunc dictum libero finibus nunc auctor vehicula. Nam pretium tellus massa, at faucibus augue finibus ac.
                     </div>
@@ -175,6 +175,32 @@ const ChatDetails = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className='chat-details-btm'>
+            <div className='attche'>
+              <div className="upload-btn-wrapper">
+                <button class="btn"> <Image
+                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/aatach-icon.png`}
+                  alt="Panache"
+                  width={18}
+                  height={18}
+                  priority={true}
+                /></button>
+                <input type="file" name="myfile" />
+              </div>
+            </div>
+            <div className='from-area'>
+              <input type="text" className='form-control' placeholder='Type your message' />
+              <button className='chat-btn' type='submit'>
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/sent-icon.png`}
+                  alt="Panache"
+                  width={18}
+                  height={18}
+                  priority={true}
+                />
+              </button>
             </div>
           </div>
         </div>
