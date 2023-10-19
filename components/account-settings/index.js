@@ -7,85 +7,30 @@ const AccountSettings = () => {
     <>
       <div className="content-panel">
 
-        <div className="header-w-back">
-          <Link href="/login" className="back-btn">
-            <figure>
+        <div className='account-top'>
+          <div className="right-pane">
+            <div className="notification-btn">
               <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/back-icon.png`}
+                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/notification-icon.png`}
                 alt="Panache"
-                width={6}
-                height={12}
+                width={16}
+                height={16}
                 priority={true}
               />
-            </figure>
-            <span>Checkout page</span>
-          </Link>
-        </div>
-
-        <div className="acc-settings-pane">
-          <div className="row mt-5">
-            <div className="col-md-8 offset-md-2">
-              <div className="checkout-box-panel">
-                <div className="checkout-box">
-                  <div className="checkout-header d-flex">
-                    <p>APPLICATION 2</p>
-                    <p>
-                      <Image
-                        src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/approve-icon.png`}
-                        alt="Panache"
-                        width={16}
-                        height={16}
-                        priority={true}
-                      />
-                      <span>APPROVED</span>
-                    </p>
-                  </div>
-                  <h4>PhD HRM and Organisation Studies</h4>
-                  <h5>University of Essex (UK)</h5>
-                  <div class="fee-panel">
-                    <ul>
-                      <li>Application Fee<span>$5059</span></li>
-                      <li>Tutio Fee<span>$50</span></li>
-                    </ul>
-                  </div>
-                  <button className="added-btn" type="button">+ ADDED</button>
-                </div>
-
-                <div className="checkout-box">
-                  <div className="checkout-header d-flex">
-                    <p>APPLICATION 2</p>
-                    <p>
-                      <Image
-                        src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/approve-icon.png`}
-                        alt="Panache"
-                        width={16}
-                        height={16}
-                        priority={true}
-                      />
-                      <span>APPROVED</span>
-                    </p>
-                  </div>
-                  <h4>B.F.A. in Art Practices</h4>
-                  <h5>University of Wolverhampton (UK)</h5>
-                  <div class="fee-panel">
-                    <ul>
-                      <li>Application Fee<span>$5059</span></li>
-                      <li>Tutio Fee<span>$50</span></li>
-                    </ul>
-                  </div>
-                  <button className="added-btn payment" type="button">+ ADD TO PAYMENT</button>
-                </div>
-              </div>
+              <span className="notification-dot"></span>
             </div>
-          </div>
-
-
-          <p className="amnt-pane">Total Amount: <span>$5059</span></p>
-          <div className="proceed-btn-pane">
-            <button
-              className="pay-btn"
-              type="submit">PROCEED TO PAY
-            </button>
+            <div className="profile-image">
+              <figure>
+                <Image
+                  src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/advisors-1.jpg`}
+                  alt="Panache"
+                  width={48}
+                  height={48}
+                  priority={true}
+                />
+              </figure>
+              <p>Welcome<span>John Doe!</span></p>
+            </div>
           </div>
         </div>
       </div>

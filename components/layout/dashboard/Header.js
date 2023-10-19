@@ -42,7 +42,6 @@ const Header = () => {
                                 </figure>
                                 <p>Welcome<span>John Doe!</span></p>
                             </div>
-
                         </div>
                     </div>
                 </div>
