@@ -6,22 +6,22 @@ const AccountBody = () => {
   return (
     <>
       <div className='account-list'>
-        <Link href="/edit-profile">Edit profile</Link>
+        <Link href="/account-settings/edit-profile">Edit Profile</Link>
       </div>
       <div className='account-list'>
-        <Link href="/upload-documents">Upload documents</Link>
+        <Link href="/account-settings/upload-documents">Upload Documents</Link>
       </div>
       <div className='account-list'>
-        <Link href="/account-settings">Account settings</Link>
+        <Link href="/account-settings/account-settings">Account Settings</Link>
       </div>
       <div className='account-list'>
-        <Link href="/checkout-page">Checkout page</Link>
+        <Link href="/checkout">Checkout Page</Link>
       </div>
       <div className='account-list'>
-        <Link href="/help">Help</Link>
+        <Link href="/account-settings/help">Help</Link>
       </div>
-      <div className='account-list'>
-        <Link href="/sign-out">Sign out</Link>
+      <div className='account-list last'>
+        <Link href="/login">Sign Out</Link>
       </div>
     </>
   )

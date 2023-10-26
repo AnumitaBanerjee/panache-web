@@ -1,14 +1,18 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 
 const CheckOut = () => {
+
+  const router = useRouter()
+  
   return (
     <>
       <div className="content-panel">
 
         <div className="header-w-back">
-          <Link href="/login" className="back-btn">
+          <Link href="" className="back-btn" onClick={() => router.back()}>
             <figure>
               <Image
                 src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/back-icon.png`}
