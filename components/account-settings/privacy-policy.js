@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import AccountHeaderPage from '../../components/account-settings/account-header'
 
-const Help = () => {
+const PrivacyPolicy = () => {
   return (
     <>
       <div className="content-panel">
@@ -14,20 +14,18 @@ const Help = () => {
           <div className='account-list account-back'>
             <Link href="/account-settings/" className='main-link'>
               <Image
-                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/help-icon.png`}
+                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/change-profile-picture-icon.png`}
                 alt="Panache"
                 width={18}
                 height={18}
                 priority={true}
               />
-              <span>Help</span>
+              <span>Privacy Policy</span>
             </Link>
           </div>
-          <div className='account-list'>
-            <Link href="/account-settings/terms-of-use">Terms of Use</Link>
-          </div>
-          <div className='account-list'>
-            <Link href="/account-settings/privacy-policy">Privacy Policy</Link>
+          <div className='account-btm-con'>
+            <h3>Privacy Policy</h3>
+            <p>Content Coming Soon</p>
           </div>
         </div>
       </div>
@@ -35,4 +33,4 @@ const Help = () => {
   )
 }
 
-export default Help;
+export default PrivacyPolicy;
