@@ -108,13 +108,13 @@ const Blog = (props) => {
 
                     </div>
 
-                    <ul className="pagination">
+                    {/* <ul className="pagination">
                         <li><Link href="/" className="prev"></Link></li>
                         <li><Link href="/" className="active">1</Link></li>
                         <li><Link href="/">2</Link></li>
                         <li><Link href="/">3</Link></li>
                         <li><Link href="/" className="next"></Link></li>
-                    </ul>
+                    </ul> */}
 
                 </div>
             </section>
