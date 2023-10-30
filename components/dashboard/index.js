@@ -3,8 +3,17 @@ import Slider from "react-slick";
 import Image from 'next/image';
 import MultiStepProgressBar from './MultiStepProgressBar';
 import Link from "next/link";
+import ApplicationModal from "../modal/ApplicationModal";
 
 const Dashboard = () => {
+
+  const [show, setShow] = useState(false);
+  const [modelitems, setmodeldata] = useState([]);
+
+  const handleClose = () => setShow(false);
+  const openModal = (e) => {
+    setShow(true);
+  }
 
   var applicationSettings = {
     infinite: true,
@@ -127,7 +136,7 @@ const Dashboard = () => {
               <div className="application-status-panel">
                 <h2>Application Status (for Acadia University)</h2>
                 <span>Application ID: 25698745</span>
-                <span className="application-book">
+                <Link href='#' className="application-book" onClick={() => openModal('https://www.youtube.com/embed/x4U9-T202uA')}>
                   <Image
                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
                     alt="Panache"
@@ -135,7 +144,7 @@ const Dashboard = () => {
                     height={13}
                     priority={true}
                   />
-                </span>
+                </Link>
               </div>
               <div className="application-progress-panel">
                 <div className="end-act-date">
@@ -165,7 +174,7 @@ const Dashboard = () => {
               <div className="application-status-panel">
                 <h2>Application Status (for Acadia University)</h2>
                 <span>Application ID: 25698745</span>
-                <span className="application-book">
+                <Link href='#' className="application-book" onClick={() => openModal('https://www.youtube.com/embed/x4U9-T202uA')}>
                   <Image
                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
                     alt="Panache"
@@ -173,7 +182,7 @@ const Dashboard = () => {
                     height={13}
                     priority={true}
                   />
-                </span>
+                </Link>
               </div>
               <div className="application-progress-panel">
                 <div className="end-act-date">
@@ -203,7 +212,7 @@ const Dashboard = () => {
               <div className="application-status-panel">
                 <h2>Application Status (for Acadia University)</h2>
                 <span>Application ID: 25698745</span>
-                <span className="application-book">
+                <Link href='#' className="application-book" onClick={() => openModal('https://www.youtube.com/embed/x4U9-T202uA')}>
                   <Image
                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
                     alt="Panache"
@@ -211,7 +220,7 @@ const Dashboard = () => {
                     height={13}
                     priority={true}
                   />
-                </span>
+                </Link>
               </div>
               <div className="application-progress-panel">
                 <div className="end-act-date">
@@ -397,7 +406,7 @@ const Dashboard = () => {
                   </ul>
                 </div>
                 <div className="university-footer-pane">
-                  <p>VIEW PROGRAMS</p>
+                  <Link href="/university">VIEW PROGRAMS</Link>
                 </div>
               </div>
               <div className="slider-content university-content">
@@ -419,7 +428,7 @@ const Dashboard = () => {
                   </ul>
                 </div>
                 <div className="university-footer-pane">
-                  <p>VIEW PROGRAMS</p>
+                  <Link href="/university">VIEW PROGRAMS</Link>
                 </div>
               </div>
               <div className="slider-content university-content">
@@ -441,7 +450,7 @@ const Dashboard = () => {
                   </ul>
                 </div>
                 <div className="university-footer-pane">
-                  <p>VIEW PROGRAMS</p>
+                  <Link href="/university">VIEW PROGRAMS</Link>
                 </div>
               </div>
               <div className="slider-content university-content">
@@ -463,13 +472,18 @@ const Dashboard = () => {
                   </ul>
                 </div>
                 <div className="university-footer-pane">
-                  <p>VIEW PROGRAMS</p>
+                  <Link href="/university">VIEW PROGRAMS</Link>
                 </div>
               </div>
             </Slider>
           </div>
         </div>
       </div>
+      <ApplicationModal
+        show={show}
+        onHide={handleClose}
+        modelitems={modelitems}
+      />
     </>
   )
 }

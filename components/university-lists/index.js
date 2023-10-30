@@ -7,7 +7,7 @@ const UniversityLists = () => {
     <>
       <div className="content-panel">
 
-      <div className="apply-list-pane-top">
+        <div className="apply-list-pane-top">
           <h2>University List</h2>
           <Link href="/" className="apply-new-btn">Create New</Link>
         </div>
@@ -33,7 +33,7 @@ const UniversityLists = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
           </div>
@@ -57,7 +57,7 @@ const UniversityLists = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@ const UniversityLists = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ const UniversityLists = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ const UniversityLists = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@ const UniversityLists = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
           </div>
@@ -177,7 +177,7 @@ const UniversityLists = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
           </div>
@@ -201,7 +201,7 @@ const UniversityLists = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
           </div>
@@ -225,7 +225,7 @@ const UniversityLists = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
           </div>

@@ -126,6 +126,7 @@ const SearchByUniversity = () => {
                   </li>
                 </ul>
               </div>
+
               <div className="filter-program">
                 <h3>Filter program:</h3>
                 <Accordion flush>
@@ -237,7 +238,7 @@ const SearchByUniversity = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                 <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
           </div>
@@ -261,11 +262,10 @@ const SearchByUniversity = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                 <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
-          </div>
-          <div className="col-md-4 mb-4">
+          </div><div className="col-md-4 mb-4">
             <div className="university-content">
               <span className="university-pane">
                 <Image
@@ -285,11 +285,10 @@ const SearchByUniversity = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                 <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
-          </div>
-          <div className="col-md-4 mb-4">
+          </div><div className="col-md-4 mb-4">
             <div className="university-content">
               <span className="university-pane">
                 <Image
@@ -309,11 +308,10 @@ const SearchByUniversity = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                 <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
-          </div>
-          <div className="col-md-4 mb-4">
+          </div><div className="col-md-4 mb-4">
             <div className="university-content">
               <span className="university-pane">
                 <Image
@@ -333,11 +331,10 @@ const SearchByUniversity = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                 <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
-          </div>
-          <div className="col-md-4 mb-4">
+          </div><div className="col-md-4 mb-4">
             <div className="university-content">
               <span className="university-pane">
                 <Image
@@ -357,11 +354,10 @@ const SearchByUniversity = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                 <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
-          </div>
-          <div className="col-md-4 mb-4">
+          </div><div className="col-md-4 mb-4">
             <div className="university-content">
               <span className="university-pane">
                 <Image
@@ -381,11 +377,10 @@ const SearchByUniversity = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                 <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
-          </div>
-          <div className="col-md-4 mb-4">
+          </div><div className="col-md-4 mb-4">
             <div className="university-content">
               <span className="university-pane">
                 <Image
@@ -405,11 +400,10 @@ const SearchByUniversity = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                 <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
-          </div>
-          <div className="col-md-4 mb-4">
+          </div><div className="col-md-4 mb-4">
             <div className="university-content">
               <span className="university-pane">
                 <Image
@@ -429,11 +423,10 @@ const SearchByUniversity = () => {
                 </ul>
               </div>
               <div className="university-footer-pane">
-                <p>VIEW PROGRAMS</p>
+                 <Link href="/university">VIEW PROGRAMS</Link>
               </div>
             </div>
           </div>
-
         </div>
         {/* <ul className="pagination">
           <li><Link href="/" className="prev"></Link></li>

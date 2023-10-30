@@ -259,64 +259,11 @@ p {
             background: var(--secondary-color);
         }
     }
-}
-
-// MODAL
-.ReactModalPortal {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 9999;
-
-    .ReactModal__Overlay {
-        background-color: rgba(0, 0, 0, 0.85) !important;
-        max-height: 100vh;
-        overflow: hidden;
-
-        .ReactModal__Content {
-            background-color: var(--white-color);
-            position: absolute;
-            margin: auto;
-            // max-height: 90vh;
-            left: 50%;
-            top: 50%;
-            padding: 15px;
-            transform: translateY(-50%) translateX(-50%);
-            display: block;
-
-            .modal-cont-inner {
-                position: relative;
-                width: 100%;
-                max-height: 85vh;
-                overflow-y: auto;
-                overflow-x: hidden;
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-
-            &.readblocker-modal {
-                span {
-                    display: block !important;
-                    position: absolute;
-                }
-            }
-
-            button:not(.btn) {
-                width: 30px;
-                height: 30px;
-                background-color: var(--black-color);
-                border: 2px solid var(--grey-color);
-                color: var(--white-color);
-                position: absolute;
-                right: -15px;
-                top: -15px;
-                border-radius: 50%;
-                cursor: pointer;
-                z-index: 1;
-            }
-        }
+    &.btn-big {
+        width: 340px;
     }
 }
+
 
 /* Login */
 .welcome-panel {
@@ -816,7 +763,7 @@ p {
             span {
                 font-size: 0.8rem;
                 color: var(--white-color);
-                margin: 0 0 0 10px;
+                margin: 0 10px;
                 display: block;
                 padding: 4px 10px;
                 background: var(--blue-color);
@@ -827,6 +774,7 @@ p {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                width: 26px;
                 height: 24px;
             }
         }
@@ -1006,10 +954,12 @@ p {
         text-align: center;
         border-top: 2px solid #dedede;
         height: 100%;
-
-        p {
-            line-height: 3;
-            margin: 0;
+        padding: 12px 0;
+        a {
+            color: var(--primary-color);
+            &:hover {
+                color: var(--secondary-color);
+            }
         }
     }
 }
@@ -4360,9 +4310,7 @@ form {
             justify-content: space-between;
         }
     }
-    .btn-big {
-        width: 340px;
-    }
+   
 }
 .account-details-area {
     padding: 30px;
@@ -4510,11 +4458,78 @@ form {
                 left: 16px;
             }
         }
-        .form-flex{
+        .form-flex {
             display: flex;
-            .form-floating-last{
+            .form-floating-last {
                 border-left: 0;
             }
         }
     }
+}
+/* university */
+.university-pane {
+    .university-pane-top {
+        display: flex;
+        align-items: center;
+        figure {
+            margin: 0;
+        }
+        .ccon {
+            margin-left: 20px;
+            h2 {
+                margin: 0;
+            }
+            ul {
+                display: flex;
+                padding: 0;
+                margin: 10px 0 0 0;
+                list-style-type: none;
+                li {
+                    font-size: 1rem;
+                    color: #8f8f8f;
+                    padding: 0 20px;
+                    &.city {
+                        background: url(../../../public/assets/images/uni-location-icon.png) no-repeat 0 2px;
+                    }
+                    &.campus {
+                        background: url(../../../public/assets/images/uni-campus-iocn.png) no-repeat 0 2px;
+                    }
+                }
+            }
+        }
+    }
+    .university-pane-mid {
+        p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    }
+}
+
+/* application-modal */
+.btn-close:focus {
+    box-shadow: none;
+}
+.modal-content-area {
+    .modal-header {
+        border: 0;
+        display: block;
+        padding-bottom: 0;
+        .btn-close {
+            background: url(../../../public/assets/images/modal-back.svg) no-repeat 0 0;
+            height: 38px;
+            width: 38px;
+        }
+    }
+    .modal-content {
+        background-color: #eff9fe;
+        h2 {
+            font-size: 1.75rem;
+            font-weight: normal;
+            color: var(--primary-color);
+        }
+    }
+}
+.application-modal-content{
+    
 }
