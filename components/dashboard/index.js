@@ -4,6 +4,7 @@ import Image from 'next/image';
 import MultiStepProgressBar from './MultiStepProgressBar';
 import Link from "next/link";
 import ApplicationModal from "../modal/ApplicationModal";
+import ProgramsModal from "../modal/ProgramsModal";
 
 const Dashboard = () => {
 
@@ -14,6 +15,15 @@ const Dashboard = () => {
   const openModal = (e) => {
     setShow(true);
   }
+
+  const [ programmeShow, setProgrammeShow] = useState(false);
+  const [ programmeModelitems, setProgrammeModeldata] = useState([]);
+
+  const programmeHandleClose = () => setProgrammeShow(false);
+  const programmeOpenModal = (e) => {
+    setProgrammeShow(true);
+  }
+
 
   var applicationSettings = {
     infinite: true,
@@ -136,7 +146,7 @@ const Dashboard = () => {
               <div className="application-status-panel">
                 <h2>Application Status (for Acadia University)</h2>
                 <span>Application ID: 25698745</span>
-                <Link href='#' className="application-book" onClick={() => openModal('https://www.youtube.com/embed/x4U9-T202uA')}>
+                <Link href='#' className="application-book" onClick={() => openModal()}>
                   <Image
                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
                     alt="Panache"
@@ -174,7 +184,7 @@ const Dashboard = () => {
               <div className="application-status-panel">
                 <h2>Application Status (for Acadia University)</h2>
                 <span>Application ID: 25698745</span>
-                <Link href='#' className="application-book" onClick={() => openModal('https://www.youtube.com/embed/x4U9-T202uA')}>
+                <Link href='#' className="application-book" onClick={() => openModal()}>
                   <Image
                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
                     alt="Panache"
@@ -212,7 +222,7 @@ const Dashboard = () => {
               <div className="application-status-panel">
                 <h2>Application Status (for Acadia University)</h2>
                 <span>Application ID: 25698745</span>
-                <Link href='#' className="application-book" onClick={() => openModal('https://www.youtube.com/embed/x4U9-T202uA')}>
+                <Link href='#' className="application-book" onClick={() => openModal()}>
                   <Image
                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
                     alt="Panache"
@@ -269,7 +279,7 @@ const Dashboard = () => {
                     />
                     <p>BSc in Applied<br />Data Science</p>
                   </div>
-                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                 </div>
                 <h5>Modal University (Austria)</h5>
                 <div className="fee-panel">
@@ -299,7 +309,7 @@ const Dashboard = () => {
                     />
                     <p>BSc in Applied<br />Data Science</p>
                   </div>
-                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                 </div>
                 <h5>Modal University (Austria)</h5>
                 <div className="fee-panel">
@@ -329,7 +339,7 @@ const Dashboard = () => {
                     />
                     <p>BSc in Applied<br />Data Science</p>
                   </div>
-                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                 </div>
                 <h5>Modal University (Austria)</h5>
                 <div className="fee-panel">
@@ -359,7 +369,7 @@ const Dashboard = () => {
                     />
                     <p>BSc in Applied<br />Data Science</p>
                   </div>
-                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                 </div>
                 <h5>Modal University (Austria)</h5>
                 <div className="fee-panel">
@@ -483,6 +493,11 @@ const Dashboard = () => {
         show={show}
         onHide={handleClose}
         modelitems={modelitems}
+      />
+      <ProgramsModal
+        show={programmeShow}
+        onHide={programmeHandleClose}
+        programmeModelitems={programmeModelitems}
       />
     </>
   )
