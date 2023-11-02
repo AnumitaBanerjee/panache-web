@@ -84,7 +84,7 @@ const Communication = (props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='details-tab'>
+                        <div className='details-tab orange-tab'>
                             <Tabs>
                                 <TabList>
                                     <Tab>Conversation</Tab>
