@@ -4540,12 +4540,14 @@ form {
             font-size: 1.25rem;
             font-weight: 400;
             color: var(--primary-color);
+            margin-bottom: 15px;
         }
 
         h4 {
             font-size: 1rem;
             font-weight: 400;
             color: var(--primary-color);
+            margin-bottom: 15px;
         }
 
         h5 {
@@ -4639,8 +4641,18 @@ form {
         margin-bottom: 20px;
         .form-floating {
             width: 50%;
-            &:first-child{
+            &:first-child {
                 border-right: 1px solid var(--border-color);
+            }
+        }
+    }
+    .additional {
+        a {
+            color: var(--black-color);
+            text-transform: uppercase;
+            font-size: 14px;
+            &:hover {
+                color: var(--primary-color);
             }
         }
     }
@@ -4651,7 +4663,7 @@ form {
             margin-top: -44px;
             margin-left: 63px;
             .react-tabs__tab {
-                margin-right: 5px;
+                margin-right: 10px;
             }
         }
         .react-tabs__tab-panel {
@@ -4666,4 +4678,28 @@ form {
     max-height: 50vh;
     overflow-y: auto;
     overflow-x: hidden;
+}
+.english-modal {
+    .english-form-check {
+        width: 336px;
+        height: 56px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--primary-color);
+        label {
+            text-transform: uppercase;
+            color: var(--primary-color);
+        }
+    }
+    .test-list {
+        .test-sublist {
+            margin-bottom: 10px;
+            .test-sublist-top {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
 }

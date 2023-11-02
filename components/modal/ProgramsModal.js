@@ -12,6 +12,11 @@ const ProgramsModal = (props) => {
         setShowMe(!showMe);
     }
 
+    const [showMeEnglish, setShowMeEnglish] = useState(true);
+    function toggleEnglish() {
+        setShowMeEnglish(!showMeEnglish);
+    }
+
     return (
         <Modal
             show={props.show}
@@ -306,13 +311,514 @@ const ProgramsModal = (props) => {
                                 </div>
                             </TabPanel>
                             <TabPanel>
-                                Academic
+                                <div className="programs-modal-body">
+                                    <div className="modal-secroll">
+                                        <form>
+
+                                            <div className='education-summary'>
+                                                <h3>Education Summary</h3>
+                                                <div className='form-floating ornage-line box-shoadow mb-4'>
+                                                    <select className="form-select" id="year" aria-label="Highest-Education">
+                                                        <option selected>Graduation</option>
+                                                        <option value="1">Other</option>
+                                                    </select>
+                                                    <label htmlFor="Highest-Education">Highest Level of Education</label>
+                                                </div>
+                                            </div>
+
+                                            <div className='graduation'>
+                                                <h3>Graduation</h3>
+                                                <div className='form-floating ornage-line box-shoadow mb-4'>
+                                                    <input type="text" className="form-control" id="Name-Institution" placeholder="Buc College" value="Buc College" />
+                                                    <label htmlFor="Name-Institution">Name of the Institution</label>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <select className="form-select" id="year" aria-label="CountryStudy">
+                                                            <option selected>India</option>
+                                                            <option value="1">Other</option>
+                                                        </select>
+                                                        <label htmlFor="CountryStudy">Country of Study</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <select className="form-select" id="StateStudy" aria-label="Name-Institution">
+                                                            <option selected>Punjab</option>
+                                                            <option value="1">Other</option>
+                                                        </select>
+                                                        <label htmlFor="StateStudy">State of Study</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="CityStudy" placeholder="Batala" value="Batala" />
+                                                        <label htmlFor="CityStudy">City of Study</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Qualification" placeholder="B.SC" value="B.SC" />
+                                                        <label htmlFor="Qualification">Qualification Achieved/Degree Awarded</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Backlogs" placeholder="Enter Backlogs" value="Enter Backlogs" />
+                                                        <label htmlFor="Backlogs">Backlogs</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <select className="form-select" id="GradingSystem" aria-label="GradingSystem">
+                                                            <option selected>Out of 100</option>
+                                                            <option value="1">Other</option>
+                                                        </select>
+                                                        <label htmlFor="GradingSystem">Grading System</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Score" placeholder="60" value="60" />
+                                                        <label htmlFor="Score">Score</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <select className="form-select" id="PrimaryLanguage" aria-label="PrimaryLanguage">
+                                                            <option selected>English</option>
+                                                            <option value="1">Other</option>
+                                                        </select>
+                                                        <label htmlFor="PrimaryLanguage">Primary Language of Instruction</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Score" placeholder="01/12/2014" value="01/12/2014" />
+                                                        <label htmlFor="StartDate">Start Date</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="EndDate" placeholder="01/05/2016" value="01/05/2016" />
+                                                        <label htmlFor="EndDate">End Date</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div className='grade-equivalent'>
+                                                <h3>Grade 12th or equivalent</h3>
+                                                <div className='form-floating ornage-line box-shoadow mb-4'>
+                                                    <input type="text" className="form-control" id="Name-Institution" placeholder="Punjab School Education" value="Punjab School Education" />
+                                                    <label htmlFor="Name-Institution">Name of the Institution</label>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <select className="form-select" id="year" aria-label="CountryStudy">
+                                                            <option selected>India</option>
+                                                            <option value="1">Other</option>
+                                                        </select>
+                                                        <label htmlFor="CountryStudy">Country of Study</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <select className="form-select" id="StateStudy" aria-label="Name-Institution">
+                                                            <option selected>Punjab</option>
+                                                            <option value="1">Other</option>
+                                                        </select>
+                                                        <label htmlFor="StateStudy">State of Study</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="CityStudy" placeholder="Batala" value="Batala" />
+                                                        <label htmlFor="CityStudy">City of Study</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Qualification" placeholder="B.SC" value="B.SC" />
+                                                        <label htmlFor="Qualification">Qualification Achieved/Degree Awarded</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Backlogs" placeholder="Enter Backlogs" value="Enter Backlogs" />
+                                                        <label htmlFor="Backlogs">Backlogs</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <select className="form-select" id="GradingSystem" aria-label="GradingSystem">
+                                                            <option selected>Out of 100</option>
+                                                            <option value="1">Other</option>
+                                                        </select>
+                                                        <label htmlFor="GradingSystem">Grading System</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Score" placeholder="60" value="60" />
+                                                        <label htmlFor="Score">Score</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <select className="form-select" id="PrimaryLanguage" aria-label="PrimaryLanguage">
+                                                            <option selected>English</option>
+                                                            <option value="1">Other</option>
+                                                        </select>
+                                                        <label htmlFor="PrimaryLanguage">Primary Language of Instruction</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Score" placeholder="01/12/2014" value="01/12/2014" />
+                                                        <label htmlFor="StartDate">Start Date</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="EndDate" placeholder="01/05/2016" value="01/05/2016" />
+                                                        <label htmlFor="EndDate">End Date</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className='grade-equivalent'>
+                                                <h3>Grade 10th or equivalent</h3>
+                                                <div className='form-floating ornage-line box-shoadow mb-4'>
+                                                    <input type="text" className="form-control" id="Name-Institution" placeholder="Punjab School Education" value="Punjab School Education" />
+                                                    <label htmlFor="Name-Institution">Name of the Institution</label>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <select className="form-select" id="year" aria-label="CountryStudy">
+                                                            <option selected>India</option>
+                                                            <option value="1">Other</option>
+                                                        </select>
+                                                        <label htmlFor="CountryStudy">Country of Study</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <select className="form-select" id="StateStudy" aria-label="Name-Institution">
+                                                            <option selected>Punjab</option>
+                                                            <option value="1">Other</option>
+                                                        </select>
+                                                        <label htmlFor="StateStudy">State of Study</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="CityStudy" placeholder="Batala" value="Batala" />
+                                                        <label htmlFor="CityStudy">City of Study</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Qualification" placeholder="B.SC" value="B.SC" />
+                                                        <label htmlFor="Qualification">Qualification Achieved/Degree Awarded</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Backlogs" placeholder="Enter Backlogs" value="Enter Backlogs" />
+                                                        <label htmlFor="Backlogs">Backlogs</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <select className="form-select" id="GradingSystem" aria-label="GradingSystem">
+                                                            <option selected>Out of 100</option>
+                                                            <option value="1">Other</option>
+                                                        </select>
+                                                        <label htmlFor="GradingSystem">Grading System</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Score" placeholder="60" value="60" />
+                                                        <label htmlFor="Score">Score</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <select className="form-select" id="PrimaryLanguage" aria-label="PrimaryLanguage">
+                                                            <option selected>English</option>
+                                                            <option value="1">Other</option>
+                                                        </select>
+                                                        <label htmlFor="PrimaryLanguage">Primary Language of Instruction</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Score" placeholder="01/12/2014" value="01/12/2014" />
+                                                        <label htmlFor="StartDate">Start Date</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="EndDate" placeholder="01/05/2016" value="01/05/2016" />
+                                                        <label htmlFor="EndDate">End Date</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className='additional'>
+                                                <Link href="#">+ Add Additional Qualification</Link>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
                             </TabPanel>
                             <TabPanel>
-                                Work Experience
+                                <div className="programs-modal-body">
+                                    <div className="modal-secroll">
+                                        <form>
+                                            <div className='work-experience'>
+                                                <h3>Work Experience</h3>
+                                                <div className='form-floating ornage-line box-shoadow mb-4'>
+                                                    <input type="text" className="form-control" id="Organization-Address" placeholder="Web Tech" value="Web Tech" />
+                                                    <label htmlFor="Organization-Address">Name of the Organization & Address</label>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Position" placeholder="Designer" value="Designer" />
+                                                        <label htmlFor="Position">Position</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="JobProfile" placeholder="Designer" value="Designer" />
+                                                        <label htmlFor="JobProfile">Job Profile</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="WorkingFrom" placeholder="06/03/2017" value="06/03/2017" />
+                                                        <label htmlFor="WorkingFrom">Working From</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="Working-upto" placeholder="31/05/2023" value="31/05/2023" />
+                                                        <label htmlFor="Working-upto">Working upto</label>
+                                                    </div>
+                                                </div>
+                                                <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="ModeSalary" placeholder="Cash" value="Cash" />
+                                                        <label htmlFor="Mode-Salary">Mode of Salary</label>
+                                                    </div>
+                                                    <div className="form-floating">
+                                                        <input type="text" className="form-control" id="currently" placeholder="No" value="No" />
+                                                        <label htmlFor="currently">I am currently working here</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div className='additional'>
+                                                <Link href="#">+ Add Experience</Link>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
                             </TabPanel>
                             <TabPanel>
-                                English Test
+                                <div className="programs-modal-body english-modal">
+
+                                    <div className="modal-secroll">
+
+                                        <div className="mb-4 english-form-check">
+                                            <div className="form-check form-check-inline">
+                                                <input className="form-check-input" type="radio" name="english-radio" value="agent" id="english-radio" />
+                                                <label className="form-check-label" htmlFor="english-radio">
+                                                    English language waiver
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div className='test-list'>
+                                            <h3>Tests</h3>
+                                            <div className='test-sublist'>
+                                                <div className='test-sublist-top'>
+                                                    <h4>GRE</h4>
+                                                    <div className='additional'>
+                                                        <Link href="#" onClick={toggleEnglish}>+ Add Experience</Link>
+                                                    </div>
+                                                </div>
+                                                <div className='test-sublist-btm' style={{ display: showMeEnglish ? "none" : "block" }}>
+                                                    <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="OverallScore" placeholder="Overall Score" value="Overall Score" />
+                                                            <label htmlFor="OverallScore">Overall Score</label>
+                                                        </div>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="DateExamination" placeholder="Date of Examination" value="Date of Examination" />
+                                                            <label htmlFor="DateExamination">Date of Examination</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="Quantitative" placeholder="Quantitative" value="Quantitative" />
+                                                            <label htmlFor="Quantitative">Quantitative</label>
+                                                        </div>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="Verbal" placeholder="Verbal" value="Verbal" />
+                                                            <label htmlFor="Verbal">Verbal</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className="form-floating ornage-line box-shoadow mb-4">
+                                                        <input type="text" className="form-control" id="AnalyticalWriting" placeholder="Analytical Writing" value="Analytical Writing" />
+                                                        <label htmlFor="AnalyticalWriting">Analytical Writing</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='test-sublist'>
+                                                <div className='test-sublist-top'>
+                                                    <h4>GMAT</h4>
+                                                    <div className='additional'>
+                                                        <Link href="#" onClick={toggleEnglish}>+ Add Experience</Link>
+                                                    </div>
+                                                </div>
+                                                <div className='test-sublist-btm' style={{ display: showMeEnglish ? "none" : "block" }}>
+                                                    <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="OverallScore" placeholder="Overall Score" value="Overall Score" />
+                                                            <label htmlFor="OverallScore">Overall Score</label>
+                                                        </div>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="DateExamination" placeholder="Date of Examination" value="Date of Examination" />
+                                                            <label htmlFor="DateExamination">Date of Examination</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="Quantitative" placeholder="Quantitative" value="Quantitative" />
+                                                            <label htmlFor="Quantitative">Quantitative</label>
+                                                        </div>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="Verbal" placeholder="Verbal" value="Verbal" />
+                                                            <label htmlFor="Verbal">Verbal</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className="form-floating ornage-line box-shoadow mb-4">
+                                                        <input type="text" className="form-control" id="AnalyticalWriting" placeholder="Analytical Writing" value="Analytical Writing" />
+                                                        <label htmlFor="AnalyticalWriting">Analytical Writing</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='test-sublist'>
+                                                <div className='test-sublist-top'>
+                                                    <h4>TOEFL</h4>
+                                                    <div className='additional'>
+                                                        <Link href="#" onClick={toggleEnglish}>+ Add Experience</Link>
+                                                    </div>
+                                                </div>
+                                                <div className='test-sublist-btm' style={{ display: showMeEnglish ? "none" : "block" }}>
+                                                    <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="OverallScore" placeholder="Overall Score" value="Overall Score" />
+                                                            <label htmlFor="OverallScore">Overall Score</label>
+                                                        </div>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="DateExamination" placeholder="Date of Examination" value="Date of Examination" />
+                                                            <label htmlFor="DateExamination">Date of Examination</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="Quantitative" placeholder="Quantitative" value="Quantitative" />
+                                                            <label htmlFor="Quantitative">Quantitative</label>
+                                                        </div>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="Verbal" placeholder="Verbal" value="Verbal" />
+                                                            <label htmlFor="Verbal">Verbal</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className="form-floating ornage-line box-shoadow mb-4">
+                                                        <input type="text" className="form-control" id="AnalyticalWriting" placeholder="Analytical Writing" value="Analytical Writing" />
+                                                        <label htmlFor="AnalyticalWriting">Analytical Writing</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='test-sublist'>
+                                                <div className='test-sublist-top'>
+                                                    <h4>IELTS</h4>
+                                                    <div className='additional'>
+                                                        <Link href="#" onClick={toggleEnglish}>+ Add Experience</Link>
+                                                    </div>
+                                                </div>
+                                                <div className='test-sublist-btm' style={{ display: showMeEnglish ? "none" : "block" }}>
+                                                    <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="OverallScore" placeholder="Overall Score" value="Overall Score" />
+                                                            <label htmlFor="OverallScore">Overall Score</label>
+                                                        </div>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="DateExamination" placeholder="Date of Examination" value="Date of Examination" />
+                                                            <label htmlFor="DateExamination">Date of Examination</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="Quantitative" placeholder="Quantitative" value="Quantitative" />
+                                                            <label htmlFor="Quantitative">Quantitative</label>
+                                                        </div>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="Verbal" placeholder="Verbal" value="Verbal" />
+                                                            <label htmlFor="Verbal">Verbal</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className="form-floating ornage-line box-shoadow mb-4">
+                                                        <input type="text" className="form-control" id="AnalyticalWriting" placeholder="Analytical Writing" value="Analytical Writing" />
+                                                        <label htmlFor="AnalyticalWriting">Analytical Writing</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='test-sublist'>
+                                                <div className='test-sublist-top'>
+                                                    <h4>DET</h4>
+                                                    <div className='additional'>
+                                                        <Link href="#" onClick={toggleEnglish}>+ Add Experience</Link>
+                                                    </div>
+                                                </div>
+                                                <div className='test-sublist-btm' style={{ display: showMeEnglish ? "none" : "block" }}>
+                                                    <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="OverallScore" placeholder="Overall Score" value="Overall Score" />
+                                                            <label htmlFor="OverallScore">Overall Score</label>
+                                                        </div>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="DateExamination" placeholder="Date of Examination" value="Date of Examination" />
+                                                            <label htmlFor="DateExamination">Date of Examination</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="Quantitative" placeholder="Quantitative" value="Quantitative" />
+                                                            <label htmlFor="Quantitative">Quantitative</label>
+                                                        </div>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="Verbal" placeholder="Verbal" value="Verbal" />
+                                                            <label htmlFor="Verbal">Verbal</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className="form-floating ornage-line box-shoadow mb-4">
+                                                        <input type="text" className="form-control" id="AnalyticalWriting" placeholder="Analytical Writing" value="Analytical Writing" />
+                                                        <label htmlFor="AnalyticalWriting">Analytical Writing</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='test-sublist'>
+                                                <div className='test-sublist-top'>
+                                                    <h4>SAT</h4>
+                                                    <div className='additional'>
+                                                        <Link href="#" onClick={toggleEnglish}>+ Add Experience</Link>
+                                                    </div>
+                                                </div>
+                                                <div className='test-sublist-btm' style={{ display: showMeEnglish ? "none" : "block" }}>
+                                                    <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="OverallScore" placeholder="Overall Score" value="Overall Score" />
+                                                            <label htmlFor="OverallScore">Overall Score</label>
+                                                        </div>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="DateExamination" placeholder="Date of Examination" value="Date of Examination" />
+                                                            <label htmlFor="DateExamination">Date of Examination</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className='form-compact ornage-line box-shoadow mb-4'>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="Quantitative" placeholder="Quantitative" value="Quantitative" />
+                                                            <label htmlFor="Quantitative">Quantitative</label>
+                                                        </div>
+                                                        <div className="form-floating">
+                                                            <input type="text" className="form-control" id="Verbal" placeholder="Verbal" value="Verbal" />
+                                                            <label htmlFor="Verbal">Verbal</label>
+                                                        </div>
+                                                    </div>
+                                                    <div className="form-floating ornage-line box-shoadow mb-4">
+                                                        <input type="text" className="form-control" id="AnalyticalWriting" placeholder="Analytical Writing" value="Analytical Writing" />
+                                                        <label htmlFor="AnalyticalWriting">Analytical Writing</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </TabPanel>
                         </Tabs>
                         <div className="submit-area text-center">
