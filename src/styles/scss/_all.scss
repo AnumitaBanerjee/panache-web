@@ -779,8 +779,8 @@ p {
                             color: var(--secondary-color);
                         }
                     }
-                    &:last-child{
-                        a{
+                    &:last-child {
+                        a {
                             border-bottom: 0;
                         }
                     }
@@ -4594,6 +4594,26 @@ form {
             display: flex;
             .form-floating-last {
                 border-left: 0;
+            }
+        }
+    }
+}
+.cardList-area {
+    .cardList {
+        margin-top: 20px;
+        display: flex;
+        font-size: 0.9rem;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid var(--border-color);
+        padding: 10px;
+        .cardList-right {
+            display: flex;
+            align-items: center;
+            span {
+                color: #939191;
+                display: block;
+                margin-right: 10px;
             }
         }
     }
