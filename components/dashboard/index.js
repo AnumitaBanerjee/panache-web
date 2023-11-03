@@ -3,10 +3,18 @@ import Slider from "react-slick";
 import Image from 'next/image';
 import MultiStepProgressBar from './MultiStepProgressBar';
 import Link from "next/link";
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 import ApplicationModal from "../modal/ApplicationModal";
 import ProgramsModal from "../modal/ProgramsModal";
 
 const Dashboard = () => {
+
+  const renderTooltip = (props) => (
+    <Tooltip id="button-tooltip" {...props}>
+      click to view courses checklist
+    </Tooltip>
+  );
 
   const [show, setShow] = useState(false);
   const [modelitems, setmodeldata] = useState([]);
@@ -16,8 +24,8 @@ const Dashboard = () => {
     setShow(true);
   }
 
-  const [ programmeShow, setProgrammeShow] = useState(false);
-  const [ programmeModelitems, setProgrammeModeldata] = useState([]);
+  const [programmeShow, setProgrammeShow] = useState(false);
+  const [programmeModelitems, setProgrammeModeldata] = useState([]);
 
   const programmeHandleClose = () => setProgrammeShow(false);
   const programmeOpenModal = (e) => {
@@ -146,17 +154,22 @@ const Dashboard = () => {
               <div className="application-status-panel">
                 <h2>Application Status (for Acadia University)</h2>
                 <span>Application ID: 25698745</span>
-                <Link href='#' className="application-book" onClick={() => openModal()}>
-                  <Image
-                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
-                    alt="Panache"
-                    width={11}
-                    height={13}
-                    priority={true}
-                  />
-                </Link>
+                <OverlayTrigger
+                  placement="top"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip}    >
+                  <Link href='#' className="application-book" onClick={() => openModal()}>
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
+                      alt="Panache"
+                      width={11}
+                      height={13}
+                      priority={true}
+                    />
+                  </Link>
+                </OverlayTrigger>
               </div>
-              
+
               <div className="application-progress-panel">
                 <div className="end-act-date">
                   <span>Est. Date</span>
@@ -185,15 +198,20 @@ const Dashboard = () => {
               <div className="application-status-panel">
                 <h2>Application Status (for Acadia University)</h2>
                 <span>Application ID: 25698745</span>
-                <Link href='#' className="application-book" onClick={() => openModal()}>
-                  <Image
-                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
-                    alt="Panache"
-                    width={11}
-                    height={13}
-                    priority={true}
-                  />
-                </Link>
+                <OverlayTrigger
+                  placement="top"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip}    >
+                  <Link href='#' className="application-book" onClick={() => openModal()}>
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
+                      alt="Panache"
+                      width={11}
+                      height={13}
+                      priority={true}
+                    />
+                  </Link>
+                </OverlayTrigger>
               </div>
               <div className="application-progress-panel">
                 <div className="end-act-date">
@@ -223,15 +241,20 @@ const Dashboard = () => {
               <div className="application-status-panel">
                 <h2>Application Status (for Acadia University)</h2>
                 <span>Application ID: 25698745</span>
-                <Link href='#' className="application-book" onClick={() => openModal()}>
-                  <Image
-                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
-                    alt="Panache"
-                    width={11}
-                    height={13}
-                    priority={true}
-                  />
-                </Link>
+                <OverlayTrigger
+                  placement="top"
+                  delay={{ show: 250, hide: 400 }}
+                  overlay={renderTooltip}    >
+                  <Link href='#' className="application-book" onClick={() => openModal()}>
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
+                      alt="Panache"
+                      width={11}
+                      height={13}
+                      priority={true}
+                    />
+                  </Link>
+                </OverlayTrigger>
               </div>
               <div className="application-progress-panel">
                 <div className="end-act-date">

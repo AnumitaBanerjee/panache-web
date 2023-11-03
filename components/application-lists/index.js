@@ -2,10 +2,18 @@ import React, { useState } from 'react'
 import Slider from "react-slick";
 import Image from 'next/image';
 import Link from "next/link";
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 import MultiStepProgressBar from '../dashboard/MultiStepProgressBar';
 import ApplicationModal from "../modal/ApplicationModal";
 
 const ApplicationLists = (props) => {
+
+    const renderTooltip = (props) => (
+        <Tooltip id="button-tooltip" {...props}>
+            click to view courses checklist
+        </Tooltip>
+    );
 
     const [show, setShow] = useState(false);
     const [modelitems, setmodeldata] = useState([]);
@@ -92,15 +100,20 @@ const ApplicationLists = (props) => {
                                         <h3>Olivia Jason</h3>
                                         <span className="apply-id">Application ID: 25698745</span>
                                         <span className="student-id">Student ID: 25698745</span>
-                                        <Link href='#' className="application-book" onClick={() => openModal()}>
-                                            <Image
-                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
-                                                alt="Panache"
-                                                width={11}
-                                                height={13}
-                                                priority={true}
-                                            />
-                                        </Link>
+                                        <OverlayTrigger
+                                            placement="top"
+                                            delay={{ show: 250, hide: 400 }}
+                                            overlay={renderTooltip}    >
+                                            <Link href='#' className="application-book" onClick={() => openModal()}>
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
+                                                    alt="Panache"
+                                                    width={11}
+                                                    height={13}
+                                                    priority={true}
+                                                />
+                                            </Link>
+                                        </OverlayTrigger>
                                     </div>
                                     <div className="applt-card-profile-details-b">
                                         <ul>
@@ -171,15 +184,20 @@ const ApplicationLists = (props) => {
                                         <h3>Olivia Jason</h3>
                                         <span className="apply-id">Application ID: 25698745</span>
                                         <span className="student-id">Student ID: 25698745</span>
-                                        <Link href='#' className="application-book" onClick={() => openModal()}>
-                                            <Image
-                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
-                                                alt="Panache"
-                                                width={11}
-                                                height={13}
-                                                priority={true}
-                                            />
-                                        </Link>
+                                        <OverlayTrigger
+                                            placement="top"
+                                            delay={{ show: 250, hide: 400 }}
+                                            overlay={renderTooltip}    >
+                                            <Link href='#' className="application-book" onClick={() => openModal()}>
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
+                                                    alt="Panache"
+                                                    width={11}
+                                                    height={13}
+                                                    priority={true}
+                                                />
+                                            </Link>
+                                        </OverlayTrigger>
                                     </div>
                                     <div className="applt-card-profile-details-b">
                                         <ul>
@@ -250,15 +268,20 @@ const ApplicationLists = (props) => {
                                         <h3>Olivia Jason</h3>
                                         <span className="apply-id">Application ID: 25698745</span>
                                         <span className="student-id">Student ID: 25698745</span>
-                                        <Link href='#' className="application-book" onClick={() => openModal()}>
-                                            <Image
-                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
-                                                alt="Panache"
-                                                width={11}
-                                                height={13}
-                                                priority={true}
-                                            />
-                                        </Link>
+                                        <OverlayTrigger
+                                            placement="top"
+                                            delay={{ show: 250, hide: 400 }}
+                                            overlay={renderTooltip}    >
+                                            <Link href='#' className="application-book" onClick={() => openModal()}>
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
+                                                    alt="Panache"
+                                                    width={11}
+                                                    height={13}
+                                                    priority={true}
+                                                />
+                                            </Link>
+                                        </OverlayTrigger>
                                     </div>
                                     <div className="applt-card-profile-details-b">
                                         <ul>
