@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+import ProgramsModal from "../modal/ProgramsModal";
 
 const FinancialAid = () => {
+
+  const [programmeShow, setProgrammeShow] = useState(false);
+  const [programmeModelitems, setProgrammeModeldata] = useState([]);
+
+  const programmeHandleClose = () => setProgrammeShow(false);
+  const programmeOpenModal = (e) => {
+    setProgrammeShow(true);
+  }
+
+
   return (
     <>
       <div className="content-panel">
@@ -48,7 +59,7 @@ const FinancialAid = () => {
                   </div>
                 </div>
                 <div className="financial-box-footer">
-                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   <button className="brochure-btn">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
@@ -98,7 +109,7 @@ const FinancialAid = () => {
                   </div>
                 </div>
                 <div className="financial-box-footer">
-                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   <button className="brochure-btn">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
@@ -148,7 +159,7 @@ const FinancialAid = () => {
                   </div>
                 </div>
                 <div className="financial-box-footer">
-                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   <button className="brochure-btn">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
@@ -198,7 +209,7 @@ const FinancialAid = () => {
                   </div>
                 </div>
                 <div className="financial-box-footer">
-                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   <button className="brochure-btn">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
@@ -248,7 +259,7 @@ const FinancialAid = () => {
                   </div>
                 </div>
                 <div className="financial-box-footer">
-                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   <button className="brochure-btn">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
@@ -298,7 +309,7 @@ const FinancialAid = () => {
                   </div>
                 </div>
                 <div className="financial-box-footer">
-                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   <button className="brochure-btn">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
@@ -348,7 +359,7 @@ const FinancialAid = () => {
                   </div>
                 </div>
                 <div className="financial-box-footer">
-                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   <button className="brochure-btn">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
@@ -398,7 +409,7 @@ const FinancialAid = () => {
                   </div>
                 </div>
                 <div className="financial-box-footer">
-                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   <button className="brochure-btn">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
@@ -448,7 +459,7 @@ const FinancialAid = () => {
                   </div>
                 </div>
                 <div className="financial-box-footer">
-                  <button className="apply-btn" type="button">APPLY</button>
+                  <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   <button className="brochure-btn">
                     <Image
                       src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pdf-icon.png`}
@@ -473,6 +484,11 @@ const FinancialAid = () => {
           </ul> */}
         </div>
       </div>
+      <ProgramsModal
+        show={programmeShow}
+        onHide={programmeHandleClose}
+        programmeModelitems={programmeModelitems}
+      />
     </>
   )
 }
