@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from 'next/router';
 
 const Header = () => {
+    
     const [sticky, setSticky] = useState("");
     const [menuClass, setMenuClass]= useState(false);
     const router = useRouter();

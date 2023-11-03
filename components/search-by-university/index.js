@@ -10,7 +10,7 @@ const SearchByUniversity = () => {
   return (
     <>
       <div className="content-panel">
-
+        
         <div className='header-w-filter'>
           <div className="header-w-back">
             <Link href="/dashboard" className="back-btn">
