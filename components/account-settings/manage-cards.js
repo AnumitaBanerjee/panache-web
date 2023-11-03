@@ -71,6 +71,59 @@ const ManageCardsPage = () => {
                   />
                 </Link>
               </div>
+
+
+              <div className='cardList-area'>
+                <div className='cardList'>
+                  <div className='cardList-left'>
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/master-icon.jpg`}
+                      alt="Panache"
+                      width={80}
+                      height={42}
+                      priority={true}
+                    />
+                    <span>Deutche Bank</span>
+                  </div>
+                  <div className='cardList-right'>
+                    <span>****4569</span>
+                    <Link href="#">
+                      <Image
+                        src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/del-icon.svg`}
+                        alt="Panache"
+                        width={14}
+                        height={17}
+                        priority={true}
+                      />
+                    </Link>
+                  </div>
+                </div>
+                <div className='cardList'>
+                  <div className='cardList-left'>
+                    <Image
+                      src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/visa-icon.jpg`}
+                      alt="Panache"
+                      width={80}
+                      height={42}
+                      priority={true}
+                    />
+                    <span>Swiss Bank</span>
+                  </div>
+                  <div className='cardList-right'>
+                    <span>****8769</span>
+                    <Link href="#">
+                      <Image
+                        src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/del-icon.svg`}
+                        alt="Panache"
+                        width={14}
+                        height={17}
+                        priority={true}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
               <div className='add-cards-form'>
 
                 <form>
@@ -105,7 +158,7 @@ const ManageCardsPage = () => {
                       </div>
                     </div>
                     <div className='col-md-6 form-flex'>
-                    <div className="form-floating">
+                      <div className="form-floating">
                         <input type="text" placeholder="12/06" className="form-control" id="expiryngInput" value="12/06" />
                         <label htmlFor="expiryngInput">Expiry</label>
                         <span className="input-icon">
@@ -125,12 +178,14 @@ const ManageCardsPage = () => {
                     </div>
                   </div>
 
-                  <button
-                    onClick={() => router.push('/dashboard')}
-                    type="button"
-                    className="btn">
-                    LOGIN
-                  </button>
+                  <div className="submit-area text-center mt-4">
+                    <button
+                      onClick={() => router.push('/dashboard')}
+                      type="button"
+                      className="btn btn-blue btn-big">
+                      Submit
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>
