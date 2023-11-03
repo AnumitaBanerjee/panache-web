@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Header = () => {
     return (
@@ -21,6 +22,7 @@ const Header = () => {
                     <div className="right-pane-main">
                         <div className="right-pane">
                             <div className="notification-btn">
+                                <Link href='/notifications'>
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/notification-icon.png`}
                                     alt="Panache"
@@ -28,6 +30,7 @@ const Header = () => {
                                     height={16}
                                     priority={true}
                                 />
+                                </Link>
                                 <span className="notification-dot"></span>
                             </div>
                             <div className="profile-image">

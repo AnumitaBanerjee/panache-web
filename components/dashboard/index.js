@@ -156,6 +156,7 @@ const Dashboard = () => {
                   />
                 </Link>
               </div>
+              
               <div className="application-progress-panel">
                 <div className="end-act-date">
                   <span>Est. Date</span>

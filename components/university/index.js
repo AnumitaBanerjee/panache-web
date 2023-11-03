@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+import ProgramsModal from "../modal/ProgramsModal";
 
 const University = () => {
+
+  const [programmeShow, setProgrammeShow] = useState(false);
+  const [programmeModelitems, setProgrammeModeldata] = useState([]);
+
+  const programmeHandleClose = () => setProgrammeShow(false);
+  const programmeOpenModal = (e) => {
+    setProgrammeShow(true);
+  }
+
+
   return (
     <>
       <div className="content-panel">
@@ -44,7 +55,7 @@ const University = () => {
                       />
                       <p>BSc in Applied<br />Data Science</p>
                     </div>
-                    <button className="apply-btn" type="button">APPLY</button>
+                    <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   </div>
                   <h5>Modal University (Austria)</h5>
                   <div className="fee-panel">
@@ -76,7 +87,7 @@ const University = () => {
                       />
                       <p>BSc in Applied<br />Data Science</p>
                     </div>
-                    <button className="apply-btn" type="button">APPLY</button>
+                    <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   </div>
                   <h5>Modal University (Austria)</h5>
                   <div className="fee-panel">
@@ -108,7 +119,7 @@ const University = () => {
                       />
                       <p>BSc in Applied<br />Data Science</p>
                     </div>
-                    <button className="apply-btn" type="button">APPLY</button>
+                    <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   </div>
                   <h5>Modal University (Austria)</h5>
                   <div className="fee-panel">
@@ -140,7 +151,7 @@ const University = () => {
                       />
                       <p>BSc in Applied<br />Data Science</p>
                     </div>
-                    <button className="apply-btn" type="button">APPLY</button>
+                    <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   </div>
                   <h5>Modal University (Austria)</h5>
                   <div className="fee-panel">
@@ -172,7 +183,7 @@ const University = () => {
                       />
                       <p>BSc in Applied<br />Data Science</p>
                     </div>
-                    <button className="apply-btn" type="button">APPLY</button>
+                    <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   </div>
                   <h5>Modal University (Austria)</h5>
                   <div className="fee-panel">
@@ -204,7 +215,7 @@ const University = () => {
                       />
                       <p>BSc in Applied<br />Data Science</p>
                     </div>
-                    <button className="apply-btn" type="button">APPLY</button>
+                    <button className="apply-btn" type="button" onClick={() => programmeOpenModal()}>APPLY</button>
                   </div>
                   <h5>Modal University (Austria)</h5>
                   <div className="fee-panel">
@@ -227,6 +238,11 @@ const University = () => {
           </div>
         </div>
       </div>
+      <ProgramsModal
+        show={programmeShow}
+        onHide={programmeHandleClose}
+        programmeModelitems={programmeModelitems}
+      />
     </>
   )
 }

@@ -3180,13 +3180,13 @@ form {
                 align-items: center;
 
                 h3 {
-                    margin: 0;
+                    margin: 0 10px 0 0;
                 }
 
                 span {
                     font-size: 0.8rem;
                     color: var(--white-color);
-                    margin: 0 0 0 10px;
+                    margin: 0 10px 0 0;
                     display: block;
                     padding: 4px 10px;
 
@@ -3197,14 +3197,14 @@ form {
                     &.student-id {
                         background: var(--green-color);
                     }
-
-                    &.application-book {
-                        background: #e0eef6;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        height: 24px;
-                    }
+                }
+                .application-book {
+                    background: #e0eef6;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 26px;
+                    height: 24px;
                 }
             }
 
@@ -4124,6 +4124,8 @@ form {
         padding-right: 25px;
         margin-top: 25px;
         margin-bottom: 25px;
+        display: flex;
+        flex-direction: column-reverse;
 
         .chat-main {
             .chat-main-content {
@@ -4699,6 +4701,64 @@ form {
             .test-sublist-top {
                 display: flex;
                 justify-content: space-between;
+            }
+        }
+    }
+}
+
+/* Notifications */
+.noti-main {
+    font-size: 0.9rem;
+    .noti-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            margin: 0;
+        }
+        a {
+            color: var(--secondary-color);
+            text-transform: uppercase;
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+    .noti-mid {
+        .noti-sin {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0;
+            border-bottom: 1px solid var(--border-color);
+            p {
+                margin: 0;
+                color: #6E9DBD;
+                &::before{
+                    background-color: #90B5CF;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 20px;
+                    content: '';
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
+            span{
+                color: var(--blue-color);
+                text-transform: uppercase;
+                font-size: 12px;
+            }
+            &:last-child{
+                border-bottom: 0;
+            }
+            &.active{
+                p{
+                    color: var(--primary-color);
+                    &::before{
+                        background-color: var(--secondary-color);
+                    }
+                }
             }
         }
     }

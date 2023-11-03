@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 import Modal from 'react-bootstrap/Modal';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 const ProgramsModal = (props) => {
+
+    const router = useRouter();
 
     const [showMe, setShowMe] = useState(false);
     function toggle() {
@@ -822,7 +825,7 @@ const ProgramsModal = (props) => {
                             </TabPanel>
                         </Tabs>
                         <div className="submit-area text-center">
-                            <button className="btn btn-blue btn-big">Next</button>
+                            <button className="btn btn-blue btn-big"  onClick={() => router.push('/application-lists')} >Next</button>
                         </div>
                     </div>
                 </div>

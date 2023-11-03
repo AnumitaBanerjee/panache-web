@@ -3,8 +3,17 @@ import Slider from "react-slick";
 import Image from 'next/image';
 import Link from "next/link";
 import MultiStepProgressBar from '../dashboard/MultiStepProgressBar';
+import ApplicationModal from "../modal/ApplicationModal";
 
 const ApplicationLists = (props) => {
+
+    const [show, setShow] = useState(false);
+    const [modelitems, setmodeldata] = useState([]);
+
+    const handleClose = () => setShow(false);
+    const openModal = (e) => {
+        setShow(true);
+    }
 
     const settings = {
         dots: true,
@@ -62,7 +71,7 @@ const ApplicationLists = (props) => {
             <div className="content-panel">
                 <div className="apply-list-pane-top">
                     <h2>Applications List</h2>
-                    <Link href="/" className="apply-new-btn">Create New</Link>
+                    <Link href="#" className="apply-new-btn">Create New</Link>
                 </div>
                 <div className="apply-card-sec">
 
@@ -83,7 +92,7 @@ const ApplicationLists = (props) => {
                                         <h3>Olivia Jason</h3>
                                         <span className="apply-id">Application ID: 25698745</span>
                                         <span className="student-id">Student ID: 25698745</span>
-                                        <span className="application-book">
+                                        <Link href='#' className="application-book" onClick={() => openModal()}>
                                             <Image
                                                 src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
                                                 alt="Panache"
@@ -91,7 +100,7 @@ const ApplicationLists = (props) => {
                                                 height={13}
                                                 priority={true}
                                             />
-                                        </span>
+                                        </Link>
                                     </div>
                                     <div className="applt-card-profile-details-b">
                                         <ul>
@@ -162,7 +171,7 @@ const ApplicationLists = (props) => {
                                         <h3>Olivia Jason</h3>
                                         <span className="apply-id">Application ID: 25698745</span>
                                         <span className="student-id">Student ID: 25698745</span>
-                                        <span className="application-book">
+                                        <Link href='#' className="application-book" onClick={() => openModal()}>
                                             <Image
                                                 src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
                                                 alt="Panache"
@@ -170,7 +179,7 @@ const ApplicationLists = (props) => {
                                                 height={13}
                                                 priority={true}
                                             />
-                                        </span>
+                                        </Link>
                                     </div>
                                     <div className="applt-card-profile-details-b">
                                         <ul>
@@ -241,7 +250,7 @@ const ApplicationLists = (props) => {
                                         <h3>Olivia Jason</h3>
                                         <span className="apply-id">Application ID: 25698745</span>
                                         <span className="student-id">Student ID: 25698745</span>
-                                        <span className="application-book">
+                                        <Link href='#' className="application-book" onClick={() => openModal()}>
                                             <Image
                                                 src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
                                                 alt="Panache"
@@ -249,7 +258,7 @@ const ApplicationLists = (props) => {
                                                 height={13}
                                                 priority={true}
                                             />
-                                        </span>
+                                        </Link>
                                     </div>
                                     <div className="applt-card-profile-details-b">
                                         <ul>
@@ -313,6 +322,11 @@ const ApplicationLists = (props) => {
 
                 </div>
             </div>
+            <ApplicationModal
+                show={show}
+                onHide={handleClose}
+                modelitems={modelitems}
+            />
         </>
     )
 }
