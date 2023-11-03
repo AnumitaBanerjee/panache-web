@@ -264,7 +264,62 @@ p {
         width: 340px;
     }
 }
+// MODAL
+.ReactModalPortal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
 
+    .ReactModal__Overlay {
+        background-color: rgba(0, 0, 0, 0.85) !important;
+        max-height: 100vh;
+        overflow: hidden;
+
+        .ReactModal__Content {
+            background-color: var(--white-color);
+            position: absolute;
+            margin: auto;
+            // max-height: 90vh;
+            left: 50%;
+            top: 50%;
+            padding: 15px;
+            transform: translateY(-50%) translateX(-50%);
+            display: block;
+
+            .modal-cont-inner {
+                position: relative;
+                width: 100%;
+                max-height: 85vh;
+                overflow-y: auto;
+                overflow-x: hidden;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            &.readblocker-modal {
+                span {
+                    display: block !important;
+                    position: absolute;
+                }
+            }
+
+            button:not(.btn) {
+                width: 30px;
+                height: 30px;
+                background-color: var(--black-color);
+                border: 2px solid var(--grey-color);
+                color: var(--white-color);
+                position: absolute;
+                right: -15px;
+                top: -15px;
+                border-radius: 50%;
+                cursor: pointer;
+                z-index: 1;
+            }
+        }
+    }
+}
 /* Login */
 .welcome-panel {
     background-image: url(../../../public/assets/images/bg.png);
