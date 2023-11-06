@@ -4914,30 +4914,70 @@ form {
 .details__wrapper {
     max-width: 400px;
     margin: 10em auto;
-  }
-  .form__item {
+}
+.form__item {
     margin-bottom: 1.6em;
-  }
-  label,
-  input {
+}
+label,
+input {
     display: block;
     width: 100%;
-  }
-  .d-flex {
+}
+.d-flex {
     display: flex !important;
-  }
-  
-  .justify-content-end {
+}
+
+.justify-content-end {
     justify-content: flex-end !important;
-  }
-  
-  .justify-content-between {
+}
+
+.justify-content-between {
     justify-content: space-between !important;
-  }
-  .input__error input {
+}
+.input__error input {
     border-color: red;
-  }
-  .error__feedback {
+}
+.error__feedback {
     color: red;
-  }
-  
+}
+
+/* Congratulations */
+.congra-content {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .congra-main{
+        width: 334px;
+        position: relative;
+        background-color: var(--white-color);
+        box-shadow: var(--box-shadow-light);
+        text-align: center;
+        .congra-main-img{
+            margin: -60px auto 0 auto;
+        }
+        h2{
+            color: var(--secondary-color);
+            margin: 10px 0;
+        }
+        p{
+            margin: 0;
+        }
+        .back-home{
+            margin-top: 40px;
+            background: #FAF4E7;
+            border-top: 2px solid var(--gray-color);
+            .btn{
+                background-color: #FAF4E7;
+                color: var(--primary-color);
+                text-transform: capitalize;
+                &:after {
+                    background: url(../../../public/assets/images/arrow-l-b.png) no-repeat 0 0;
+                }
+                &:hover{
+                    color: var(--secondary-color);
+                }
+            }
+        }
+    }
+}

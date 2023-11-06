@@ -3,10 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 
-const CheckOut = () => {
+const ChooseMethods = () => {
 
   const router = useRouter()
-  
+
   return (
     <>
       <div className="content-panel">
@@ -22,7 +22,7 @@ const CheckOut = () => {
                 priority={true}
               />
             </figure>
-            <span>Checkout page</span>
+            <span>Choose Methods</span>
           </Link>
         </div>
 
@@ -86,7 +86,7 @@ const CheckOut = () => {
 
           <p className="amnt-pane">Total Amount: <span>$5059</span></p>
           <div className="proceed-btn-pane">
-            <button  onClick={() => router.push('/checkout/choose-methods')} 
+          <button  onClick={() => router.push('/checkout/congratulations')} 
               className="pay-btn"
               type="submit">PROCEED TO PAY
             </button>
@@ -97,4 +97,4 @@ const CheckOut = () => {
   )
 }
 
-export default CheckOut;
+export default ChooseMethods;
