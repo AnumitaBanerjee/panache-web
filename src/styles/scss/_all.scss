@@ -4973,6 +4973,10 @@ input {
                 justify-content: center;
                 align-items: center;
             }
+            &.react-tabs__tab--selected{
+                border: 1px solid var(--black-color);
+                border-top: 2px solid var(--secondary-color);
+            }
         }
     }
     .tab_content_area {
