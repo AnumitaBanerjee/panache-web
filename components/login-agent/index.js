@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react'
 import Image from 'next/image';
 import Link from "next/link";
+import AgreementPolicyModal from "../modal/AgreementPolicy";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { useRouter } from 'next/router'
 
 const LoginAgent = () => {
     const router = useRouter();
+
+    // Agreement Policy
+    const [show, setShow] = useState(false);
+    const [modelitems, setmodeldata] = useState([]);
+
+    const handleClose = () => setShow(false);
+    const openModal = (e) => {
+        setShow(true);
+    }
+
 
     return (
         <>
@@ -72,8 +83,9 @@ const LoginAgent = () => {
                                                     </span>
                                                 </div>
                                                 <span className="d-flex"><Link href="/forgot-password">Forgot Password</Link></span>
+
                                                 <button
-                                                    onClick={() => router.push('/dashboard')}
+                                                    onClick={() => openModal()}
                                                     type="button"
                                                     className="btn login-btn"
                                                 >
@@ -86,20 +98,20 @@ const LoginAgent = () => {
                                             <p>We are excited to see you here</p>
                                             <form>
 
-                                            <div className='row mb-4'>
+                                                <div className='row mb-4'>
                                                     <div className='col-md-6'>
                                                         <div className="form-floating">
                                                             <input type="text" placeholder="John" className="form-control" id="CompanyName" />
-                                                        <label htmlFor="CompanyName">Company Name</label>
-                                                        <span className="input-icon">
-                                                            <Image
-                                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/business-icon.png`}
-                                                                alt="Panache"
-                                                                width={20}
-                                                                height={18}
-                                                                priority={true}
-                                                            />
-                                                        </span>
+                                                            <label htmlFor="CompanyName">Company Name</label>
+                                                            <span className="input-icon">
+                                                                <Image
+                                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/business-icon.png`}
+                                                                    alt="Panache"
+                                                                    width={20}
+                                                                    height={18}
+                                                                    priority={true}
+                                                                />
+                                                            </span>
                                                         </div>
                                                     </div>
                                                     <div className='col-md-6'>
@@ -232,6 +244,11 @@ const LoginAgent = () => {
                     </div>
                 </div>
             </div>
+            <AgreementPolicyModal
+                show={show}
+                onHide={handleClose}
+                modelitems={modelitems}
+            />
         </>
     )
 }

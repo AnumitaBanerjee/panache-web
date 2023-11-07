@@ -5210,3 +5210,18 @@ input {
         }
     }
 }
+/* Agreement Policy */ 
+.agreement-modal-content{
+    .agreement-modal-body{
+        max-height: 55vh;
+        overflow-y: auto;
+        margin-bottom: 24px;
+        padding-right: 5px;
+        p{
+            font-size: 1rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
