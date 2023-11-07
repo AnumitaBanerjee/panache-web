@@ -64,17 +64,17 @@ const Header = () => {
                                         <Link href="/blog">Blog</Link>
                                     </li>
                                     <li className={router.pathname == "/login" ? "active login" : "login"}>
-                                        <Link href="/login">Login</Link>
+                                        <Link href="/welcome">Login</Link>
                                     </li>
                                     <li className={router.pathname == "/signup" ? "active signup" : "signup"}>
-                                        <Link href="/">Sign Up</Link>
+                                        <Link href="/welcome">Sign Up</Link>
                                     </li>
                                 </ul>
                             </nav>
                             <div className="extra-buttons">
                                 <ul>
                                     <li className="login"><Link href="/welcome">Login</Link></li>
-                                    <li className="signup"><Link href="/">Sign Up</Link></li>
+                                    <li className="signup"><Link href="/welcome">Sign Up</Link></li>
                                 </ul>
                             </div>
                             <div className={`menu-ctrl ${menuClass ? 'button-active' : ''}`}>

@@ -16,8 +16,8 @@ const Login = () => {
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/student-login-bg.png`}
                                     alt="Panache"
-                                    width={774}
-                                    height={485}
+                                    width={606}
+                                    height={434}
                                     priority={true}
                                 />
                             </div>
@@ -27,7 +27,7 @@ const Login = () => {
                                 <h1>Welcome Back,</h1>
                                 <p>Good to see you again</p>
                                 <form>
-                                    <div className="form-floating mb-3">
+                                    <div className="form-floating mb-4">
                                         <input type="email" placeholder="email" className="form-control" id="floatingInput" />
                                         <label htmlFor="floatingInput">Email</label>
                                         <span className="input-icon">
@@ -40,7 +40,7 @@ const Login = () => {
                                             />
                                         </span>
                                     </div>
-                                    <div className="form-floating mb-3">
+                                    <div className="form-floating mb-4">
                                         <input type="password" placeholder="password" className="form-control" id="floatingInput" />
                                         <label htmlFor="floatingInput">Password</label>
                                         <span className="input-icon">
@@ -49,6 +49,15 @@ const Login = () => {
                                                 alt="Panache"
                                                 width={15}
                                                 height={18}
+                                                priority={true}
+                                            />
+                                        </span>
+                                        <span className="hide-icon">
+                                            <Image
+                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/hide-icon.png`}
+                                                alt="Panache"
+                                                width={18}
+                                                height={14}
                                                 priority={true}
                                             />
                                         </span>

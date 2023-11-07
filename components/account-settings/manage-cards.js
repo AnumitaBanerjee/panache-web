@@ -2,8 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import AccountHeaderPage from '../../components/account-settings/account-header'
+import { useRouter } from 'next/router'
 
 const ManageCardsPage = () => {
+
+  const router = useRouter()
+  
   return (
     <>
       <div className="content-panel">
