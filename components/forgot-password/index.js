@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 const ForgotPassword = () => {
     const router = useRouter();
-    
+
     return (
         <>
             <div className="login-panel forgot-password-panel">
@@ -16,23 +16,25 @@ const ForgotPassword = () => {
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/forgot-bg.png`}
                                     alt="Panache"
-                                    width={736}
-                                    height={457}
+                                    width={573}
+                                    height={449}
                                     priority={true}
                                 />
                             </div>
                         </div>
                         <div className="col-md-6">
                             <div className="right-panel">
-                                <button onClick={() => router.push('/login')} className="back-btn" type="button">
-                                    <Image
-                                        src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/back-icon.png`}
-                                        alt="Panache"
-                                        width={6.15}
-                                        height={12}
-                                        priority={true}
-                                    />
-                                </button><span>Back</span>
+                                <div className='back-panel mb-4'>
+                                    <button onClick={() => router.push('/login')} className="back-btn" type="button">
+                                        <Image
+                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/back-icon.png`}
+                                            alt="Panache"
+                                            width={6.15}
+                                            height={12}
+                                            priority={true}
+                                        />
+                                    </button><span>Back</span>
+                                </div>
                                 <h1>Forgot Password</h1>
                                 <p>Fill in you email and we’ll send a code to reset your password</p>
                                 <form>
@@ -49,9 +51,9 @@ const ForgotPassword = () => {
                                             />
                                         </span>
                                     </div>
-                                    <button 
-                                        onClick={() => router.push('/login')} 
-                                        type="button" 
+                                    <button
+                                        onClick={() => router.push('/login')}
+                                        type="button"
                                         className="btn login-btn"
                                     >
                                         SUBMIT
