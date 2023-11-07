@@ -3,9 +3,10 @@ import React, { useContext } from "react";
 import MultiStepFormContext from "./MultistepFormContext";
 
 const Review = () => {
-  const { details, address, next, prev } = useContext(MultiStepFormContext);
-  console.log(details);
-  console.log(address);
+  const { questionOne, questionTwo, questionThree, next, prev } = useContext(MultiStepFormContext);
+  console.log(questionOne);
+  console.log(questionTwo);
+  console.log(questionThree);
   return (
     <div className={"details__wrapper"}>
       <Row>
