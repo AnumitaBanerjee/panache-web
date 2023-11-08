@@ -90,7 +90,7 @@ const UploadDocuments = () => {
                                         </span>
                                     </div>
                                     <button
-                                        onClick={() => router.push('/login')}
+                                        onClick={() => router.push('/login-agent')}
                                         type="button"
                                         className="btn login-btn"
                                     >

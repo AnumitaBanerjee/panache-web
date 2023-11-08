@@ -5549,6 +5549,14 @@ input {
             }
         }
     }
+    .upload-signeture{
+        width: 250px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--border-color);
+    }
 }
 
 .question-section {

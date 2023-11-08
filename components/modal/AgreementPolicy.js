@@ -19,6 +19,7 @@ const AgreementPolicyModal = (props) => {
     function toggleEnglish() {
         setShowMeEnglish(!showMeEnglish);
     }
+    
 
     return (
         <Modal
@@ -34,7 +35,6 @@ const AgreementPolicyModal = (props) => {
             ></Modal.Header>
             <Modal.Body>
                 <div className="agreement-modal-content">
-
                     <div className="agreement-modal-head text-center mb-4">
                         <h2 className='mb-0'>Agreement Policy</h2>
                     </div>
@@ -46,7 +46,11 @@ const AgreementPolicyModal = (props) => {
                         <p>Donec mollis sapien leo, et pharetra dolor cursus a. Ut malesuada sagittis dui, nec imperdiet ante facilisis sit amet. Proin nunc dolor, faucibus eu sem a, aliquet mattis ipsum. Vestibulum sagittis augue in sapien rhoncus fermentum. Sed consectetur elementum tellus sed posuere. Vestibulum congue ornare commodo.</p>
                         <p>Donec mollis sapien leo, et pharetra dolor cursus a. Ut malesuada sagittis dui, nec imperdiet ante facilisis sit amet. Proin nunc dolor, faucibus eu sem a, aliquet mattis ipsum. Vestibulum sagittis augue in sapien rhoncus fermentum. Sed consectetur elementum tellus sed posuere. Vestibulum congue ornare commodo.</p>
                         <p>Donec mollis sapien leo, et pharetra dolor cursus a. Ut malesuada sagittis dui, nec imperdiet ante facilisis sit amet. Proin nunc dolor, faucibus eu sem a, aliquet mattis ipsum. Vestibulum sagittis augue in sapien rhoncus fermentum. Sed consectetur elementum tellus sed posuere. Vestibulum congue ornare commodo.</p>
+                        <div className='upload-signeture'>
+
+                        </div>
                     </div>
+
                     <div className="submit-area text-center">
                         <button className="btn btn-blue btn-big" onClick={() => router.push('/dashboard')} >Submit</button>
                     </div>
