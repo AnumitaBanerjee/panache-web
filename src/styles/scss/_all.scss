@@ -324,7 +324,11 @@ p {
         }
     }
 }
-
+// Progress Bar 
+.progress-bar {
+    color: var(--black-color);
+    background-color: var(--secondary-color);
+}
 /* Home Page Start  From, Here */
 /* Banner */
 .banner {
@@ -5561,6 +5565,11 @@ input {
 
 .question-section {
     padding: 20px 0;
+    .question-text{
+        font-weight: bold;
+        font-size: 1rem;
+        color: var(--primary-color);
+    }
 }
 
 .answer-section {
@@ -5578,6 +5587,8 @@ input {
     .answer-input {
         margin: 16px 0;
         position: relative;
+        background: #ddd;
+
         label {
             color: #a1a1a1;
             font-size: 16px;
@@ -5589,11 +5600,12 @@ input {
             align-items: center;
             min-height: 100px;
             position: relative;
-            background: #ddd;
-            &:hover{
-                background: #0b436a !important;
-            }
+
         }
-        
+
+        &:hover {
+            background: #0b436a !important;
+        }
     }
+
 }

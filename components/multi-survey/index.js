@@ -162,7 +162,8 @@ const MultiSurvey = () => {
     return (
         <>
             <div className="content-panel">
-                <ProgressBar now={now} label={`${now}%`} />
+                {/* <ProgressBar now={now} label={`${now}%`} /> */}
+                <ProgressBar now={now} />
                 <div className='question-section'>
                     <div className='question-count'>
                         <span>Question {currentQuestion + 1}</span>/{questions.length}
@@ -171,9 +172,9 @@ const MultiSurvey = () => {
                 </div>
                 <div className='answer-section'>
                     <div className='row'>
-                        <div className='col-md-6'>
-                            {questions[currentQuestion].answerOptions.map((answerOption) => (
-                                <div className='answer-input' key={answerOption.id}>
+                        {questions[currentQuestion].answerOptions.map((answerOption) => (
+                            <div className='col-md-6' key={answerOption.id}>
+                                <div className='answer-input'>
                                     <input
                                         type="radio"
                                         id='answer'
@@ -185,11 +186,12 @@ const MultiSurvey = () => {
                                         }} />
                                     <label htmlFor='answer'>{answerOption.answerText}</label>
                                 </div>
-                            ))}
-                        </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
+
         </>
     )
 }
