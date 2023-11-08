@@ -2385,6 +2385,7 @@ p {
     }
 
     a {
+        font-size: 0.9rem;
         text-transform: uppercase;
         color: var(--black-color);
 
@@ -2469,6 +2470,8 @@ p {
             border: none;
             padding: 0 10px;
             margin: 0 0 0 36px;
+            font-size: 12px;
+            min-width: inherit;
 
             &:hover {
                 background: var(--primary-color);
@@ -5033,7 +5036,6 @@ form {
 }
 
 .application-modal-inner {
-
     td,
     th {
         &:last-child {
@@ -5042,7 +5044,6 @@ form {
             padding-right: 10px;
         }
     }
-
     td,
     th {
         &:nth-last-child(2) {
@@ -5050,6 +5051,23 @@ form {
             padding-left: 10px;
             padding-right: 10px;
             text-align: center;
+        }
+    }
+    .dropdown{
+        .btn{
+            background-color: inherit;
+            padding: 0;
+            min-width: inherit;
+        }
+        .dropdown-menu{
+            margin: -35px 5px 0 0;
+            .dropdown-item{
+                font-size: 0.8rem;
+                &:hover, &:focus, &:active{
+                    background-color: var(--primary-color);
+                    color: var(--white-color);
+                }
+            }
         }
     }
 }

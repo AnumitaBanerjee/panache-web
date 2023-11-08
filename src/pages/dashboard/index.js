@@ -1,10 +1,14 @@
 import React from 'react';
-import DashboardPage from '../../../components/dashboard';
+import StudentDashboardPage from '../../../components/dashboard/StudentDashboard';
+import AgentDashboardPage from '../../../components/dashboard/AgentDashboard';
+import  CounsellorDashboardPage from '../../../components/dashboard/CounsellorDashboard';
 
 const Dasboard = () => {
   return (
     <>
-        <DashboardPage />
+        <StudentDashboardPage />
+        {/* <AgentDashboardPage /> */}
+         {/* <CounsellorDashboardPage /> */}
     </>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Table from 'react-bootstrap/Table';
+import Dropdown from 'react-bootstrap/Dropdown';
 import Modal from 'react-bootstrap/Modal';
 
 const ApplicationModal = (props) => {
@@ -47,15 +48,23 @@ const ApplicationModal = (props) => {
                                             priority={true}
                                         />
                                     </Link></td>
-                                    <td><Link href="#">
-                                        <Image
-                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
-                                            alt="Panache"
-                                            width={4}
-                                            height={18}
-                                            priority={true}
-                                        />
-                                    </Link></td>
+                                    <td>
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-action">
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
+                                                    alt="Panache"
+                                                    width={4}
+                                                    height={18}
+                                                    priority={true}
+                                                />
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#">Edit</Dropdown.Item>
+                                                <Dropdown.Item href="#">Delete</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -71,15 +80,23 @@ const ApplicationModal = (props) => {
                                             priority={true}
                                         />
                                     </Link></td>
-                                    <td><Link href="#">
-                                        <Image
-                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
-                                            alt="Panache"
-                                            width={4}
-                                            height={18}
-                                            priority={true}
-                                        />
-                                    </Link></td>
+                                    <td>
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-action">
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
+                                                    alt="Panache"
+                                                    width={4}
+                                                    height={18}
+                                                    priority={true}
+                                                />
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#">Edit</Dropdown.Item>
+                                                <Dropdown.Item href="#">Delete</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Experience- Letter of Reference (Second)</td>
@@ -95,15 +112,23 @@ const ApplicationModal = (props) => {
                                             priority={true}
                                         />
                                     </Link></td>
-                                    <td><Link href="#">
-                                        <Image
-                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
-                                            alt="Panache"
-                                            width={4}
-                                            height={18}
-                                            priority={true}
-                                        />
-                                    </Link></td>
+                                    <td>
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-action">
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
+                                                    alt="Panache"
+                                                    width={4}
+                                                    height={18}
+                                                    priority={true}
+                                                />
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#">Edit</Dropdown.Item>
+                                                <Dropdown.Item href="#">Delete</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Experience: Letter of Reference</td>
@@ -119,15 +144,23 @@ const ApplicationModal = (props) => {
                                             priority={true}
                                         />
                                     </Link></td>
-                                    <td><Link href="#">
-                                        <Image
-                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
-                                            alt="Panache"
-                                            width={4}
-                                            height={18}
-                                            priority={true}
-                                        />
-                                    </Link></td>
+                                    <td>
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-action">
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
+                                                    alt="Panache"
+                                                    width={4}
+                                                    height={18}
+                                                    priority={true}
+                                                />
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#">Edit</Dropdown.Item>
+                                                <Dropdown.Item href="#">Delete</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Identity: Passport Certiﬁed Adventus for University Application</td>
@@ -143,15 +176,23 @@ const ApplicationModal = (props) => {
                                             priority={true}
                                         />
                                     </Link></td>
-                                    <td><Link href="#">
-                                        <Image
-                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
-                                            alt="Panache"
-                                            width={4}
-                                            height={18}
-                                            priority={true}
-                                        />
-                                    </Link></td>
+                                    <td>
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-action">
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
+                                                    alt="Panache"
+                                                    width={4}
+                                                    height={18}
+                                                    priority={true}
+                                                />
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#">Edit</Dropdown.Item>
+                                                <Dropdown.Item href="#">Delete</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Academic: Transcripts & Certiﬁcates</td>
@@ -167,15 +208,23 @@ const ApplicationModal = (props) => {
                                             priority={true}
                                         />
                                     </Link></td>
-                                    <td><Link href="#">
-                                        <Image
-                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
-                                            alt="Panache"
-                                            width={4}
-                                            height={18}
-                                            priority={true}
-                                        />
-                                    </Link></td>
+                                    <td>
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-action">
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
+                                                    alt="Panache"
+                                                    width={4}
+                                                    height={18}
+                                                    priority={true}
+                                                />
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#">Edit</Dropdown.Item>
+                                                <Dropdown.Item href="#">Delete</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Academic: Transcripts & Certiﬁcates</td>
@@ -191,15 +240,23 @@ const ApplicationModal = (props) => {
                                             priority={true}
                                         />
                                     </Link></td>
-                                    <td><Link href="#">
-                                        <Image
-                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
-                                            alt="Panache"
-                                            width={4}
-                                            height={18}
-                                            priority={true}
-                                        />
-                                    </Link></td>
+                                    <td>
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-action">
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
+                                                    alt="Panache"
+                                                    width={4}
+                                                    height={18}
+                                                    priority={true}
+                                                />
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#">Edit</Dropdown.Item>
+                                                <Dropdown.Item href="#">Delete</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Academic: Transcripts & Certiﬁcates</td>
@@ -215,15 +272,23 @@ const ApplicationModal = (props) => {
                                             priority={true}
                                         />
                                     </Link></td>
-                                    <td><Link href="#">
-                                        <Image
-                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
-                                            alt="Panache"
-                                            width={4}
-                                            height={18}
-                                            priority={true}
-                                        />
-                                    </Link></td>
+                                    <td>
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-action">
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
+                                                    alt="Panache"
+                                                    width={4}
+                                                    height={18}
+                                                    priority={true}
+                                                />
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#">Edit</Dropdown.Item>
+                                                <Dropdown.Item href="#">Delete</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Academic: Transcripts & Certiﬁcates</td>
@@ -239,15 +304,23 @@ const ApplicationModal = (props) => {
                                             priority={true}
                                         />
                                     </Link></td>
-                                    <td><Link href="#">
-                                        <Image
-                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
-                                            alt="Panache"
-                                            width={4}
-                                            height={18}
-                                            priority={true}
-                                        />
-                                    </Link></td>
+                                    <td>
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-action">
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
+                                                    alt="Panache"
+                                                    width={4}
+                                                    height={18}
+                                                    priority={true}
+                                                />
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#">Edit</Dropdown.Item>
+                                                <Dropdown.Item href="#">Delete</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Academic: Transcripts & Certiﬁcates</td>
@@ -263,15 +336,23 @@ const ApplicationModal = (props) => {
                                             priority={true}
                                         />
                                     </Link></td>
-                                    <td><Link href="#">
-                                        <Image
-                                            src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
-                                            alt="Panache"
-                                            width={4}
-                                            height={18}
-                                            priority={true}
-                                        />
-                                    </Link></td>
+                                    <td>
+                                        <Dropdown>
+                                            <Dropdown.Toggle variant="success" id="dropdown-action">
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/dots-3-icon.svg`}
+                                                    alt="Panache"
+                                                    width={4}
+                                                    height={18}
+                                                    priority={true}
+                                                />
+                                            </Dropdown.Toggle>
+                                            <Dropdown.Menu>
+                                                <Dropdown.Item href="#">Edit</Dropdown.Item>
+                                                <Dropdown.Item href="#">Delete</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+                                    </td>
                                 </tr>
                             </tbody>
                         </Table>
