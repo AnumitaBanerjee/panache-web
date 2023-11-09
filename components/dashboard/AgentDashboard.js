@@ -185,8 +185,8 @@ const AgentDashboard = () => {
 
                 <div className="row">
                     <div className="col-lg-12 col-sm-12 mb-4">
-                        <div className="chart-box">
-                            <div className="chart-heading chart-heading-dorodown">
+                        <div className="chart-box chart-heading-dorodown">
+                            <div className="chart-heading">
                                 <div className='d-flex align-items-center'>
                                     <Image
                                         src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/potential-revenue-icon.svg`}
@@ -207,6 +207,28 @@ const AgentDashboard = () => {
                                         <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
+                            </div>
+                            <div className='chart-doe'>
+                                    <div className='row'>
+                                        <div className='col-md-2'>
+                                            <p><strong>0</strong> CAD</p>
+                                        </div>
+                                        <div className='col-md-2'>
+                                            <p><strong>3K</strong> AUD</p>
+                                        </div>
+                                        <div className='col-md-2'>
+                                            <p><strong>0</strong> USD</p>
+                                        </div>
+                                        <div className='col-md-2'>
+                                            <p><strong>0</strong> CAD</p>
+                                        </div>
+                                        <div className='col-md-2'>
+                                            <p><strong>0</strong> USD</p>
+                                        </div>
+                                        <div className='col-md-2'>
+                                            <p><strong>0</strong> CAD</p>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                     </div>
