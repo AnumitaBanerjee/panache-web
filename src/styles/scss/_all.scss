@@ -5572,12 +5572,33 @@ input {
         }
     }
     .upload-signeture{
-        width: 250px;
+        width: 350px;
         height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid var(--border-color);
+        border: 1px solid var(--border-color);  
+        .choose_file{
+            background-color: var(--secondary-color);
+            position:relative;
+            display: flex;
+            padding: 10px;
+            cursor: pointer;
+            span{
+                text-transform: uppercase;
+                display: block;
+                margin-left: 10px;
+                color: var(--black-color);
+                pointer-events: none;
+            }
+            input[type="file"]{
+                position:absolute;
+                top:0; 
+                left:0;
+                opacity:0; 
+            }
+        }
+       
     }
 }
 
@@ -5626,4 +5647,43 @@ input {
         }
     }
 
+}
+
+/* Agent Dashboard */
+.dashboard-agent{
+    .chart-box{
+        box-shadow: var(--box-shadow-light);
+        padding: 30px;
+        border-top: 4px solid var(--secondary-color);
+        background: var(--white-color);
+        height: 100%;
+        .chart-heading{
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            h3{
+                margin: 0 0 0 14px;
+            }
+            &.chart-heading-dorodown{
+                justify-content: space-between;
+            }
+        }
+        canvas {
+            max-height: 200px !important;
+        }
+    }
+    .bar-chart-label{
+        margin: 0 0 10px;
+        h4 {
+            font-size: 14px;
+            color: #0B436A;
+            margin-bottom: 0.5rem;
+          }
+        .bar-color {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin: 0 10px 0;
+          }
+    }
 }

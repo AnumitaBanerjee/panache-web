@@ -19,7 +19,7 @@ const AgreementPolicyModal = (props) => {
     function toggleEnglish() {
         setShowMeEnglish(!showMeEnglish);
     }
-    
+
 
     return (
         <Modal
@@ -47,7 +47,17 @@ const AgreementPolicyModal = (props) => {
                         <p>Donec mollis sapien leo, et pharetra dolor cursus a. Ut malesuada sagittis dui, nec imperdiet ante facilisis sit amet. Proin nunc dolor, faucibus eu sem a, aliquet mattis ipsum. Vestibulum sagittis augue in sapien rhoncus fermentum. Sed consectetur elementum tellus sed posuere. Vestibulum congue ornare commodo.</p>
                         <p>Donec mollis sapien leo, et pharetra dolor cursus a. Ut malesuada sagittis dui, nec imperdiet ante facilisis sit amet. Proin nunc dolor, faucibus eu sem a, aliquet mattis ipsum. Vestibulum sagittis augue in sapien rhoncus fermentum. Sed consectetur elementum tellus sed posuere. Vestibulum congue ornare commodo.</p>
                         <div className='upload-signeture'>
-
+                            <div className='choose_file'>
+                                <input name="Select File" type="file" />
+                                <Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/upload-b-icon.png`}
+                                    alt="Panache"
+                                    width={18}
+                                    height={21}
+                                    priority={true}
+                                />
+                                <span>Upload Signature</span>
+                            </div>
                         </div>
                     </div>
 

@@ -6,8 +6,8 @@ import  CounsellorDashboardPage from '../../../components/dashboard/CounsellorDa
 const Dasboard = () => {
   return (
     <>
-        <StudentDashboardPage />
-        {/* <AgentDashboardPage /> */}
+        {/* <StudentDashboardPage /> */}
+        <AgentDashboardPage />
          {/* <CounsellorDashboardPage /> */}
     </>
   )
