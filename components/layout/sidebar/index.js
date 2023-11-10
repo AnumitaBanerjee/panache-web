@@ -63,28 +63,7 @@ const Sidebar = () => {
                                 />
                                 <span>Application Lists</span>
                             </Link>
-                        </li>
-                        <li className={router.pathname == "/student-profiles" ? "active" : ""}>
-                            <Link href="/student-profiles" className="">
-                                <Image
-                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/student-icon.png`}
-                                    alt="Student"
-                                    width={32}
-                                    height={26}
-                                    priority={true}
-                                    className="img"
-                                />
-                                <Image
-                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/student-icon-a.png`}
-                                    alt="Student"
-                                    width={32}
-                                    height={26}
-                                    priority={true}
-                                    className="img-active"
-                                />
-                                <span>Student Profiles</span>
-                            </Link>
-                        </li>
+                        </li>       
                         <li className={router.pathname == "/university-lists" ? "active" : ""}>
                             <Link href="/university-lists" className="">
                                 <Image
@@ -209,6 +188,27 @@ const Sidebar = () => {
                                     className="img-active"
                                 />
                                 <span>Account Settings</span>
+                            </Link>
+                        </li>
+                        <li className={router.pathname == "/student-profiles" ? "active" : ""}>
+                            <Link href="/student-profiles" className="">
+                                <Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/student-icon.png`}
+                                    alt="Student"
+                                    width={32}
+                                    height={26}
+                                    priority={true}
+                                    className="img"
+                                />
+                                <Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/student-icon-a.png`}
+                                    alt="Student"
+                                    width={32}
+                                    height={26}
+                                    priority={true}
+                                    className="img-active"
+                                />
+                                <span>Student Profiles</span>
                             </Link>
                         </li>
                     </ul>
