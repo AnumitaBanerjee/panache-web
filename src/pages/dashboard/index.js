@@ -1,14 +1,14 @@
 import React from 'react';
 import StudentDashboardPage from '../../../components/dashboard/StudentDashboard';
 import AgentDashboardPage from '../../../components/dashboard/AgentDashboard';
-import  CounsellorDashboardPage from '../../../components/dashboard/CounsellorDashboard';
+import CounsellorDashboardPage from '../../../components/dashboard/CounsellorDashboard';
 
 const Dasboard = () => {
   return (
     <>
-        {/* <StudentDashboardPage /> */}
-        <AgentDashboardPage />
-         {/* <CounsellorDashboardPage /> */}
+      <StudentDashboardPage />
+      <AgentDashboardPage />
+      <CounsellorDashboardPage />
     </>
   )
 }
@@ -16,8 +16,8 @@ const Dasboard = () => {
 export async function getServerSideProps(context) {
   return {
     props: {
-      layout:'DashboardLayout'
-    }, 
+      layout: 'DashboardLayout'
+    },
   }
 }
 

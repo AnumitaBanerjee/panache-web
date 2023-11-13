@@ -1904,7 +1904,7 @@ p {
             border-radius: 0;
             padding-left: 46px;
             border: 0;
-            border-top: 3px solid var(--secondary-color);
+            border-top: 2px solid var(--secondary-color);
             height: 66px;
         }
 
@@ -2445,7 +2445,7 @@ p {
 
 .programs-content {
     background-color: var(--white-color);
-    border-top: 3px solid var(--secondary-color);
+    border-top: 2px solid var(--secondary-color);
     padding: 12px;
     box-shadow: var(--box-shadow-light);
 
@@ -2552,7 +2552,7 @@ p {
 
 .university-content {
     background-color: var(--white-color);
-    border-top: 3px solid var(--secondary-color);
+    border-top: 2px solid var(--secondary-color);
     box-shadow: var(--box-shadow-light);
 
     .university-pane {
@@ -4623,7 +4623,7 @@ form {
 
 .account-btm {
     box-shadow: var(--box-shadow-light);
-    border-top: 4px solid var(--secondary-color);
+    border-top: 2px solid var(--secondary-color);
     background: var(--white-color);
     min-height: 70vh;
 
@@ -5664,7 +5664,7 @@ input {
     .chart-box {
         box-shadow: var(--box-shadow-light);
         padding: 24px;
-        border-top: 4px solid var(--secondary-color);
+        border-top: 2px solid var(--secondary-color);
         background: var(--white-color);
         height: 100%;
         .chart-heading {
@@ -5740,7 +5740,7 @@ input {
 /* Student Profiles */
 .student-profiles-container {
     background: var(--white-color);
-    border-top: 4px solid var(--secondary-color);
+    border-top: 2px solid var(--secondary-color);
     box-shadow: var(--box-shadow-light);
     margin-bottom: 20px;
     .student-row {
@@ -5997,8 +5997,8 @@ input {
 }
 
 /* invoices */
-.invoices-pane-con{
-    .orange-tab .react-tabs__tab-panel{
+.invoices-pane-con {
+    .orange-tab .react-tabs__tab-panel {
         padding: 0;
         background-color: inherit;
     }
@@ -6037,35 +6037,63 @@ input {
         }
     }
 }
-.invoices-filter-group{
+.invoices-filter-group {
     width: 375px;
     padding: 24px;
     z-index: 1;
-    .form-group{
-        border: 1px solid #96B7CF;
+    .form-group {
+        border: 1px solid #96b7cf;
         display: inline-flex;
         align-items: center;
         margin: 0 0 20px 0;
         width: 100%;
-        label{
+        label {
             font-size: 12px;
             color: var(--primary-color);
-            margin: 0 ;
+            margin: 0;
             padding-left: 14px;
             flex: 1;
         }
-        .form-select{
+        .form-select {
             font-size: 12px;
             border: 0;
             border-radius: 0;
-            border-left: 1px solid #96B7CF;
+            border-left: 1px solid #96b7cf;
             flex: 2;
         }
     }
-    
-    .submit-area{
-        .btn-big{
+
+    .submit-area {
+        .btn-big {
             width: 100%;
+        }
+    }
+}
+/* dashboard-counsellor */
+.dashboard-counsellor {
+    .icon-box {
+        font-size: 14px;
+        background: var(--white-color);
+        box-shadow: var(--box-shadow-light);
+        border-top: 2px solid var(--secondary-color);
+        padding: 14px;
+        .icon-box-t{
+            display: flex;
+            justify-content: space-between;
+            h2{
+                font-size: 2rem;
+                font-weight: 600;
+            }
+        }
+        &.primary{
+            .icon-box-t h2{
+                color: var(--primary-color);
+            }
+        }
+        &.secondary{
+            .icon-box-t h2{
+                color: #FB6816;
+            }
         }
     }
 }
