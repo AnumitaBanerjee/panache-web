@@ -47,7 +47,7 @@ const Sidebar = () => {
                             <Link href="/application-lists" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/application-list-icon.png`}
-                                    alt="Application"
+                                    alt="Application Lists"
                                     width={24}
                                     height={22}
                                     priority={true}
@@ -55,7 +55,7 @@ const Sidebar = () => {
                                 />
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/application-list-icon-a.png`}
-                                    alt="Application"
+                                    alt="Application Lists"
                                     width={24}
                                     height={22}
                                     priority={true}
@@ -68,7 +68,7 @@ const Sidebar = () => {
                             <Link href="/university-lists" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-list-icon.png`}
-                                    alt="University"
+                                    alt="University Lists"
                                     width={26}
                                     height={26}
                                     priority={true}
@@ -76,7 +76,7 @@ const Sidebar = () => {
                                 />
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/university-list-icon-a.png`}
-                                    alt="University"
+                                    alt="University Lists"
                                     width={26}
                                     height={26}
                                     priority={true}
@@ -89,7 +89,7 @@ const Sidebar = () => {
                             <Link href="/recommended-programs" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/recommended-icon.png`}
-                                    alt="Recommended"
+                                    alt="Recommended Programs"
                                     width={27}
                                     height={26}
                                     priority={true}
@@ -97,7 +97,7 @@ const Sidebar = () => {
                                 />
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/recommended-icon-a.png`}
-                                    alt="Recommended"
+                                    alt="Recommended Programs"
                                     width={27}
                                     height={26}
                                     priority={true}
@@ -110,7 +110,7 @@ const Sidebar = () => {
                             <Link href="/pending-tasks" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pending-icon.png`}
-                                    alt="Pending"
+                                    alt="Pending Tasks"
                                     width={25}
                                     height={25}
                                     priority={true}
@@ -118,7 +118,7 @@ const Sidebar = () => {
                                 />
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/pending-icon-a.png`}
-                                    alt="Pending"
+                                    alt="Pending Tasks"
                                     width={25}
                                     height={25}
                                     priority={true}
@@ -131,7 +131,7 @@ const Sidebar = () => {
                             <Link href="/financial-aid-information" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/financial-icon.png`}
-                                    alt="Financial"
+                                    alt="Financial Aid Information"
                                     width={23}
                                     height={27}
                                     priority={true}
@@ -139,7 +139,7 @@ const Sidebar = () => {
                                 />
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/financial-icon-a.png`}
-                                    alt="Financial"
+                                    alt="Financial Aid Information"
                                     width={23}
                                     height={27}
                                     priority={true}
@@ -173,7 +173,7 @@ const Sidebar = () => {
                             <Link href="/account-settings" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/account-icon.png`}
-                                    alt="Account"
+                                    alt="Account Settings"
                                     width={18}
                                     height={22}
                                     priority={true}
@@ -181,7 +181,7 @@ const Sidebar = () => {
                                 />
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/account-icon-a.png`}
-                                    alt="Account"
+                                    alt="Account Settings"
                                     width={18}
                                     height={22}
                                     priority={true}
@@ -194,7 +194,7 @@ const Sidebar = () => {
                             <Link href="/student-profiles" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/student-icon.png`}
-                                    alt="Student"
+                                    alt="Student Profiles"
                                     width={28}
                                     height={22}
                                     priority={true}
@@ -202,7 +202,7 @@ const Sidebar = () => {
                                 />
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/student-icon-a.png`}
-                                    alt="Student"
+                                    alt="Student Profiles"
                                     width={28}
                                     height={22}
                                     priority={true}
@@ -215,7 +215,7 @@ const Sidebar = () => {
                             <Link href="/upcoming-appointment" className="">
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/upcoming-icon.png`}
-                                    alt="Student"
+                                    alt="Upcoming Appointments"
                                     width={20}
                                     height={22}
                                     priority={true}
@@ -223,13 +223,34 @@ const Sidebar = () => {
                                 />
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/upcoming-icon-a.png`}
-                                    alt="Student"
+                                    alt="Upcoming Appointments"
                                     width={20}
                                     height={22}
                                     priority={true}
                                     className="img-active"
                                 />
                                 <span>Upcoming Appointments</span>
+                            </Link>
+                        </li>
+                        <li className={router.pathname == "/commissions" ? "active" : ""}>
+                            <Link href="/commissions" className="">
+                                <Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/commissions-icon.png`}
+                                    alt="Commissions"
+                                    width={26}
+                                    height={26}
+                                    priority={true}
+                                    className="img"
+                                />
+                                <Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/commissions-icon-a.png`}
+                                    alt="Commissions"
+                                    width={26}
+                                    height={26}
+                                    priority={true}
+                                    className="img-active"
+                                />
+                                <span>Commissions</span>
                             </Link>
                         </li>
                     </ul>

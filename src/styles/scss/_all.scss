@@ -265,6 +265,10 @@ p {
 
     &.btn-big {
         width: 340px;
+        padding: 14px 24px;
+        &:after {
+            top: 18px;
+        }
     }
 }
 
@@ -2028,7 +2032,7 @@ p {
             padding: 0;
             overflow-y: auto;
             overflow-x: hidden;
-            max-height: calc( 100vh - 180px) ;
+            max-height: calc(100vh - 180px);
 
             li {
                 border-bottom: 1px solid #255475;
@@ -3320,16 +3324,18 @@ form {
         margin: 0;
     }
 
-    .apply-new-btn {
-        text-transform: uppercase;
-        background: url(../../../public/assets/images/plus-sign.png) 0 2px no-repeat;
-        padding-left: 25px;
+    a {
         font-size: 0.9rem;
         color: var(--black-color);
-
+        text-transform: uppercase;
         &:hover {
             color: var(--secondary-color);
         }
+    }
+
+    .apply-new-btn {
+        background: url(../../../public/assets/images/plus-sign.png) 0 2px no-repeat;
+        padding-left: 25px;
     }
 }
 
@@ -5743,7 +5749,7 @@ input {
             &:first-child {
                 width: 26.66%;
             }
-            &:last-child{
+            &:last-child {
                 width: 170px;
             }
         }
@@ -5765,7 +5771,6 @@ input {
         font-size: 16px;
         margin: 0;
     }
-    
 }
 .student-item {
     font-size: 14px;
@@ -5831,59 +5836,157 @@ input {
 }
 
 /* Upcoming Appointment  */
-.upcoming-content{
-    .upcoming-box{
+.upcoming-content {
+    .upcoming-box {
         font-size: 14px;
         background: var(--white-color);
         border-top: 2px solid var(--secondary-color);
         margin-bottom: 30px;
-        .upcoming-box-t{
+        .upcoming-box-t {
             display: flex;
             padding: 10px;
-            .upcoming-box-tr{
+            .upcoming-box-tr {
                 margin-left: 10px;
-                .upcoming-box-li{
+                .upcoming-box-li {
                     list-style-type: none;
                     padding: 0;
                     margin: 7px 0 0 0;
                     display: flex;
-                    li{
-                        a{
+                    li {
+                        a {
                             color: var(--blue-color);
-                            &:hover{
+                            &:hover {
                                 color: var(--secondary-color);
                             }
                         }
-                        &:last-child{
+                        &:last-child {
                             padding-left: 10px;
                         }
-                        &:not(:last-child){
-                            border-right: 1px solid #AFC4D2;
+                        &:not(:last-child) {
+                            border-right: 1px solid #afc4d2;
                             padding-right: 10px;
                         }
                     }
                 }
             }
         }
-        .upcoming-box-b{
-            background: #FAF4E7;
+        .upcoming-box-b {
+            background: #faf4e7;
             display: flex;
-            a{
+            a {
                 height: 46px;
                 width: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 color: var(--black-color);
-                &:hover{
+                &:hover {
                     color: var(--secondary-color);
                 }
-                img{
+                img {
                     margin-right: 10px;
                 }
-                &:first-child{
-                    border-right: 1px solid #C1D1DC;
+                &:first-child {
+                    border-right: 1px solid #c1d1dc;
                 }
+            }
+        }
+    }
+}
+/* Calculate Commission */
+.commission-pane {
+    background: var(--white-color);
+    box-shadow: var(--box-shadow-light);
+    border-top: 2px solid var(--secondary-color);
+    padding: 24px;
+    .form-select,
+    .form-control {
+        padding-left: 0;
+        padding-right: 0;
+        border: 0;
+        border-radius: 0;
+        width: 100%;
+        border-bottom: 1px solid #d2e1eb;
+    }
+
+    .form-floating {
+        margin-bottom: 24px;
+        label {
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+}
+.track-pane {
+    font-size: 14px;
+    background: var(--white-color);
+    box-shadow: var(--box-shadow-light);
+    border-top: 2px solid var(--secondary-color);
+    .track-pane-t {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+        .track-pane-proifle {
+            width: 41px;
+            height: 41px;
+            margin-right: 14px;
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 100%;
+            }
+        }
+        .track-pane-con {
+            flex: 1;
+            .track-pane-con-1 {
+                display: flex;
+                justify-content: space-between;
+                color: var(--primary-color);
+            }
+            .track-pane-con-2 {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    list-style-type: none;
+                    color: #8F8F8F;
+                    li{
+                        margin-top: 5px;
+                        img{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .price{
+                    font-size: 2rem;
+                    color: #FB6816;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .track-pane-b {
+        background: #faf4e7;
+        display: flex;
+        a {
+            height: 46px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--primary-color);
+            &:hover {
+                color: var(--secondary-color);
+            }
+            img {
+                margin-right: 10px;
+            }
+            &:first-child {
+                border-right: 1px solid #c1d1dc;
             }
         }
     }
