@@ -3748,6 +3748,10 @@ form {
         margin: 0;
     }
 
+    h2 {
+        margin: 0;
+    }
+
     .filter-area {
         display: flex;
         align-items: center;
@@ -3790,7 +3794,7 @@ form {
 .filter-group {
     width: 100%;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 60px;
     box-shadow: var(--box-shadow-light);
     background: var(--white-color);
@@ -5953,17 +5957,17 @@ input {
                     padding: 0;
                     margin: 0;
                     list-style-type: none;
-                    color: #8F8F8F;
-                    li{
+                    color: #8f8f8f;
+                    li {
                         margin-top: 5px;
-                        img{
+                        img {
                             margin-right: 5px;
                         }
                     }
                 }
-                .price{
+                .price {
                     font-size: 2rem;
-                    color: #FB6816;
+                    color: #fb6816;
                     font-weight: 500;
                 }
             }
@@ -5988,6 +5992,80 @@ input {
             &:first-child {
                 border-right: 1px solid #c1d1dc;
             }
+        }
+    }
+}
+
+/* invoices */
+.invoices-pane-con{
+    .orange-tab .react-tabs__tab-panel{
+        padding: 0;
+        background-color: inherit;
+    }
+}
+.invoices-pane-tab {
+    margin-top: 24px;
+    padding: 24px;
+    background-color: var(--white-color);
+    border-top: 2px solid var(--secondary-color);
+    min-height: 50vh;
+    .invoices-pane {
+        display: flex;
+        justify-content: space-between;
+        .invoices-pane-l {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            margin-bottom: 24px;
+            img {
+                margin-right: 15px;
+                display: block;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        a {
+            color: #2794d1;
+            font-size: 12px;
+            background-color: #def3ff;
+            padding: 5px 12px;
+            &:hover {
+                color: var(--black-color);
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+}
+.invoices-filter-group{
+    width: 375px;
+    padding: 24px;
+    z-index: 1;
+    .form-group{
+        border: 1px solid #96B7CF;
+        display: inline-flex;
+        align-items: center;
+        margin: 0 0 20px 0;
+        width: 100%;
+        label{
+            font-size: 12px;
+            color: var(--primary-color);
+            margin: 0 ;
+            padding-left: 14px;
+            flex: 1;
+        }
+        .form-select{
+            font-size: 12px;
+            border: 0;
+            border-radius: 0;
+            border-left: 1px solid #96B7CF;
+            flex: 2;
+        }
+    }
+    
+    .submit-area{
+        .btn-big{
+            width: 100%;
         }
     }
 }

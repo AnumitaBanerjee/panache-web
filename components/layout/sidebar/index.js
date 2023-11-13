@@ -253,6 +253,27 @@ const Sidebar = () => {
                                 <span>Commissions</span>
                             </Link>
                         </li>
+                        <li className={router.pathname == "/invoices" ? "active" : ""}>
+                            <Link href="/invoices" className="">
+                                <Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/invoices-icon.png`}
+                                    alt="Invoices"
+                                    width={26}
+                                    height={26}
+                                    priority={true}
+                                    className="img"
+                                />
+                                <Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/invoices-icon-a.png`}
+                                    alt="Invoices"
+                                    width={26}
+                                    height={26}
+                                    priority={true}
+                                    className="img-active"
+                                />
+                                <span>Invoices</span>
+                            </Link>
+                        </li>
                     </ul>
                     <div className="logout-pane">
                         <Image
