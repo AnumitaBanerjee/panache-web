@@ -195,20 +195,41 @@ const Sidebar = () => {
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/student-icon.png`}
                                     alt="Student"
-                                    width={32}
-                                    height={26}
+                                    width={28}
+                                    height={22}
                                     priority={true}
                                     className="img"
                                 />
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/student-icon-a.png`}
                                     alt="Student"
-                                    width={32}
-                                    height={26}
+                                    width={28}
+                                    height={22}
                                     priority={true}
                                     className="img-active"
                                 />
                                 <span>Student Profiles</span>
+                            </Link>
+                        </li>
+                        <li className={router.pathname == "/upcoming-appointment" ? "active" : ""}>
+                            <Link href="/upcoming-appointment" className="">
+                                <Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/upcoming-icon.png`}
+                                    alt="Student"
+                                    width={20}
+                                    height={22}
+                                    priority={true}
+                                    className="img"
+                                />
+                                <Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/upcoming-icon-a.png`}
+                                    alt="Student"
+                                    width={20}
+                                    height={22}
+                                    priority={true}
+                                    className="img-active"
+                                />
+                                <span>Upcoming Appointments</span>
                             </Link>
                         </li>
                     </ul>

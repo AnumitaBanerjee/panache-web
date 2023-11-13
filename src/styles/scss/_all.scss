@@ -5826,3 +5826,62 @@ input {
         }
     }
 }
+
+/* Upcoming Appointment  */
+.upcoming-content{
+    .upcoming-box{
+        font-size: 14px;
+        background: var(--white-color);
+        border-top: 2px solid var(--secondary-color);
+        margin-bottom: 30px;
+        .upcoming-box-t{
+            display: flex;
+            padding: 10px;
+            .upcoming-box-tr{
+                margin-left: 10px;
+                .upcoming-box-li{
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 7px 0 0 0;
+                    display: flex;
+                    li{
+                        a{
+                            color: var(--blue-color);
+                            &:hover{
+                                color: var(--secondary-color);
+                            }
+                        }
+                        &:last-child{
+                            padding-left: 10px;
+                        }
+                        &:not(:last-child){
+                            border-right: 1px solid #AFC4D2;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .upcoming-box-b{
+            background: #FAF4E7;
+            display: flex;
+            a{
+                height: 46px;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--black-color);
+                &:hover{
+                    color: var(--secondary-color);
+                }
+                img{
+                    margin-right: 10px;
+                }
+                &:first-child{
+                    border-right: 1px solid #C1D1DC;
+                }
+            }
+        }
+    }
+}
