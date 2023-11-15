@@ -20,6 +20,12 @@ const Sidebar = () => {
                         priority={true}
                     />
                 </div>
+                <div className="sidebar-search">
+                    <div className="form-group has-search">
+                        <span className="search-control form-control-feedback"></span>
+                        <input type="text" className="form-control" placeholder="Search Courses Here..."/>
+                    </div>
+                </div>
                 <div className="sidebar-menu">
                     <ul>
                         <li className={router.pathname == "/dashboard" ? "active" : ""}>
@@ -63,7 +69,7 @@ const Sidebar = () => {
                                 />
                                 <span>Application Lists</span>
                             </Link>
-                        </li>       
+                        </li>
                         <li className={router.pathname == "/university-lists" ? "active" : ""}>
                             <Link href="/university-lists" className="">
                                 <Image

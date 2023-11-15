@@ -5,7 +5,7 @@ import Link from "next/link";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import ProfileModal from "../modal/ProfileModal";
-
+import StudentProfilesModal from "../modal/StudentProfilesModal";
 const StudentProfiles = (props) => {
 
     const renderTooltip = (props) => (
@@ -107,6 +107,14 @@ const StudentProfiles = (props) => {
                                         <Link href="/recommended-programs" className="btn-reco btns">Recommendation</Link>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div className="student-update">
+                            <div className='verify-documents'>
+                                <Link href="#" onClick={() => openModal()}>Verify Documents</Link>
+                            </div>
+                            <div className='verify-documents'>
+                                <Link href="#">Submit Documents</Link>
                             </div>
                         </div>
                     </div>
@@ -414,6 +422,11 @@ const StudentProfiles = (props) => {
 
                 </div>
             </div>
+            <ProfileModal
+                show={show}
+                onHide={handleClose}
+                modelitems={modelitems}
+            />
             <ProfileModal
                 show={show}
                 onHide={handleClose}

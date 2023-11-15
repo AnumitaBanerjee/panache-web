@@ -2024,7 +2024,37 @@ p {
             margin: 35px 28px;
         }
     }
+    .sidebar-search {
+        .has-search {
+            position: relative;
+            .form-control {
+                padding-left: 60px;
+                background-color: #195783;
+                border: 0;
+                color: var(--white-color);
+            }
+            .form-control-feedback {
+                background: url(../../../public/assets/images/sidebar-search-icon.png) left center no-repeat;
+                position: absolute;
+                z-index: 2;
+                display: block;
+                width: 22px;
+                height: 22px;
+                pointer-events: none;
+                left: 26px;
+                top: 14px;
+            }
+        }
+        ::placeholder {
+            color: #789FBA;
+            opacity: 1; /* Firefox */
+        }
 
+        ::-ms-input-placeholder {
+            /* Edge 12 -18 */
+            color: #789FBA;
+        }
+    }
     .sidebar-menu {
         ul {
             list-style: none;
@@ -5775,6 +5805,9 @@ input {
         font-size: 16px;
         margin: 0;
     }
+    .student-update{
+        
+    }
 }
 .student-item {
     font-size: 14px;
@@ -6077,22 +6110,22 @@ input {
         box-shadow: var(--box-shadow-light);
         border-top: 2px solid var(--secondary-color);
         padding: 14px;
-        .icon-box-t{
+        .icon-box-t {
             display: flex;
             justify-content: space-between;
-            h2{
+            h2 {
                 font-size: 2rem;
                 font-weight: 600;
             }
         }
-        &.primary{
-            .icon-box-t h2{
+        &.primary {
+            .icon-box-t h2 {
                 color: var(--primary-color);
             }
         }
-        &.secondary{
-            .icon-box-t h2{
-                color: #FB6816;
+        &.secondary {
+            .icon-box-t h2 {
+                color: #fb6816;
             }
         }
     }
