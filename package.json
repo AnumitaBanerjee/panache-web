@@ -10,6 +10,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tiptap/pm": "^2.1.12",
+    "@tiptap/react": "^2.1.12",
+    "@tiptap/starter-kit": "^2.1.12",
     "antd": "^4.24.14",
     "axios": "^1.5.0",
     "bootstrap": "^5.3.1",

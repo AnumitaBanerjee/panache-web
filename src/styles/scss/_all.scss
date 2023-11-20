@@ -6253,3 +6253,28 @@ input {
         }
     }
 }
+
+/* Template */
+.template-table{
+    min-height: 65vh;
+    .no-content{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        color: #ADACAC;
+    }
+}
+.template-modal-content{
+    margin-top: 25px;
+    .form-group .form-control{
+        border: 1px solid #C9D6DE;
+        background-color: var(--white-color);
+        box-shadow: var(--box-shadow-light);
+    }
+    textarea.form-control{
+        height: 260px;
+    }
+}
