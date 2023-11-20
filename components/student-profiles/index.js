@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from "next/link";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import ProfileModal from "../modal/ProfileModal";
+import DocumentsVerificationModal from "../modal/DocumentsVerificationModal";
 import StudentProfilesModal from "../modal/StudentProfilesModal";
 const StudentProfiles = (props) => {
 
@@ -15,11 +15,15 @@ const StudentProfiles = (props) => {
     );
 
     const [show, setShow] = useState(false);
-    const [modelitems, setmodeldata] = useState([]);
-
     const handleClose = () => setShow(false);
     const openModal = (e) => {
         setShow(true);
+    }
+
+    const [showDocment, setShowDocment] = useState(false);
+    const handleDocmentClose = () => setShowDocment(false);
+    const openDocmentModal = (e) => {
+        setShowDocment(true);
     }
 
     return (
@@ -111,7 +115,7 @@ const StudentProfiles = (props) => {
                         </div>
                         <div className="student-update">
                             <div className='verify-documents'>
-                                <Link href="#" onClick={() => openModal()}>Verify Documents</Link>
+                                <Link href="#" onClick={() => openDocmentModal()}>Verify Documents</Link>
                             </div>
                             <div className='submit-documents'>
                                 <Link href="#">Submit Documents</Link>
@@ -422,15 +426,13 @@ const StudentProfiles = (props) => {
 
                 </div>
             </div>
-            <ProfileModal
+            <StudentProfilesModal
                 show={show}
                 onHide={handleClose}
-                modelitems={modelitems}
             />
-            <ProfileModal
-                show={show}
-                onHide={handleClose}
-                modelitems={modelitems}
+            <DocumentsVerificationModal
+                show={showDocment}
+                onHide={handleDocmentClose}
             />
         </>
     )

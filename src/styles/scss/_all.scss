@@ -2167,8 +2167,8 @@ p {
             }
         }
     }
-     /* Hide scrollbar for Chrome, Safari and Opera */
-     .sidebar-menu ul::-webkit-scrollbar {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .sidebar-menu ul::-webkit-scrollbar {
         display: none;
     }
 
@@ -5817,36 +5817,52 @@ input {
         font-size: 16px;
         margin: 0;
     }
-    .student-update{
+    .student-update {
         display: flex;
-        a{
+        a {
             font-size: 14px;
             text-align: center;
             display: block;
             padding: 10px;
         }
-        .verify-documents{
+        .verify-documents {
             width: 50%;
-            a{
+            a {
                 background-color: var(--primary-color);
                 color: var(--white-color);
-                &:hover{
+                &:hover {
                     background-color: var(--dark-primary-color);
-                    
                 }
             }
         }
-        .submit-documents{
+        .submit-documents {
             width: 50%;
-            a{
+            a {
                 background-color: var(--secondary-color);
                 color: var(--primary-color);
-                &:hover{
+                &:hover {
                     background-color: var(--black-color);
                     color: var(--white-color);
                 }
             }
         }
+    }
+}
+.profile-modal {
+    .modal-header {
+        .modal-title {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            padding: 0 0 0 50px;
+        }
+        .btn-close{
+            margin:0;
+            position: absolute;
+            top: 24px;
+        }
+    }
+    .programs-modal-second.orange-tab .react-tabs__tab-list{
+        margin-top: 40px;
     }
 }
 .student-item {
@@ -5910,9 +5926,75 @@ input {
             }
         }
     }
-
 }
-
+/* Documents Verification */
+.documents-modal{
+    .documents-modal-top{
+        margin: 50px auto 20px auto;
+        text-align: center;
+        .student-profile-img{
+            margin: 10px auto;
+            width: 133px;
+            height: 133px;
+            img{
+                border-radius: 100%;
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+            }
+        }
+        .student-card{
+            display: flex;
+            justify-content: center;
+            span {
+                font-size: 0.9rem;
+                color: var(--white-color);
+                margin: 0 10px 0 0;
+                display: block;
+                padding: 4px 10px;
+            }
+            span.apply-id {
+                background: var(--blue-color);
+            }
+            span.student-id {
+                background: var(--green-color);
+            }
+        }
+    }
+    .documents-modal-btm{
+        margin: 30px 0 20px 0;
+        .col-md-6{
+            margin-bottom: 20px;
+        }
+        .documents{
+            background: var(--white-color);
+            border-top: 2px solid var(--secondary-color);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--box-shadow-light);
+            .documents-l{
+                span{
+                    font-size: 12px;
+                    color: #939191;
+                    text-transform: uppercase;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+            .documents-r{
+                a{
+                    margin-right: 10px;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
 /* Upcoming Appointment  */
 .upcoming-content {
     .upcoming-box {
