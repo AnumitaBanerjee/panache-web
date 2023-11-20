@@ -113,7 +113,7 @@ const StudentProfiles = (props) => {
                             <div className='verify-documents'>
                                 <Link href="#" onClick={() => openModal()}>Verify Documents</Link>
                             </div>
-                            <div className='verify-documents'>
+                            <div className='submit-documents'>
                                 <Link href="#">Submit Documents</Link>
                             </div>
                         </div>
