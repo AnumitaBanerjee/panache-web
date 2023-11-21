@@ -76,71 +76,71 @@ const MultiSurvey = () => {
         {
             questionText: 'I like to analyze things (problems/situations) ?',
             answerOptions: [
-                { id: 19, answerText: 'Yes', value: 'yes' },
-                { id: 20, answerText: 'No', value: 'no' },
+                { id: 21, answerText: 'Yes', value: 'yes' },
+                { id: 22, answerText: 'No', value: 'no' },
             ],
         },
         {
             questionText: 'I like working with numbers or charts ?',
             answerOptions: [
-                { id: 19, answerText: 'Yes', value: 'yes' },
-                { id: 20, answerText: 'No', value: 'no' },
+                { id: 23, answerText: 'Yes', value: 'yes' },
+                { id: 24, answerText: 'No', value: 'no' },
             ],
         },
         {
             questionText: 'I’m good at math ?',
             answerOptions: [
-                { id: 19, answerText: 'Yes', value: 'yes' },
-                { id: 20, answerText: 'No', value: 'no' },
+                { id: 25, answerText: 'Yes', value: 'yes' },
+                { id: 26, answerText: 'No', value: 'no' },
             ],
         },
         {
             questionText: 'I am good at working independently ?',
             answerOptions: [
-                { id: 19, answerText: 'Yes', value: 'yes' },
-                { id: 20, answerText: 'No', value: 'no' },
+                { id: 27, answerText: 'Yes', value: 'yes' },
+                { id: 28, answerText: 'No', value: 'no' },
             ],
         },
         {
             questionText: 'I like to read about art and music ?',
             answerOptions: [
-                { id: 19, answerText: 'Yes', value: 'yes' },
-                { id: 20, answerText: 'No', value: 'no' },
+                { id: 29, answerText: 'Yes', value: 'yes' },
+                { id: 30, answerText: 'No', value: 'no' },
             ],
         },
         {
             questionText: 'I enjoy creative writing ?',
             answerOptions: [
-                { id: 19, answerText: 'Yes', value: 'yes' },
-                { id: 20, answerText: 'No', value: 'no' },
+                { id: 31, answerText: 'Yes', value: 'yes' },
+                { id: 32, answerText: 'No', value: 'no' },
             ],
         },
         {
             questionText: 'I am a creative person ?',
             answerOptions: [
-                { id: 19, answerText: 'Yes', value: 'yes' },
-                { id: 20, answerText: 'No', value: 'no' },
+                { id: 33, answerText: 'Yes', value: 'yes' },
+                { id: 34, answerText: 'No', value: 'no' },
             ],
         },
         {
             questionText: 'I like to play instruments or sing ?',
             answerOptions: [
-                { id: 19, answerText: 'Yes', value: 'yes' },
-                { id: 20, answerText: 'No', value: 'no' },
+                { id: 35, answerText: 'Yes', value: 'yes' },
+                { id: 36, answerText: 'No', value: 'no' },
             ],
         },
         {
             questionText: 'I like acting in plays ?',
             answerOptions: [
-                { id: 19, answerText: 'Yes', value: 'yes' },
-                { id: 20, answerText: 'No', value: 'no' },
+                { id: 37, answerText: 'Yes', value: 'yes' },
+                { id: 38, answerText: 'No', value: 'no' },
             ],
         },
         {
             questionText: 'I like to draw ?',
             answerOptions: [
-                { id: 19, answerText: 'Yes', value: 'yes' },
-                { id: 20, answerText: 'No', value: 'no' },
+                { id: 39, answerText: 'Yes', value: 'yes' },
+                { id: 40, answerText: 'No', value: 'no' },
             ],
         },
     ];
