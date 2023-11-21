@@ -280,6 +280,27 @@ const Sidebar = () => {
                                 <span>Invoices</span>
                             </Link>
                         </li>
+                        <li className={router.pathname == "/template" ? "active" : ""}>
+                            <Link href="/template" className="">
+                                <Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/template-icon.png`}
+                                    alt="Template"
+                                    width={26}
+                                    height={26}
+                                    priority={true}
+                                    className="img"
+                                />
+                                <Image
+                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/template-icon-a.png`}
+                                    alt="Template"
+                                    width={26}
+                                    height={26}
+                                    priority={true}
+                                    className="img-active"
+                                />
+                                <span>Template</span>
+                            </Link>
+                        </li>
                     </ul>
                     <div className="logout-pane">
                         <Image

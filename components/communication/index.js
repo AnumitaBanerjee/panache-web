@@ -4,8 +4,27 @@ import Image from 'next/image';
 import Link from "next/link";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
+import ApplicationModal from "../modal/ApplicationModal";
+import ProgramsModal from "../modal/ProgramsModal";
 
 const Communication = (props) => {
+
+    const renderTooltip = (props) => (
+        <Tooltip id="button-tooltip" {...props}>
+          click to view courses checklist
+        </Tooltip>
+      );
+    
+
+    const [show, setShow] = useState(false);
+    const [modelitems, setmodeldata] = useState([]);
+
+    const handleClose = () => setShow(false);
+    const openModal = (e) => {
+        setShow(true);
+    }
 
     return (
         <>
@@ -13,6 +32,7 @@ const Communication = (props) => {
                 <div className="apply-list-pane-top">
                     <h2>Communication</h2>
                 </div>
+
                 <div className="apply-card-sec">
 
                     <div className="apply-card-inner">
@@ -32,15 +52,20 @@ const Communication = (props) => {
                                         <h3>Olivia Jason</h3>
                                         <span className="apply-id">Application ID: 25698745</span>
                                         <span className="student-id">Student ID: 25698745</span>
-                                        <span className="application-book">
-                                            <Image
-                                                src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
-                                                alt="Panache"
-                                                width={11}
-                                                height={13}
-                                                priority={true}
-                                            />
-                                        </span>
+                                        <OverlayTrigger
+                                            placement="top"
+                                            delay={{ show: 250, hide: 400 }}
+                                            overlay={renderTooltip}    >
+                                            <Link href='#' className="application-book" onClick={() => openModal()}>
+                                                <Image
+                                                    src={`${process.env.NEXT_PUBLIC_IMAGE_PATH}/book-icon.png`}
+                                                    alt="Panache"
+                                                    width={11}
+                                                    height={13}
+                                                    priority={true}
+                                                />
+                                            </Link>
+                                        </OverlayTrigger>
                                     </div>
                                     <div className="applt-card-profile-details-b">
                                         <ul>
@@ -79,7 +104,7 @@ const Communication = (props) => {
                             </div>
                             <div className="apply-card-btns">
                                 <div className="apply-card-btn-inner">
-                                    <Link href="/" className="btn-orange btn">Remarks</Link>
+                                    <Link href="#" className="btn-orange btn">Remarks</Link>
                                     <Link href="/communication" className="btn-blue btn">Communication</Link>
                                 </div>
                             </div>
@@ -569,6 +594,12 @@ const Communication = (props) => {
 
                 </div>
             </div>
+
+            <ApplicationModal
+                show={show}
+                onHide={handleClose}
+                modelitems={modelitems}
+            />
 
         </>
     )
